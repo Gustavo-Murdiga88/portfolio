@@ -1,19 +1,20 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-	content: [
-		"./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-		"./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-	],
+	content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
 	theme: {
 		extend: {
 			maxWidth: {
 				page: "78.3125rem",
 			},
 
+			inset: {
+				controls: "calc(((100% - 1253px) / 2) - 56px)",
+			},
+
 			boxShadow: {
 				btn1: "-4px 4px 6px 0px rgba(0, 0, 0, 0.35) inset, 4px 0px 4px 2px rgba(0, 0, 0, 0.30) inset",
+				card: "-4px 4px 4px 2px rgba(0, 0, 0, 0.25)",
 			},
 
 			dropShadow: {
