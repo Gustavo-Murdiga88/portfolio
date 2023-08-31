@@ -47,8 +47,8 @@ dependencies:
 
 devDependencies:
   '@gm-dev/eslint-config':
-    specifier: ^1.0.5
-    version: 1.0.5(eslint-plugin-jsx-a11y@6.7.1)(eslint@8.48.0)(typescript@5.2.2)
+    specifier: ^1.0.6
+    version: 1.0.6(eslint-plugin-jsx-a11y@6.7.1)(eslint@8.48.0)(typescript@5.2.2)
   '@typescript-eslint/eslint-plugin':
     specifier: ^6.4.1
     version: 6.4.1(@typescript-eslint/parser@6.4.1)(eslint@8.48.0)(typescript@5.2.2)
@@ -114,8 +114,8 @@ packages:
     resolution: {integrity: sha512-ZSjtmelB7IJfWD2Fvb7+Z+ChTIKWq6kjda95fLcQKNS5aheVHn4IkfgRQE3sIIzTcSLwLcLZUD9UBt+V7+h+Pw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
 
-  /@gm-dev/eslint-config@1.0.5(eslint-plugin-jsx-a11y@6.7.1)(eslint@8.48.0)(typescript@5.2.2):
-    resolution: {integrity: sha512-qNUsuIPzR+6EWPryVXw46YkImIF0wtUN4Ph6My7Kc4Mt/QPKbxyAqOjFeXnRNY4ZDzxP+nyFMVPnRtVMuUuKYQ==}
+  /@gm-dev/eslint-config@1.0.6(eslint-plugin-jsx-a11y@6.7.1)(eslint@8.48.0)(typescript@5.2.2):
+    resolution: {integrity: sha512-l8FVCjFclWOeYEnaGX0DxPa7E2S8mjsCsyvBqe/V2A+NKjknxB0x7RYJDI/sguydX1QXrh+G/nwniDgMgOQWMA==}
     peerDependencies:
       eslint: ^8.0.0
       typescript: '>=4'

@@ -5,7 +5,7 @@ const config: Config = {
 	theme: {
 		extend: {
 			maxWidth: {
-				page: "78.3125rem",
+				page: "1255px",
 			},
 
 			inset: {

@@ -7,8 +7,8 @@ interface ISquareProps extends ComponentProps<"svg"> {
 export function Square({ size, ...props }: ISquareProps) {
 	return (
 		<svg
-			width={size ?? 24}
-			height={size ?? 24}
+			width={size}
+			height={size}
 			viewBox="0 0 20 21"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"

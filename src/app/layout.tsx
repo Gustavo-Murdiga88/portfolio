@@ -28,11 +28,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 				className={`${roboto.className}  my-8 h-screen dark:bg-neutral-dark-100 dark:text-neutral-dark-900`}
 			>
 				<header className="mx-auto flex max-w-page justify-between border-b border-b-neutral-300 bg-neutral-dark-100 px-5 py-4 pr-4">
-					<Link href="/">
-						<strong className="uppercase text-blue-200 transition-colors hover:text-blue-dark-700 dark:text-blue-dark-200 dark:hover:text-blue-dark-700">
-							Home
-						</strong>
-					</Link>
+					<strong className="uppercase text-blue-200 transition-colors hover:text-blue-dark-700 dark:text-blue-dark-200 dark:hover:text-blue-dark-700">
+						Home
+					</strong>
 					<button
 						type="button"
 						className="transition-all hover:brightness-150 "

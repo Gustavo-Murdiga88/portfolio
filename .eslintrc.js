@@ -9,9 +9,6 @@ module.exports = {
 	plugins: ["eslint-plugin-import-helpers"],
 
 	rules: {
-		"react/jsx-props-no-spreading": "off",
-		"react/require-default-props": "off",
-
 		"import-helpers/order-imports": [
 			"warn",
 			{
