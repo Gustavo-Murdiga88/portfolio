@@ -1,24 +1,25 @@
 import { GitCommit } from "lucide-react";
-
 import Img from "next/image";
+
+import { Docker } from "@/icons/docker";
+import { Mouse } from "@/icons/mouse";
+import { Next } from "@/icons/next";
+import { Node } from "@/icons/node";
+import { TypeScript } from "@/icons/typesctipt";
 
 export function Main() {
 	return (
 		<>
-			<main className="mx-auto mt-[2.8125rem] grid max-w-page grid-cols-[679px_1fr] gap-5 px-5 pr-[26px]">
+			<main className="mx-auto mt-[2.8125rem] grid max-w-page grid-cols-1 gap-5 lg:grid-cols-[679px_1fr] lg:px-5 lg:pr-[26px]">
 				{/* left */}
 				<div className="flex flex-col gap-5">
-					<div className="h-[320px] rounded-md bg-neutral-200 p-8 shadow-card dark:bg-neutral-dark-200">
-						<div className="flex w-full gap-[14px]">
+					<div className="animate__animated animated_stop animate__bounceInDown animate-delay-01s rounded-md bg-neutral-200 p-8 shadow-card dark:bg-neutral-dark-200 lg:h-[320px]">
+						<div className="flex w-full flex-col gap-[14px] md:flex-row">
 							<Img
 								src="https://github.com/gustavo-murdiga88.png"
 								height={256}
 								width={232}
-								className="rounded-br-md rounded-tl-md shadow-card"
-								style={{
-									height: 256,
-									width: 232,
-								}}
+								className="h-full w-full rounded-br-md rounded-tl-md shadow-card sm:h-[256px] sm:w-[232px]"
 								alt="Gustavo Murdiga"
 							/>
 							<div className="flex w-full flex-col items-start justify-between">
@@ -26,7 +27,7 @@ export function Main() {
 									<span className="font-normal uppercase text-neutral-600 dark:text-neutral-dark-600 ">
 										Desenvolvedor front-end
 									</span>
-									<h1 className="mt-5 text-[54px] font-semibold leading-[60px]">
+									<h1 className="mb-2 mt-5 text-center text-3xl font-semibold leading-[60px] md:text-left md:text-3xl">
 										Gustavo Murdiga.
 									</h1>
 								</span>
@@ -39,31 +40,20 @@ export function Main() {
 							</div>
 						</div>
 					</div>
-					<div className="h-[320px] w-full rounded-md bg-neutral-200 p-6 shadow-card dark:bg-neutral-dark-200">
-						<div className="flex w-full gap-[14px]">
-							<Img
-								src="https://github.com/gustavo-murdiga88.png"
-								height={256}
-								width={232}
-								className="rounded-br-md rounded-tl-md shadow-card"
-								style={{
-									height: 256,
-									width: 232,
-								}}
-								alt="Gustavo Murdiga"
-							/>
-							<div className="flex w-full flex-col items-start justify-between">
-								<span>
-									<span className="font-normal uppercase text-neutral-600 dark:text-neutral-dark-600 ">
-										Desenvolvedor front-end
-									</span>
-									<h1 className="mt-5 text-[54px] font-semibold leading-[60px]">
-										Gustavo Murdiga.
-									</h1>
+					<div className="animate__animated animated_stop animate__bounceInDown animate-delay-02s w-full rounded-md bg-neutral-200 p-6 shadow-card dark:bg-neutral-dark-200 lg:h-[320px]">
+						<div className="flex w-full flex-col items-center gap-5 md:flex-row lg:items-stretch">
+							<Node className="h-32 w-32 md:h-[256px] md:w-[232px]" />
+							<div className="flex w-full flex-1 flex-col justify-between lg:items-start">
+								<span className="font-normal uppercase text-neutral-600 dark:text-neutral-dark-600 ">
+									API Fórum
 								</span>
+								<h1 className="mb-6 flex h-full flex-1 items-center text-xs font-semibold uppercase">
+									API criada com os conhecimentos adquiridos em alguns padrões
+									de projetos, como DDD, TDD e SOLID.
+								</h1>
 								<footer className="flex w-full items-center justify-between">
 									<span className="font-semibold uppercase text-neutral-600 dark:text-neutral-dark-600 ">
-										Currículo
+										Perfil
 									</span>
 									<GitCommit className="font-normal uppercase text-neutral-600 dark:text-neutral-dark-600 " />
 								</footer>
@@ -73,88 +63,54 @@ export function Main() {
 				</div>
 				{/* right */}
 				<div className="flex flex-col gap-5">
-					<div className="h-[42px] w-full rounded-md bg-neutral-200 p-2 px-8 shadow-card dark:bg-neutral-dark-200">
+					<div className="animate__animated animated_stop animate__bounceInDown animate-delay-03s h-[42px] w-full rounded-md bg-neutral-200 p-2 px-8 shadow-card dark:bg-neutral-dark-200">
 						<GitCommit />
 					</div>
-					<div className="flex h-[16.125rem] gap-5">
-						<div className="flex-1 rounded-md bg-neutral-200  p-8 shadow-card dark:bg-neutral-dark-200">
-							<Img
-								src="https://github.com/gustavo-murdiga88.png"
-								height={256}
-								width={232}
-								className="rounded-br-md rounded-tl-md shadow-card"
+					<div className="flex flex-col gap-5 md:flex-row lg:h-[16.125rem]">
+						<div className="animate__animated animated_stop animate__bounceInDown animate-delay-06s flex-1 rounded-md bg-neutral-200  p-8 shadow-card dark:bg-neutral-dark-200">
+							<Next
+								className="mx-auto"
 								style={{
 									width: 191,
 									height: 151,
 								}}
-								alt="Gustavo Murdiga"
 							/>
 							<footer className="mt-6 flex w-full items-center justify-between">
 								<span className="font-semibold uppercase text-neutral-600 dark:text-neutral-dark-600 ">
-									Currículo
+									Habilidades
 								</span>
 								<GitCommit className="font-normal uppercase text-neutral-600 dark:text-neutral-dark-600 " />
 							</footer>
 						</div>
-						<div className="flex-1 rounded-md bg-neutral-200 p-8 shadow-card dark:bg-neutral-dark-200">
-							<Img
-								src="https://github.com/gustavo-murdiga88.png"
-								height={256}
-								width={232}
-								className="rounded-br-md rounded-tl-md shadow-card"
+						<div className="animate__animated animated_stop animate__bounceInDown animate-delay-04s flex-1 rounded-md bg-neutral-200 p-8 shadow-card dark:bg-neutral-dark-200">
+							<TypeScript
+								className="mx-auto"
 								style={{
 									width: 191,
 									height: 151,
 								}}
-								alt="Gustavo Murdiga"
 							/>
 							<footer className="mt-6 flex w-full items-center justify-between">
 								<span className="font-semibold uppercase text-neutral-600 dark:text-neutral-dark-600 ">
-									Currículo
+									Projetos
 								</span>
 								<GitCommit className="font-normal uppercase text-neutral-600 dark:text-neutral-dark-600 " />
 							</footer>
 						</div>
 					</div>
-					<div className="flex flex-1 gap-5 rounded-md bg-neutral-200 p-8 shadow-card dark:bg-neutral-dark-200">
-						<div className="flex  flex-col justify-between">
+
+					<div className="animate__animated animated_stop animate__bounceInDown animate-delay-05s flex flex-1 gap-5 rounded-md bg-neutral-200 p-8 shadow-card dark:bg-neutral-dark-200">
+						<div className="flex flex-col justify-between">
 							<div className="flex gap-7">
-								<Img
-									src="https://github.com/gustavo-murdiga88.png"
-									height={256}
-									width={232}
-									style={{
-										width: 135,
-										height: 160,
-									}}
-									alt="Gustavo Murdiga"
-								/>
+								<TypeScript className="h-20 w-20 lg:h-[160px] lg:w-[135px]" />
 
-								<Img
-									src="https://github.com/gustavo-murdiga88.png"
-									height={256}
-									width={232}
-									style={{
-										width: 135,
-										height: 160,
-									}}
-									alt="Gustavo Murdiga"
-								/>
+								<Next className="h-20 w-20 lg:h-[160px] lg:w-[135px]" />
 
-								<Img
-									src="https://github.com/gustavo-murdiga88.png"
-									height={256}
-									width={232}
-									style={{
-										width: 135,
-										height: 160,
-									}}
-									alt="Gustavo Murdiga"
-								/>
+								<Docker className="h-20 w-20 lg:h-[160px] lg:w-[135px]" />
 							</div>
 							<footer className="mt-6 flex w-full items-center justify-between">
 								<span className="font-semibold uppercase text-neutral-600 dark:text-neutral-dark-600 ">
-									Currículo
+									Serviços oferecidos
 								</span>
 								<GitCommit className="font-normal uppercase text-neutral-600 dark:text-neutral-dark-600 " />
 							</footer>
@@ -162,10 +118,8 @@ export function Main() {
 					</div>
 				</div>
 			</main>
-			<div className="mt-[110px] flex h-[4.5rem] items-center justify-center bg-black p-2">
-				<span className="relative inline-block h-[50px] w-8 rounded-md border-2 border-blue-200">
-					<span className="absolute left-[45%] top-2 h-2 animate-bounce rounded-md border border-blue-200" />
-				</span>
+			<div className="ml-2 mt-[110px] flex h-[4.5rem] items-center justify-center rounded-sm bg-neutral-100 p-2 dark:bg-black">
+				<Mouse size={40} />
 			</div>
 		</>
 	);

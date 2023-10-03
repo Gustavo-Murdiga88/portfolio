@@ -1,9 +1,61 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+	darkMode: "class",
 	content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
 	theme: {
 		extend: {
+			keyframes: {
+				modal: {
+					"0%": {
+						opacity: "0",
+						transform: "translate(-50%, 100%) scale(0.5)",
+					},
+					"100%": {
+						opacity: "1",
+						transform: "translate(-50%, -50%) scale(1)",
+					},
+				},
+				modalOut: {
+					"0%": {
+						opacity: "1",
+						transform: "translate(-50%, -50%) scale(1)",
+					},
+					"100%": {
+						opacity: "0",
+						transform: "translate(-50%, 100%) scale(0.5)",
+					},
+				},
+
+				fadeOut: {
+					"100%": {
+						transform: "translateY(-120%)",
+						opacity: "1",
+					},
+				},
+
+				scroll: {
+					"100%": {
+						transform: "translateY(-6%)",
+					},
+				},
+			},
+
+			animation: {
+				modal: "modal 150ms cubic-bezier(0.16, 1, 0.3, 1)",
+				modalOut: "modalOut 200ms cubic-bezier(0.16, 1, 0.3, 1) forwards",
+				fadeOut: "fadeOut .6s ease-in-out forwards",
+				scroll: "scroll .6s ease-in infinite alternate",
+			},
+
+			height: {
+				modal: "700px",
+			},
+
+			width: {
+				modal: "800px",
+			},
+
 			maxWidth: {
 				page: "1255px",
 			},
@@ -91,7 +143,7 @@ const config: Config = {
 					"800": "#333333",
 					"900": "#262626",
 					"950": "#000000",
-					"1000": "rgba(242, 242, 242,0.2)",
+					"1000": "rgba(253, 253, 255, 0.20)",
 				},
 
 				"neutral-dark": {
@@ -112,6 +164,6 @@ const config: Config = {
 			},
 		},
 	},
-	plugins: [],
+	plugins: [require("tailwind-scrollbar")({ nocompatible: true })],
 };
 export default config;

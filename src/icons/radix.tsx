@@ -16,8 +16,8 @@ export function Radix({ size, ...props }: IRadixProps) {
 		>
 			<g clipPath="url(#clip0_9_1715)">
 				<path
+					className="fill-black dark:fill-[#E5E5E5]"
 					d="M33.6 70a22.4 22.4 0 110-44.8V70zm0-70H11.2v22.4h22.4V0zm14 22.4a11.2 11.2 0 100-22.4 11.2 11.2 0 000 22.4z"
-					fill="#E5E5E5"
 				/>
 			</g>
 			<defs>
