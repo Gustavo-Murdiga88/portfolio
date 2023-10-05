@@ -12,6 +12,28 @@ export function TypeComponent() {
 		return null;
 	}
 
+	function onTypeEnd() {
+		const controls = document.querySelector("#controls");
+		const doc = document?.documentElement;
+		const nodes = document.querySelectorAll(".animated_stop");
+
+		doc.classList.remove("overflow-hidden");
+
+		typeComponent?.current?.classList.add("animate-fadeOut");
+
+		nodes.forEach((element) => {
+			element.classList.remove("animated_stop");
+		});
+		document.body.classList.remove("overflow-hidden");
+
+		controls.classList.remove("lg:invisible");
+		controls.classList.add("animate-fadeIn");
+
+		setTimeout(() => {
+			setShouldBeRender(false);
+		}, 3000);
+	}
+
 	return (
 		<div
 			ref={typeComponent}
@@ -34,20 +56,7 @@ export function TypeComponent() {
 						"Hey there 👋, I am Gustavo Murdiga, and I am a Mobile developer",
 						2000,
 						`Hey there 👋, I am Gustavo Murdiga, and I am a Mobile developer.\nAre you read?`,
-						1000,
-						() => {
-							document?.documentElement?.classList.remove("overflow-hidden");
-							typeComponent?.current?.classList.add("animate-fadeOut");
-							const nodes = document.querySelectorAll(".animated_stop");
-							nodes.forEach((element) => {
-								element.classList.remove("animated_stop");
-							});
-							document.body.classList.remove("overflow-hidden");
-
-							setTimeout(() => {
-								setShouldBeRender(false);
-							}, 3000);
-						},
+						onTypeEnd,
 					]}
 					repeat={0}
 				/>

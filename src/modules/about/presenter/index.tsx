@@ -5,8 +5,12 @@ import Link from "next/link";
 import { Github } from "@/icons/github";
 
 export function About() {
+	const currentYear = new Date().getFullYear();
+	const yearsOld = currentYear - 1999;
+
 	return (
 		<div
+			id="about"
 			data-aos="fade-up"
 			className="mt-[100px] bg-neutral-100 dark:bg-neutral-dark-100"
 		>
@@ -71,20 +75,21 @@ export function About() {
 					</div>
 				</header>
 				<p
-					ata-aos="fade-up"
+					data-aos="fade-up"
 					data-aos-delay="50"
 					className="mt-[66px] text-justify text-xs font-normal leading-8 text-neutral-900 dark:text-neutral-dark-900"
 				>
-					Olá, meu nome é Gustavo, moro em Jaú, interior de São Paulo. Aos meus
-					24 anos sou um grande explorador da tecnologia e de todas as coisas
-					que ela pode oferecer. Mas, devo lhe dizer que nem sempre foi desta
-					forma. Em minha jornada profissional, pude conhecer e me desafiar em
-					diversas áreas, sendo o meu primeiro contato com o mundo do trabalho
-					como eletricista na empresa de meu pai. Lá, pude entender melhor sobre
-					a importância do trabalho em equipe, da boa comunicação e da entrega
-					de um trabalho bem feito. Depois, exerci a função de analista técnico
-					de suporte, mantenedor de sistemas eletrônicos, almoxarifado e até
-					agente logístico.
+					{`Olá, meu nome é Gustavo, moro em Jaú, interior de São Paulo. Aos meus
+					${yearsOld} anos sou um grande explorador da tecnologia e de todas as
+					coisas que ela pode oferecer. Mas, devo lhe dizer que nem sempre foi
+					desta forma. Em minha jornada profissional, pude conhecer e me
+					desafiar em diversas áreas, sendo o meu primeiro contato com o mundo
+					do trabalho como eletricista na empresa de meu pai. Lá, pude entender
+					melhor sobre a importância do trabalho em equipe, da boa comunicação e
+					da entrega de um trabalho bem feito. Depois, exerci a função de
+					analista técnico de suporte, mantenedor de sistemas eletrônicos,
+					almoxarifado e até agente logístico`}
+					.
 				</p>
 
 				<div className="mx-auto mb-9 mt-20 h-px w-full bg-blue-200 dark:bg-blue-dark-200 lg:w-[490px]" />

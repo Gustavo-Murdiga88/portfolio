@@ -16,17 +16,19 @@ export function File({ size, ...props }: IFileProps) {
 		>
 			<path
 				d="M14.5 2.5H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-5.5-5.5z"
-				stroke="#757575"
+				stroke="#E5E5E5"
 				strokeWidth={2}
 				strokeLinecap="round"
 				strokeLinejoin="round"
+				className={props.className}
 			/>
 			<path
 				d="M14 2.5v6h6M8 13.5h8M8 17.5h8"
-				stroke="#757575"
+				stroke="#E5E5E5"
 				strokeWidth={2}
 				strokeLinecap="round"
 				strokeLinejoin="round"
+				className={props.className}
 			/>
 		</svg>
 	);

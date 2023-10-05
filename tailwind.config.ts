@@ -5,6 +5,14 @@ const config: Config = {
 	content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
 	theme: {
 		extend: {
+			transitionDuration: {
+				scale: ".200s",
+			},
+
+			willChange: {
+				tooltip: "opacity, transform",
+			},
+
 			keyframes: {
 				modal: {
 					"0%": {
@@ -39,6 +47,40 @@ const config: Config = {
 						transform: "translateY(-6%)",
 					},
 				},
+
+				fadeInTooltip: {
+					"0%": {
+						transform: "translateY(10px)",
+						opacity: "0",
+					},
+					"100%": {
+						transform: "translateY(0px)",
+						opacity: "1",
+					},
+				},
+
+				fadeOutTooltip: {
+					"0%": {
+						transform: "translateY(0px)",
+						opacity: "1",
+					},
+					"100%": {
+						transform: "translateY(10px)",
+						opacity: "0",
+					},
+				},
+
+				fadeIn: {
+					"100%": {
+						opacity: "1",
+					},
+				},
+
+				fadeOutControl: {
+					"100%": {
+						opacity: "0",
+					},
+				},
 			},
 
 			animation: {
@@ -46,6 +88,10 @@ const config: Config = {
 				modalOut: "modalOut 200ms cubic-bezier(0.16, 1, 0.3, 1) forwards",
 				fadeOut: "fadeOut .6s ease-in-out forwards",
 				scroll: "scroll .6s ease-in infinite alternate",
+				tooltipOpen: "fadeInTooltip .3s cubic-bezier(0.16, 1, 0.3, 1)",
+				tooltipClose: "fadeOutTooltip .3s cubic-bezier(0.16, 1, 0.3, 1)",
+				fadeIn: "fadeIn .6s ease-in .2s forwards",
+				fadeOutControl: "fadeOut .6s ease-in .2s forwards",
 			},
 
 			height: {
@@ -61,7 +107,7 @@ const config: Config = {
 			},
 
 			inset: {
-				controls: "calc(((100% - 1253px) / 2) - 56px)",
+				controls: "calc(((100% - 1255px)/2) - 56px)",
 			},
 
 			boxShadow: {

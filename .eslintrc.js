@@ -5,6 +5,7 @@ module.exports = {
 	plugins: ["eslint-plugin-import-helpers"],
 
 	rules: {
+		"import/first": "off",
 		"no-shadow": "off",
 		"react/jsx-no-bind": "off",
 		"@typescript-eslint/ban-ts-comment": "off",
@@ -18,7 +19,7 @@ module.exports = {
 				newlinesBetween: "always",
 				groups: [
 					"/^(react)$/",
-					"/^(lucide-react|dayjs|next)/",
+					"/^(lucide-react|dayjs|next|@radix-ui|react-toastify|@uiball)/",
 					"/^(@/)/",
 					"/^(@)/",
 					"/^(/assets|styles)/",

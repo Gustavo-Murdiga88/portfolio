@@ -31,6 +31,7 @@ const time_line: ITimeLineProps[] = [
 export function TimeLine() {
 	return (
 		<div
+			id="time_line"
 			data-aos="fade-up"
 			className="min-h-[250px] rounded-sm bg-neutral-0 pb-8 pt-9 dark:bg-black md:ml-2"
 		>
@@ -47,7 +48,7 @@ export function TimeLine() {
 			<h1
 				data-aos="fade-up"
 				data-aos-duration="1200"
-				className="mx-auto my-10 flex flex-wrap justify-center gap-1 px-4 text-center md:mb-20 md:mt-[64px] md:max-w-page md:gap-10"
+				className="mx-auto my-10 flex flex-wrap justify-center gap-2 px-4 text-center md:mb-20 md:mt-[64px] md:max-w-page md:gap-10"
 			>
 				<span className=" text-xl font-normal text-neutral-600 dark:text-neutral-dark-600 md:text-[64px] ">
 					Educação

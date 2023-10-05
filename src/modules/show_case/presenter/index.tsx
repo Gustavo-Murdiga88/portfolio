@@ -9,6 +9,7 @@ export function ShowCase() {
 	return (
 		<>
 			<header
+				id="show_case"
 				data-aos="fade-up"
 				data-aos-delay="50"
 				className="mx-auto mb-16 flex max-w-page justify-start border-b border-b-neutral-300 bg-neutral-100  px-5 py-4 pr-4 pt-20 dark:bg-neutral-dark-100"
@@ -25,7 +26,7 @@ export function ShowCase() {
 			/>
 
 			<div
-				data-aos="fade-left"
+				data-aos="fade-up"
 				data-aos-delay="50"
 				className="mx-auto flex max-w-page flex-col gap-6 md:flex-row"
 			>

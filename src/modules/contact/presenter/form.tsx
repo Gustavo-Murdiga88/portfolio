@@ -2,9 +2,8 @@
 
 import { ComponentRef, FormEvent, useRef, useState } from "react";
 
-import { ModalAlert } from "@/components/modal/alert";
-
 import { Ring } from "@uiball/loaders";
+import { toast } from "react-toastify";
 
 import { submitter } from "./submitter";
 
@@ -12,20 +11,10 @@ interface IFormProps {
 	userAlreadySendEmail: boolean;
 }
 
-interface IModalProps {
-	open: boolean;
-	variant: "success" | "failure";
-}
-
 const TWENTY_MINUTES = 1000 * 60 * 20; // 20 MINUTES
 
 export function Form({ userAlreadySendEmail }: IFormProps) {
 	const refForm = useRef<ComponentRef<"form">>(null);
-
-	const [modal, setModal] = useState<IModalProps>({
-		variant: "success",
-		open: false,
-	});
 
 	const [formState, setFormState] = useState({
 		userAlreadySendEmail,
@@ -33,21 +22,24 @@ export function Form({ userAlreadySendEmail }: IFormProps) {
 		submitting: false,
 	});
 
-	function handleCloseModal() {
-		document.querySelector("#modalContent").classList.add("animate-modalOut");
+	function handleShowToast({
+		message,
+		type,
+	}: {
+		type: "success" | "failure";
+		message: string;
+	}) {
+		if (type === "failure") {
+			toast(message, {
+				type: "error",
+			});
+			return;
+		}
 
-		setTimeout(() => {
-			setModal((props) => ({
-				...props,
-				open: false,
-			}));
-		}, 200);
+		toast(message, {
+			type: "success",
+		});
 	}
-
-	function handleOpenModal(variant: "success" | "failure") {
-		setModal({ open: true, variant });
-	}
-
 	async function handleSubmit(formEvent: FormEvent) {
 		formEvent.preventDefault();
 
@@ -59,19 +51,22 @@ export function Form({ userAlreadySendEmail }: IFormProps) {
 
 		const form = new FormData(refForm.current);
 
-		const { success } = await submitter(form);
+		const { success, message } = await submitter(form);
 
 		if (success) {
 			refForm.current.reset();
 		}
+
+		handleShowToast({
+			type: success ? "success" : "failure",
+			message,
+		});
 
 		setFormState({
 			submitting: false,
 			userAlreadySendEmail: success,
 			isLoading: false,
 		});
-
-		handleOpenModal(success ? "success" : "failure");
 
 		setTimeout(() => {
 			setFormState({
@@ -94,6 +89,13 @@ export function Form({ userAlreadySendEmail }: IFormProps) {
 			<input
 				disabled={formState.submitting}
 				name="name"
+				required
+				onInvalid={(event) => {
+					event.currentTarget.setCustomValidity("Por favor preencha seu nome");
+				}}
+				onChange={(event) => {
+					event.currentTarget.setCustomValidity("");
+				}}
 				id="name"
 				placeholder="Nome"
 				className="rounded-sm bg-neutral-50 p-4 text-xs font-semibold placeholder:text-neutral-600 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-neutral-dark-50 dark:placeholder:text-neutral-dark-600"
@@ -102,6 +104,15 @@ export function Form({ userAlreadySendEmail }: IFormProps) {
 				type="email"
 				disabled={formState.submitting}
 				name="email"
+				required
+				onInvalid={(event) => {
+					event.currentTarget.setCustomValidity(
+						"Por favor, nos informe seu email",
+					);
+				}}
+				onChange={(event) => {
+					event.currentTarget.setCustomValidity("");
+				}}
 				inputMode="email"
 				id="email"
 				placeholder="E-mail"
@@ -111,6 +122,15 @@ export function Form({ userAlreadySendEmail }: IFormProps) {
 			<textarea
 				name="text"
 				id="text"
+				onInvalid={(event) => {
+					event.currentTarget.setCustomValidity(
+						"Por favor, escreva sua mensagem",
+					);
+				}}
+				onChange={(event) => {
+					event.currentTarget.setCustomValidity("");
+				}}
+				required
 				disabled={formState.submitting}
 				placeholder="Digite uma mensagem..."
 				className="h-[250px] resize-none rounded-sm bg-neutral-50 p-4 text-xs font-semibold placeholder:text-neutral-600 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-neutral-dark-50 dark:placeholder:text-neutral-dark-600"
@@ -125,12 +145,6 @@ export function Form({ userAlreadySendEmail }: IFormProps) {
 					<Ring size={16} lineWeight={5} speed={2} color="#0078C5" />
 				)}
 			</button>
-
-			<ModalAlert
-				open={modal.open}
-				onCancel={handleCloseModal}
-				variant={modal.variant}
-			/>
 		</form>
 	);
 }

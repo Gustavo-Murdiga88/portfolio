@@ -10,6 +10,7 @@ export function Contact() {
 
 	return (
 		<div
+			id="contract"
 			data-aos="fade-up"
 			data-aos-delay="50"
 			data-aos-offset="300"
@@ -49,8 +50,8 @@ export function Contact() {
 				</section>
 			</div>
 
-			<div className="pb-8">
-				<footer className="mx-auto flex max-w-page items-center justify-center px-6 pt-20 text-center text-xs leading-relaxed text-neutral-600 dark:text-neutral-dark-600 lg:pt-[163px]">
+			<div className="pb-8 md:pb-24">
+				<footer className="mx-auto flex max-w-page items-center justify-center px-6 pt-20 text-center text-xs leading-relaxed text-neutral-600 dark:text-neutral-dark-600 lg:pt-[70px]">
 					<p data-aos="fade-up" data-aos-offset="0">
 						Design criado por
 						<Link
