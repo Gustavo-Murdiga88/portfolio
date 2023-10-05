@@ -89,7 +89,7 @@ export function Main() {
 				</div>
 				{/* right */}
 				<div className="flex flex-col gap-5">
-					<div className="animate__animated animated_stop animate__bounceInDown animate-delay-03s h-[42px] w-full rounded-md bg-neutral-200 p-2 px-8 shadow-card dark:bg-neutral-dark-200">
+					<div className="animate__animated animated_stop animate__bounceInDown animate-delay-03s w-full rounded-md bg-neutral-200 p-2 px-8 shadow-card dark:bg-neutral-dark-200 sm:h-[54px] md:h-[42px]">
 						<div className="flex items-center gap-4 duration-scale hover:scale-105">
 							<Spotify />
 							<span className="tex text-[14px] font-bold">

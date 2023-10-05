@@ -17,17 +17,16 @@ export function TypeComponent() {
 		const doc = document?.documentElement;
 		const nodes = document.querySelectorAll(".animated_stop");
 
-		doc.classList.remove("overflow-hidden");
-
 		typeComponent?.current?.classList.add("animate-fadeOut");
 
 		nodes.forEach((element) => {
 			element.classList.remove("animated_stop");
 		});
-		document.body.classList.remove("overflow-hidden");
 
 		controls.classList.remove("lg:invisible");
 		controls.classList.add("animate-fadeIn");
+		document.body.classList.remove("overflow-hidden");
+		doc.classList.remove("overflow-hidden");
 
 		setTimeout(() => {
 			setShouldBeRender(false);
