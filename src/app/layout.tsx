@@ -25,6 +25,14 @@ export const metadata: Metadata = {
 	title: "Hey, i am Gustavo",
 	description:
 		"This is a project for display to recrutes and all developers my skills and i can help to world a grow more happier",
+	authors: [
+		{
+			name: "Gustavo Murdiga",
+			url: "https://github.com/Gustavo-Murdiga88",
+		},
+	],
+	category: "Portfólios",
+	creator: "GM Dev",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
