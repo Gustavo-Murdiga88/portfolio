@@ -2,6 +2,8 @@
 
 import { ComponentRef, useRef, useState } from "react";
 
+import { Tooltip } from "@/components/tooltip";
+
 import { TypeAnimation } from "react-type-animation";
 
 export function TypeComponent() {
@@ -59,6 +61,17 @@ export function TypeComponent() {
 					]}
 					repeat={0}
 				/>
+			</div>
+			<div className="absolute inset-x-0 bottom-10 flex justify-stretch px-5 md:justify-center">
+				<Tooltip text="Ao clicar no botão, você poderá sair da animação inicial">
+					<button
+						type="button"
+						onClick={onTypeEnd}
+						className="w-full rounded-sm border border-neutral-50 p-2 px-3 text-xs text-neutral-50 transition-all hover:border-neutral-950 hover:bg-neutral-50 hover:text-neutral-950  md:w-[156px] "
+					>
+						Skip
+					</button>
+				</Tooltip>
 			</div>
 		</div>
 	);
