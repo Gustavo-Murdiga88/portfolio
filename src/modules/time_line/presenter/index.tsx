@@ -2,21 +2,6 @@ import { ITimeLineProps, TimeBox } from "@/components/time_line/widget";
 
 const time_line: ITimeLineProps[] = [
 	{
-		company: "Anhanguera",
-		date: "01/01/2019 à 01/07/2023",
-		title: "Formação técnica em arquitetura de dados",
-	},
-	{
-		company: "ETEC - Joaquim ferreira do amaral",
-		date: "01/01/2020 à 01/12/2020",
-		title: "Formação técnica em desenvolvimento de sistemas",
-	},
-	{
-		company: "ETEC - Joaquim ferreira do amaral",
-		date: "01/01/2019 à 01/07/2019",
-		title: "Formação técnica eletrotécnica",
-	},
-	{
 		company: "Guarani sistemas",
 		date: "Atualmente",
 		title: "Desenvolvedor full-stack web/mobile",
@@ -26,11 +11,27 @@ const time_line: ITimeLineProps[] = [
 		date: "17/10/2021 à 17/10/2022",
 		title: "Desenvolvedor front-end - React.JS",
 	},
+	{
+		company: "Anhanguera",
+		date: "01/01/2019 à 01/07/2023",
+		title: "Formação técnica em arquitetura de dados",
+	},
+	{
+		company: "ETEC - Joaquim ferreira do amaral",
+		date: "01/01/2020 à 01/12/2022",
+		title: "Formação técnica em desenvolvimento de sistemas",
+	},
+	{
+		company: "ETEC - Joaquim ferreira do amaral",
+		date: "01/01/2019 à 01/07/2021",
+		title: "Formação técnica eletrotécnica",
+	},
 ];
 
 export function TimeLine() {
 	return (
 		<div
+			data-main
 			id="time_line"
 			data-aos="fade-up"
 			className="min-h-[250px] rounded-sm bg-neutral-0 pb-8 pt-9 dark:bg-black md:ml-2"

@@ -7,9 +7,8 @@ import { Photo } from "@/components/Photo/widget";
 
 export function ShowCase() {
 	return (
-		<>
+		<section data-main id="show_case">
 			<header
-				id="show_case"
 				data-aos="fade-up"
 				data-aos-delay="50"
 				className="mx-auto mb-16 flex max-w-page justify-start border-b border-b-neutral-300 bg-neutral-100  px-5 py-4 pr-4 pt-20 dark:bg-neutral-dark-100"
@@ -66,6 +65,6 @@ export function ShowCase() {
 				url={flutter.src}
 				nameOfProject="Pókedex App"
 			/>
-		</>
+		</section>
 	);
 }

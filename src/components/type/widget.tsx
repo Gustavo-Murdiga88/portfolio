@@ -40,7 +40,7 @@ export function TypeComponent() {
 			ref={typeComponent}
 			className="fixed inset-0 z-10 flex items-center bg-neutral-100 dark:bg-neutral-dark-50"
 		>
-			<div className="mx-auto w-full max-w-page animate-modal px-3 text-center text-[32px] font-bold leading-relaxed text-neutral-900 dark:text-neutral-50 md:text-3xl">
+			<div className="mx-auto w-full max-w-page animate-modal px-3 text-center text-[32px] font-bold leading-relaxed tracking-tighter text-neutral-900 dark:text-neutral-50 md:text-3xl">
 				<TypeAnimation
 					cursor
 					style={{
@@ -48,15 +48,16 @@ export function TypeComponent() {
 					}}
 					sequence={[
 						200,
-						"Hey there 👋, I am Gustavo Murdiga",
+						"Olá 👋, me chamo Gustavo Murdiga",
 						2000,
-						"Hey there 👋, I am Gustavo Murdiga, and I am a Front-End developer",
+						"Olá 👋, me chamo Gustavo Murdiga, e eu sou um desenvolvedor front-end",
 						2000,
-						"Hey there 👋, I am Gustavo Murdiga, and I am a Back-end developer",
+						"Olá 👋, me chamo Gustavo Murdiga, e eu sou um desenvolvedor back-end",
 						2000,
-						"Hey there 👋, I am Gustavo Murdiga, and I am a Mobile developer",
+						"Olá 👋, me chamo Gustavo Murdiga, e eu sou um desenvolvedor mobile",
 						2000,
-						`Hey there 👋, I am Gustavo Murdiga, and I am a Mobile developer.\nAre you read?`,
+						`Olá 👋, me chamo Gustavo Murdiga, e eu sou um desenvolvedor mobile\nEai, está preparado?`,
+						2000,
 						onTypeEnd,
 					]}
 					repeat={0}
@@ -69,7 +70,7 @@ export function TypeComponent() {
 						onClick={onTypeEnd}
 						className="w-full rounded-sm border border-neutral-50 p-2 px-3 text-xs text-neutral-50 transition-all hover:border-neutral-950 hover:bg-neutral-50 hover:text-neutral-950  md:w-[156px] "
 					>
-						Skip
+						Pular intro
 					</button>
 				</Tooltip>
 			</div>

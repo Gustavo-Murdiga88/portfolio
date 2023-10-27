@@ -9,7 +9,7 @@ import { Vite } from "@/icons/vite";
 
 export function Skills() {
 	return (
-		<div id="skills" className=" mx-auto mb-[100px] max-w-page">
+		<div data-main id="skills" className="mx-auto mb-[100px] mt-6 max-w-page">
 			<strong className="inline-block w-full max-w-page border-b border-b-neutral-300 bg-neutral-100 px-5 py-4 dark:bg-neutral-dark-100">
 				<span className="cursor-default uppercase text-neutral-600 transition-colors hover:text-blue-dark-700 dark:text-neutral-dark-600 dark:hover:text-blue-dark-700">
 					habilidades
@@ -77,7 +77,7 @@ export function Skills() {
 			<div className="mx-auto mt-[80px] h-[2px] w-full rounded-full bg-blue-200 lg:w-[490px]" />
 
 			<p
-				data-aos="fade-left"
+				data-aos="fade-up"
 				data-aos-delay="350"
 				className="mx-auto mt-5 text-center text-xs font-semibold leading-relaxed text-neutral-700 dark:text-neutral-dark-700 lg:w-[956px]"
 			>

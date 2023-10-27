@@ -10,6 +10,7 @@ export function About() {
 
 	return (
 		<div
+			data-main
 			id="about"
 			data-aos="fade-up"
 			className="mt-[100px] bg-neutral-100 dark:bg-neutral-dark-100"

@@ -10,6 +10,7 @@ export function Contact() {
 
 	return (
 		<div
+			data-main
 			id="contract"
 			data-aos="fade-up"
 			data-aos-delay="50"

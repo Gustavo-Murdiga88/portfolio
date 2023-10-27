@@ -1,7 +1,8 @@
-import { PlusCircle } from "lucide-react";
+import { Github, Instagram, Linkedin, PlusCircle } from "lucide-react";
 import Img from "next/image";
 import Link from "next/link";
 
+import { ThemeButton } from "@/components/theme_button/widget";
 import { Tooltip } from "@/components/tooltip";
 import { Details } from "@/icons/details";
 import { Docker } from "@/icons/docker";
@@ -17,7 +18,7 @@ const TooltipContent = (
 		<Link
 			target="_blank"
 			href="/curr.pdf"
-			className="dark:bg-blue-dark-7 flex flex-1 items-center justify-center gap-2 rounded-md bg-blue-300 p-2 px-4 text-neutral-50 shadow-card transition-all hover:bg-blue-100 dark:text-neutral-dark-900 hover:dark:bg-blue-dark-800"
+			className="dark:bg-blue-dark-7 flex max-h-14 flex-1 items-center justify-center gap-2 rounded-md bg-blue-300 p-2 px-4 text-neutral-50 shadow-card transition-all hover:bg-blue-100 dark:text-neutral-dark-900 hover:dark:bg-blue-dark-800"
 		>
 			<PlusCircle />
 			<span>Informações</span>
@@ -27,7 +28,39 @@ const TooltipContent = (
 
 export function Main() {
 	return (
-		<>
+		<section data-main id="home">
+			<header
+				id="home"
+				className="animate__animated animated_stop animate__bounceInDown animate-delay-01s mx-auto flex max-w-page justify-between overflow-hidden border-b border-b-neutral-300 bg-neutral-100 px-5 py-4 pr-4 dark:bg-neutral-dark-100"
+			>
+				<strong className="uppercase text-blue-200 transition-colors hover:text-blue-dark-700 dark:text-blue-dark-200 dark:hover:text-blue-dark-700">
+					Home
+				</strong>
+				<ThemeButton />
+				<div className="flex gap-4 text-neutral-600 dark:text-neutral-dark-600">
+					<Link
+						className="h-6 w-6 transition-all hover:brightness-150"
+						href="https://github.com/Gustavo-Murdiga88"
+						target="_blank"
+					>
+						<Github />
+					</Link>
+					<Link
+						className="transition-all hover:brightness-150"
+						href="https://www.linkedin.com/in/gustavo-murdiga-055470178/"
+						target="_blank"
+					>
+						<Linkedin />
+					</Link>
+					<Link
+						className="transition-all hover:brightness-150"
+						href="https://www.instagram.com/gustaavo88/"
+						target="_blank"
+					>
+						<Instagram />
+					</Link>
+				</div>
+			</header>
 			<main className="mx-auto mt-[2.8125rem] grid max-w-page grid-cols-1 gap-5 lg:grid-cols-[679px_1fr] lg:px-5 lg:pr-[26px]">
 				{/* left */}
 				<div className="flex flex-col gap-5">
@@ -167,6 +200,6 @@ export function Main() {
 			<div className="mb-4 ml-2 mt-[80px] flex h-[4.5rem] items-center justify-center rounded-sm bg-neutral-100 p-2 dark:bg-black">
 				<Mouse size={40} />
 			</div>
-		</>
+		</section>
 	);
 }

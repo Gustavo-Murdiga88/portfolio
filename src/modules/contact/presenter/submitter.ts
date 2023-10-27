@@ -28,7 +28,13 @@ export async function submitter(form: FormData): Promise<IResponseEmail> {
 		});
 
 		if (success) {
-			cookies().set("dateSendLastEmail", dayjs().toISOString());
+			cookies().set({
+				name: "dateSendLastEmail",
+				value: dayjs().toISOString(),
+				expires: 60 * 60 * 1000 * 20, // TWENTY MINUTES,
+				maxAge: 60 * 60 * 24 * 30, // ONE MONTH
+				path: "/",
+			});
 			return {
 				message: `Eai ${name}, estou feliz em te dizer que sua mensagem foi enviada, o mais rápido possível entrarei em contato com você! Até mais 😊`,
 				success: true,
