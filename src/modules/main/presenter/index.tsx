@@ -28,7 +28,7 @@ const TooltipContent = (
 
 export function Main() {
 	return (
-		<section data-main id="home">
+		<section data-main id="home" className="lg:min-h-content-height">
 			<header
 				id="home"
 				className="animate__animated animated_stop animate__bounceInDown animate-delay-01s mx-auto flex max-w-page justify-between overflow-hidden border-b border-b-neutral-300 bg-neutral-100 px-5 py-4 pr-4 dark:bg-neutral-dark-100"

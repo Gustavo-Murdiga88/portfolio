@@ -1,4 +1,5 @@
 import { Controls } from "@/components/controls/widget";
+import { TypeComponent } from "@/components/type/widget";
 import { About } from "@/modules/about/presenter";
 import { Contact } from "@/modules/contact/presenter";
 import { Main } from "@/modules/main/presenter";
@@ -9,6 +10,8 @@ import { TimeLine } from "@/modules/time_line/presenter";
 export default function Home() {
 	return (
 		<>
+			<TypeComponent />
+
 			<Controls />
 			<Main />
 			<Skills />

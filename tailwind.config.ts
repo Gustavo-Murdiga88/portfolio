@@ -98,6 +98,10 @@ const config: Config = {
 				modal: "700px",
 			},
 
+			minHeight: {
+				"content-height": "1080px",
+			},
+
 			width: {
 				modal: "800px",
 			},

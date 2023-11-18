@@ -9,7 +9,6 @@ import "@/lib/nodemailer";
 import type { Metadata } from "next";
 import { Roboto_Mono } from "next/font/google";
 
-import { TypeComponent } from "@/components/type/widget";
 import { ToastContainer } from "@/lib/toastfy";
 
 const roboto = Roboto_Mono({
@@ -38,7 +37,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 				className={`${roboto.className} mt-8 overflow-hidden bg-neutral-100 px-4 antialiased scrollbar-thin scrollbar-track-zinc-800 scrollbar-thumb-zinc-700 dark:bg-neutral-dark-100 dark:text-neutral-dark-900 md:px-0`}
 			>
 				<ToastContainer />
-				<TypeComponent />
 
 				{children}
 			</body>

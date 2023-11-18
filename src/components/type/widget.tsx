@@ -1,18 +1,13 @@
 "use client";
 
-import { ComponentRef, useRef, useState } from "react";
+import { ComponentRef, useRef } from "react";
 
 import { Tooltip } from "@/components/tooltip";
 
 import { TypeAnimation } from "react-type-animation";
 
 export function TypeComponent() {
-	const [shouldBeRender, setShouldBeRender] = useState(true);
 	const typeComponent = useRef<ComponentRef<"div">>(null);
-
-	if (!shouldBeRender) {
-		return null;
-	}
 
 	function onTypeEnd() {
 		const controls = document.querySelector("#controls");
@@ -27,12 +22,12 @@ export function TypeComponent() {
 
 		controls.classList.remove("lg:invisible");
 		controls.classList.add("animate-fadeIn");
-		document.body.classList.remove("overflow-hidden");
 		doc.classList.remove("overflow-hidden");
+		document.body.classList.remove("overflow-hidden");
 
-		setTimeout(() => {
-			setShouldBeRender(false);
-		}, 3000);
+		// setTimeout(() => {
+		// 	setShouldBeRender(false);
+		// }, 9000);
 	}
 
 	return (

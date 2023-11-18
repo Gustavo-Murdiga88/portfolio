@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useState } from "react";
 
 import { Mail, User } from "lucide-react";
 import Link from "next/link";
@@ -10,25 +10,19 @@ import { House } from "@/icons/house";
 import { Square } from "@/icons/square";
 import { Union } from "@/icons/union";
 
+type ControlsProps =
+	| "home"
+	| "skills"
+	| "time_line"
+	| "show_case"
+	| "contract"
+	| "about";
+
 export function Controls() {
-	function setDataSelected(value: string, state: "true" | "false") {
-		const element = document.querySelector(`[href='#${value}']`) as HTMLElement;
-		if (element) {
-			element.dataset.selected = state;
-		}
-	}
+	const [selected, setSelected] = useState<ControlsProps>("home");
 
-	function changeStates(value: string) {
-		const nodes = document.querySelectorAll("[data-control-link='true']");
-		nodes.forEach((node) => {
-			const element = node as HTMLElement;
-			if (node.id === value) {
-				element.dataset.selected = "true";
-				return;
-			}
-
-			element.dataset.selected = "false";
-		});
+	function changeStates(value: ControlsProps) {
+		setSelected(value);
 	}
 
 	useEffect(() => {
@@ -36,27 +30,12 @@ export function Controls() {
 
 		const observer = new IntersectionObserver(
 			(value) => {
-				const isCurrentInvisible = value.filter(
-					(value) => Number(value.intersectionRatio.toFixed(2)) <= 0.2,
-				);
-
-				isCurrentInvisible.forEach((node) => {
-					const { id } = node.target;
-
-					setDataSelected(id, "false");
-				});
-
-				const isCurrentVisible = value.find(
-					(value) => Number(value.intersectionRatio.toFixed(2)) >= 0.3,
-				);
-				const id = isCurrentVisible?.target.id;
-
-				if (id) {
-					setDataSelected(id, "true");
+				if (value[0].isIntersecting) {
+					setSelected(value[0].target.id as ControlsProps);
 				}
 			},
 			{
-				threshold: [0.2, 0.3],
+				threshold: [0.1],
 			},
 		);
 
@@ -81,7 +60,7 @@ export function Controls() {
 				onClick={() => {
 					changeStates("home");
 				}}
-				data-selected="false"
+				data-selected={selected === "home"}
 				className="group duration-scale  hover:scale-110"
 				href="#home"
 			>
@@ -92,7 +71,7 @@ export function Controls() {
 				onClick={() => {
 					changeStates("skills");
 				}}
-				data-selected="false"
+				data-selected={selected === "skills"}
 				className="group duration-scale  hover:scale-110"
 				href="#skills"
 			>
@@ -103,7 +82,7 @@ export function Controls() {
 				onClick={() => {
 					changeStates("time_line");
 				}}
-				data-selected="false_line"
+				data-selected={selected === "time_line"}
 				className="group duration-scale  hover:scale-110"
 				href="#time_line"
 			>
@@ -114,7 +93,7 @@ export function Controls() {
 				onClick={() => {
 					changeStates("about");
 				}}
-				data-selected="false"
+				data-selected={selected === "about"}
 				className="group duration-scale  hover:scale-110"
 				href="#about"
 			>
@@ -125,7 +104,7 @@ export function Controls() {
 				onClick={() => {
 					changeStates("show_case");
 				}}
-				data-selected="false"
+				data-selected={selected === "show_case"}
 				className="group duration-scale  hover:scale-110"
 				href="#show_case"
 			>
@@ -136,7 +115,7 @@ export function Controls() {
 				onClick={() => {
 					changeStates("contract");
 				}}
-				data-selected="false"
+				data-selected={selected === "contract"}
 				className="group duration-scale  hover:scale-110"
 				href="#contract"
 			>

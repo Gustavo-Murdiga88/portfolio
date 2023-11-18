@@ -7,11 +7,15 @@ import { Photo } from "@/components/Photo/widget";
 
 export function ShowCase() {
 	return (
-		<section data-main id="show_case">
+		<section
+			data-main
+			id="show_case"
+			className="flex min-h-content-height flex-col items-center justify-center"
+		>
 			<header
 				data-aos="fade-up"
 				data-aos-delay="50"
-				className="mx-auto mb-16 flex max-w-page justify-start border-b border-b-neutral-300 bg-neutral-100  px-5 py-4 pr-4 pt-20 dark:bg-neutral-dark-100"
+				className="mx-auto mb-16 flex w-full max-w-page justify-start border-b border-b-neutral-300 bg-neutral-100 px-5 py-4 pr-4 pt-20 dark:bg-neutral-dark-100"
 			>
 				<strong className="uppercase text-blue-200 transition-colors hover:text-blue-dark-700 dark:text-blue-dark-200 dark:hover:text-blue-dark-700">
 					Projetos
