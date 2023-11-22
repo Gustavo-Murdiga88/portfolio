@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 		title: "Olá, eu sou o Gustavo!",
 		url: "https://gustavomurdiga.vercel.app/",
 		description:
-			"Este é um projeto para exibir às recrutas e a todos os desenvolvedores as minhas habilidades, mostrando que posso contribuir para tornar o mundo um lugar mais feliz.",
+			"Este projeto visa destacar minhas habilidades para recrutadores e desenvolvedores, demonstrando minha capacidade de contribuir para a criação de um mundo mais feliz.",
 		firstName: "Gustavo",
 		lastName: "Murdiga",
 		username: "Gustavo Murdiga",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
 			"https://chi01pap001files.storage.live.com/y4m6AbwJEoch3TeeJLv2ZZU_y_8aD0qqoHL9bHKOIjl_8ywwBX5fHErcY8mL8lDiL8qitQFoJQwxYOkxv_FMKP9bP9cdAQBe9_LlRzDzRaNSGCKADfdMft3XiOH59zvu_DxlyGT5Ute1SvbOuOox4sPlacA6rRnFfd095dfBsuDUhwNCvWsPfbIQIhGMBH1xTkfL1g9Vt618JR3KRIZzWMHwlC6GyZcxKD7TH9ZrDTDrZY?encodeFailures=1&width=928&height=928",
 		],
 		description:
-			"Este é um projeto para exibir às recrutas e a todos os desenvolvedores as minhas habilidades, mostrando que posso contribuir para tornar o mundo um lugar mais feliz.",
+			"Este projeto visa destacar minhas habilidades para recrutadores e desenvolvedores, demonstrando minha capacidade de contribuir para a criação de um mundo mais feliz.",
 		title: "Olá, eu sou o Gustavo!",
 	},
 	category: "Portfólios",
