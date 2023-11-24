@@ -71,6 +71,8 @@ export function Main() {
 									src="https://github.com/gustavo-murdiga88.png"
 									height={256}
 									width={232}
+									loading="lazy"
+									decoding="async"
 									className="h-full w-full rounded-br-md rounded-tl-md shadow-card sm:h-[256px] sm:w-[232px]"
 									alt="Gustavo Murdiga"
 								/>

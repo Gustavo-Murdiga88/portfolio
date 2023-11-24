@@ -17,6 +17,10 @@ const roboto = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
+	metadataBase: new URL("https://gustavomurdiga.vercel.app/"),
+	alternates: {
+		canonical: "/",
+	},
 	title: "Olá, eu sou o Gustavo!",
 	description:
 		"Este é um projeto para exibir às recrutas e a todos os desenvolvedores as minhas habilidades, mostrando que posso contribuir para tornar o mundo um lugar mais feliz.",
@@ -77,7 +81,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 	return (
 		<html lang="pt-br" className="dark overflow-hidden">
 			<head>
-				<link rel="canonical" href="https://gustavomurdiga.vercel.app/" />
 				<script
 					key="structured-data"
 					type="application/ld+json"

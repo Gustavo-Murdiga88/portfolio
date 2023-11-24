@@ -40,9 +40,6 @@ export function Photo({
 						</span>
 					))}
 				</div>
-				<h3 className="absolute bottom-5 select-none text-xl font-bold leading-none tracking-[-15px] text-neutral-1000 lg:text-[150px]">
-					{nameOfProject}
-				</h3>
 			</div>
 			<div className="mt-6">
 				<span className="text-sm uppercase text-neutral-600 dark:text-neutral-dark-600 lg:text-xl">
