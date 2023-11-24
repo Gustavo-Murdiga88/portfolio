@@ -77,6 +77,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 	return (
 		<html lang="pt-br" className="dark overflow-hidden">
 			<head>
+				<link rel="canonical" href="https://gustavomurdiga.vercel.app/" />
 				<script
 					key="structured-data"
 					type="application/ld+json"
