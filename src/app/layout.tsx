@@ -81,6 +81,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 	return (
 		<html lang="pt-br" className="dark overflow-hidden">
 			<head>
+				<meta
+					name="google-site-verification"
+					content="WQbYrmDaHz95-t54jPgWbYHPSBebm4LWjt1QC3UQtrg"
+				/>
 				<script
 					key="structured-data"
 					type="application/ld+json"
