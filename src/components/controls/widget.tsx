@@ -56,6 +56,7 @@ export function Controls() {
 			className="fixed right-controls top-1/2 z-50 -translate-y-1/2 translate-x-[100%] flex-col gap-7 rounded-[9999px] border border-neutral-600 bg-neutral-100 px-4 py-[40px] opacity-0 dark:border-neutral-dark-600 dark:bg-neutral-dark-100 lg:invisible lg:flex"
 		>
 			<Link
+				aria-label="Home"
 				data-control-link
 				onClick={() => {
 					changeStates("home");
@@ -67,6 +68,7 @@ export function Controls() {
 				<House className="group-data-[selected=true]:fill-blue-600" />
 			</Link>
 			<Link
+				aria-label="Habilidades"
 				data-control-link
 				onClick={() => {
 					changeStates("skills");
@@ -79,6 +81,7 @@ export function Controls() {
 			</Link>
 			<Link
 				data-control-link
+				aria-label="Linha do tempo"
 				onClick={() => {
 					changeStates("time_line");
 				}}
@@ -90,6 +93,7 @@ export function Controls() {
 			</Link>
 			<Link
 				data-control-link
+				aria-label="Sobre"
 				onClick={() => {
 					changeStates("about");
 				}}
@@ -100,6 +104,7 @@ export function Controls() {
 				<User className="group-data-[selected=true]:stroke-blue-600" />
 			</Link>
 			<Link
+				aria-label="Projetos"
 				data-control-link
 				onClick={() => {
 					changeStates("show_case");
@@ -111,6 +116,7 @@ export function Controls() {
 				<Square className="group-data-[selected=true]:fill-blue-600" />
 			</Link>
 			<Link
+				aria-label="Contato"
 				data-control-link
 				onClick={() => {
 					changeStates("contract");

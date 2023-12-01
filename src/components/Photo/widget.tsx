@@ -1,4 +1,8 @@
+"use client";
+
 import { ComponentProps } from "react";
+
+import Image from "next/image";
 
 interface IPhotoProps extends ComponentProps<"section"> {
 	url: string;
@@ -21,15 +25,17 @@ export function Photo({
 			{...props}
 			className="mx-auto mb-10 max-w-page lg:mb-20"
 		>
-			<div
-				draggable={false}
-				className={`relative h-[350px] w-full rounded-md p-4 shadow-card lg:h-[530px] lg:w-[1245px] ${props.className}`}
-				style={{
-					backgroundImage: `url(${url})`,
-					backgroundSize: "cover",
-					backgroundRepeat: "no-repeat",
-				}}
-			>
+			<figure>
+				<Image
+					draggable={false}
+					height={1920}
+					width={1080}
+					src={url}
+					quality={100}
+					alt={nameOfProject}
+					loading="lazy"
+					className={`h-[350px] w-full rounded-md object-cover p-0  shadow-card lg:h-[530px] lg:w-[1245px] ${props.className}`}
+				/>
 				<div className="absolute left-5 top-4 flex w-[326px] flex-wrap gap-5 md:w-auto">
 					{labels.map((label) => (
 						<span
@@ -40,7 +46,7 @@ export function Photo({
 						</span>
 					))}
 				</div>
-			</div>
+			</figure>
 			<div className="mt-6">
 				<span className="text-sm uppercase text-neutral-600 dark:text-neutral-dark-600 lg:text-xl">
 					{nameOfProject} - {details}

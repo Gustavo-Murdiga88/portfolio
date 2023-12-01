@@ -16,6 +16,7 @@ export function ThemeButton() {
 	return (
 		<button
 			type="button"
+			aria-label="theme-control"
 			className="transition-all hover:brightness-150 "
 			onClick={handleChangeTheme}
 		>
