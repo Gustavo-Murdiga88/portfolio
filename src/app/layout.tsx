@@ -39,15 +39,11 @@ export const metadata: Metadata = {
 		firstName: "Gustavo",
 		lastName: "Murdiga",
 		username: "Gustavo Murdiga",
-		images: [
-			"https://chi01pap001files.storage.live.com/y4m6AbwJEoch3TeeJLv2ZZU_y_8aD0qqoHL9bHKOIjl_8ywwBX5fHErcY8mL8lDiL8qitQFoJQwxYOkxv_FMKP9bP9cdAQBe9_LlRzDzRaNSGCKADfdMft3XiOH59zvu_DxlyGT5Ute1SvbOuOox4sPlacA6rRnFfd095dfBsuDUhwNCvWsPfbIQIhGMBH1xTkfL1g9Vt618JR3KRIZzWMHwlC6GyZcxKD7TH9ZrDTDrZY?encodeFailures=1&width=928&height=928",
-		],
+		images: ["https://1drv.ms/i/s!AsklabRzD36jn0hjt5ef9973TmDP?e=LwKTao"],
 	},
 	twitter: {
 		site: "@GuMurdiga",
-		images: [
-			"https://chi01pap001files.storage.live.com/y4m6AbwJEoch3TeeJLv2ZZU_y_8aD0qqoHL9bHKOIjl_8ywwBX5fHErcY8mL8lDiL8qitQFoJQwxYOkxv_FMKP9bP9cdAQBe9_LlRzDzRaNSGCKADfdMft3XiOH59zvu_DxlyGT5Ute1SvbOuOox4sPlacA6rRnFfd095dfBsuDUhwNCvWsPfbIQIhGMBH1xTkfL1g9Vt618JR3KRIZzWMHwlC6GyZcxKD7TH9ZrDTDrZY?encodeFailures=1&width=928&height=928",
-		],
+
 		description:
 			"Este projeto visa destacar minhas habilidades para recrutadores e desenvolvedores, demonstrando minha capacidade de contribuir para a criação de um mundo mais feliz.",
 		title: "Olá, eu sou o Gustavo!",
@@ -65,15 +61,41 @@ export const metadata: Metadata = {
 
 const struttedData = {
 	"@context": "http://schema.org/",
-	"@type": "Person",
+	"@type": "LocalBusiness",
 	name: "Gustavo Murdiga",
-	image:
-		"https://chi01pap002files.storage.live.com/y4m_-87hgkixy3wXUtV4p6FXUFCCq48jo0MCliQ5RhCCmVRiiMOC58atbt58p0cVApbf7GV_o9EMoiSUTmJZ0PCGXcYfwWvA5c0uKL9VYK8-gmEzgjiMz8q04sW9QbDFRb-Pz8Snpkd2zy_3LLfndClnoY1aIetm17mkCBgV9JmL0VRjMwSEmFy5rB-t5pAz-J4-KpxbODl4SUo6oJ4OGHkWw?encodeFailures=1&width=232&height=232",
+	image: "https://1drv.ms/i/s!AsklabRzD36jn0hjt5ef9973TmDP?e=LwKTao",
 	url: "https://gustavomurdiga.vercel.app/",
-	jobTitle: "Desenvolvedor Full Stack",
-	worksFor: {
-		"@type": "Organization",
-		name: "GM Dev",
+	address: {
+		"@type": "PostalAddress",
+		streetAddress: "Luiz zanolla",
+		addressLocality: "Jaú",
+		addressRegion: "São Paulo",
+		postalCode: "17209527",
+		addressCountry: "Brazil",
+	},
+	openingHoursSpecification: [
+		{
+			"@type": "OpeningHoursSpecification",
+			dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+			opens: "08:00",
+			closes: "17:30",
+		},
+	],
+};
+
+const struttedDataOrganization = {
+	"@context": "http://schema.org/",
+	"@type": "Organization",
+	name: "GM Dev",
+	logo: "https://1drv.ms/i/s!AsklabRzD36jn0hjt5ef9973TmDP?e=LwKTao",
+	url: "https://gustavomurdiga.vercel.app/",
+	address: {
+		"@type": "PostalAddress",
+		streetAddress: "Luiz zanolla",
+		addressLocality: "Jaú",
+		addressRegion: "São Paulo",
+		postalCode: "17209527",
+		addressCountry: "Brazil",
 	},
 };
 
@@ -89,6 +111,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 					key="structured-data"
 					type="application/ld+json"
 					dangerouslySetInnerHTML={{ __html: JSON.stringify(struttedData) }}
+				/>
+				<script
+					key="structured-data"
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{
+						__html: JSON.stringify(struttedDataOrganization),
+					}}
 				/>
 			</head>
 			<body
