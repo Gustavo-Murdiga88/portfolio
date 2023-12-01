@@ -136,7 +136,7 @@ export function Form({ userAlreadySendEmail }: IFormProps) {
 				className="h-[250px] resize-none rounded-sm bg-neutral-50 p-4 text-xs font-semibold placeholder:text-neutral-600 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-neutral-dark-50 dark:placeholder:text-neutral-dark-600"
 			/>
 			<button
-				aria-label="send message"
+				aria-label="Enviar mensagem"
 				disabled={formState.userAlreadySendEmail}
 				type="submit"
 				className="flex items-center justify-center gap-4 rounded-[999px] bg-neutral-200 py-3 text-xs font-normal uppercase text-neutral-900 transition-all hover:bg-neutral-400 active:text-neutral-50 active:shadow-btn1 disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:bg-neutral-200 disabled:active:text-neutral-900 disabled:active:shadow-none dark:bg-neutral-dark-200 dark:text-neutral-dark-900 dark:hover:bg-neutral-dark-400 dark:active:text-neutral-dark-50 disabled:hover:dark:bg-neutral-dark-200 disabled:active:dark:text-neutral-dark-900"

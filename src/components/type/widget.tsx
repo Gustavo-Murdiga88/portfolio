@@ -62,7 +62,7 @@ export function TypeComponent() {
 				<Tooltip text="Ao clicar no botão, você poderá sair da animação inicial">
 					<button
 						type="button"
-						aria-label="skip intro"
+						aria-label="Pular intro"
 						onClick={onTypeEnd}
 						className="w-full rounded-sm border border-neutral-50 p-2 px-3 text-xs text-neutral-50 transition-all hover:border-neutral-950 hover:bg-neutral-50 hover:text-neutral-950  md:w-[156px] "
 					>
