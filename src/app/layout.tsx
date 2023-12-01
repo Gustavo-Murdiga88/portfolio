@@ -39,11 +39,12 @@ export const metadata: Metadata = {
 		firstName: "Gustavo",
 		lastName: "Murdiga",
 		username: "Gustavo Murdiga",
-		images: ["https://1drv.ms/i/s!AsklabRzD36jn0hjt5ef9973TmDP?e=LwKTao"],
+		images: [
+			"https://onedrive.live.com/embed?resid=A37E0F73B46925C9%214040&authkey=%21ADMOnQ4yAdE9meQ&width=1500&height=1500",
+		],
 	},
 	twitter: {
 		site: "@GuMurdiga",
-
 		description:
 			"Este projeto visa destacar minhas habilidades para recrutadores e desenvolvedores, demonstrando minha capacidade de contribuir para a criação de um mundo mais feliz.",
 		title: "Olá, eu sou o Gustavo!",
@@ -63,7 +64,8 @@ const struttedData = {
 	"@context": "http://schema.org/",
 	"@type": "LocalBusiness",
 	name: "Gustavo Murdiga",
-	image: "https://1drv.ms/i/s!AsklabRzD36jn0hjt5ef9973TmDP?e=LwKTao",
+	image:
+		"https://onedrive.live.com/embed?resid=A37E0F73B46925C9%214040&authkey=%21ADMOnQ4yAdE9meQ&width=1500&height=1500",
 	url: "https://gustavomurdiga.vercel.app/",
 	address: {
 		"@type": "PostalAddress",
@@ -87,7 +89,7 @@ const struttedDataOrganization = {
 	"@context": "http://schema.org/",
 	"@type": "Organization",
 	name: "GM Dev",
-	logo: "https://1drv.ms/i/s!AsklabRzD36jn0hjt5ef9973TmDP?e=LwKTao",
+	logo: "https://onedrive.live.com/embed?resid=A37E0F73B46925C9%214040&authkey=%21ADMOnQ4yAdE9meQ&width=1500&height=1500",
 	url: "https://gustavomurdiga.vercel.app/",
 	address: {
 		"@type": "PostalAddress",
