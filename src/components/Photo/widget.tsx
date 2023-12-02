@@ -3,12 +3,14 @@
 import { ComponentProps } from "react";
 
 import Image from "next/image";
+import Link from "next/link";
 
 interface IPhotoProps extends ComponentProps<"section"> {
 	url: string;
 	nameOfProject: string;
 	details: string;
 	labels: string[];
+	repo: string;
 }
 
 export function Photo({
@@ -16,6 +18,7 @@ export function Photo({
 	nameOfProject,
 	details,
 	labels,
+	repo,
 	...props
 }: IPhotoProps) {
 	return (
@@ -47,7 +50,16 @@ export function Photo({
 					))}
 				</div>
 			</figure>
+
 			<div className="mt-6">
+				<Link
+					className="mt-5 block text-sm font-bold underline-offset-2 transition-all hover:text-blue-600 hover:underline"
+					href={repo}
+					aria-label="Acesse o repositório"
+					target="_blank"
+				>
+					Acesse o repositório
+				</Link>
 				<span className="text-sm uppercase text-neutral-600 dark:text-neutral-dark-600 lg:text-xl">
 					{nameOfProject} - {details}
 				</span>

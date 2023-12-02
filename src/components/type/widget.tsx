@@ -20,14 +20,9 @@ export function TypeComponent() {
 			element.classList.remove("animated_stop");
 		});
 
-		controls.classList.remove("lg:invisible");
 		controls.classList.add("animate-fadeIn");
 		doc.classList.remove("overflow-hidden");
 		document.body.classList.remove("overflow-hidden");
-
-		// setTimeout(() => {
-		// 	setShouldBeRender(false);
-		// }, 9000);
 	}
 
 	return (

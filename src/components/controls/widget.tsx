@@ -53,7 +53,7 @@ export function Controls() {
 	return (
 		<div
 			id="controls"
-			className="fixed right-controls top-1/2 z-50 -translate-y-1/2 translate-x-[100%] flex-col gap-7 rounded-[9999px] border border-neutral-600 bg-neutral-100 px-4 py-[40px] opacity-0 dark:border-neutral-dark-600 dark:bg-neutral-dark-100 lg:invisible lg:flex"
+			className="fixed inset-x-0 bottom-0 z-50 flex flex-row items-center justify-between border border-neutral-600 bg-neutral-100 p-4 opacity-0 dark:border-neutral-dark-600 dark:bg-neutral-dark-100 lg:inset-x-auto lg:bottom-auto lg:right-controls lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-[100%] lg:flex-col lg:gap-7  lg:rounded-[9999px] lg:py-[40px]"
 		>
 			<Link
 				aria-label="Home"
@@ -62,10 +62,11 @@ export function Controls() {
 					changeStates("home");
 				}}
 				data-selected={selected === "home"}
-				className="group duration-scale  hover:scale-110"
+				className="group duration-scale hover:scale-110"
 				href="#home"
+				title="Home"
 			>
-				<House className="group-data-[selected=true]:fill-blue-600" />
+				<House className="h-6 w-6 group-data-[selected=true]:fill-blue-600" />
 			</Link>
 			<Link
 				aria-label="Habilidades"
@@ -76,8 +77,9 @@ export function Controls() {
 				data-selected={selected === "skills"}
 				className="group duration-scale  hover:scale-110"
 				href="#skills"
+				title="Habilidades"
 			>
-				<Union className="group-data-[selected=true]:fill-blue-600" />
+				<Union className="h-6 w-6 group-data-[selected=true]:fill-blue-600" />
 			</Link>
 			<Link
 				data-control-link
@@ -88,8 +90,9 @@ export function Controls() {
 				data-selected={selected === "time_line"}
 				className="group duration-scale  hover:scale-110"
 				href="#time_line"
+				title="Linha do tempo"
 			>
-				<File className="group-data-[selected=true]:stroke-blue-600" />
+				<File className="h-6 w-6 group-data-[selected=true]:stroke-blue-600" />
 			</Link>
 			<Link
 				data-control-link
@@ -100,8 +103,9 @@ export function Controls() {
 				data-selected={selected === "about"}
 				className="group duration-scale  hover:scale-110"
 				href="#about"
+				title="Sobre"
 			>
-				<User className="group-data-[selected=true]:stroke-blue-600" />
+				<User className="h-6 w-6 group-data-[selected=true]:stroke-blue-600" />
 			</Link>
 			<Link
 				aria-label="Projetos"
@@ -112,8 +116,9 @@ export function Controls() {
 				data-selected={selected === "show_case"}
 				className="group duration-scale  hover:scale-110"
 				href="#show_case"
+				title="Projetos"
 			>
-				<Square className="group-data-[selected=true]:fill-blue-600" />
+				<Square className="h-6 w-6 group-data-[selected=true]:fill-blue-600" />
 			</Link>
 			<Link
 				aria-label="Contato"
@@ -124,8 +129,9 @@ export function Controls() {
 				data-selected={selected === "contract"}
 				className="group duration-scale  hover:scale-110"
 				href="#contract"
+				title="Contato"
 			>
-				<Mail className="group-data-[selected=true]:stroke-blue-600" />
+				<Mail className="h-6 w-6 group-data-[selected=true]:stroke-blue-600" />
 			</Link>
 		</div>
 	);

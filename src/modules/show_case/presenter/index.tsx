@@ -22,6 +22,7 @@ export function ShowCase() {
 				</strong>
 			</header>
 			<Photo
+				repo="https://github.com/Gustavo-Murdiga88/CoffeDelivery"
 				labels={["React", "Styled components", "Vite"]}
 				details="Peça seu café a qual quer momento do dia"
 				url={home.src}
@@ -34,6 +35,7 @@ export function ShowCase() {
 				className="mx-auto flex max-w-page flex-col gap-6 md:flex-row"
 			>
 				<Photo
+					repo="https://github.com/Gustavo-Murdiga88/ig-class-05"
 					labels={["NestJS", "Vitest", "SOLID", "DDD", "TDD"]}
 					details="API-DDD uma api voltada a criação de um fórum de perguntas e respostas"
 					url={nest.src}
@@ -45,6 +47,7 @@ export function ShowCase() {
 				/>
 
 				<Photo
+					repo="https://github.com/Gustavo-Murdiga88/dropzone"
 					labels={["React"]}
 					details="Aplicação para uploads de arquivos"
 					url={drag.src}
@@ -57,6 +60,7 @@ export function ShowCase() {
 			</div>
 
 			<Photo
+				repo="https://github.com/Gustavo-Murdiga88/pokedex"
 				labels={["React", "Tailwind", "Next", "zustang"]}
 				details="App Pókedex criado para que novos desenvolvedores possam entender de uma forma visual teste com a api poke.co"
 				url={pokemons.src}
@@ -64,6 +68,7 @@ export function ShowCase() {
 			/>
 
 			<Photo
+				repo="https://github.com/Gustavo-Murdiga88/flutter-app"
 				labels={["Flutter", "Clean dart", "Modular"]}
 				details="Um app criado em flutter com o intuito de exercer os conhecimentos adquiridos"
 				url={flutter.src}

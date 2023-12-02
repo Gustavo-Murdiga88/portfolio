@@ -12,7 +12,7 @@ export function Contact() {
 		<section
 			data-main
 			id="contract"
-			className="rounded-sm bg-neutral-50 dark:bg-neutral-dark-50 md:ml-2"
+			className="mb-2 rounded-sm bg-neutral-50 dark:bg-neutral-dark-50 md:ml-2 	"
 		>
 			<div data-aos="fade-up" data-aos-delay="50" data-aos-offset="300">
 				<header
@@ -26,22 +26,22 @@ export function Contact() {
 					</strong>
 				</header>
 				<div
-					data-aos="fade-right"
+					data-aos="fade-up"
 					data-aos-delay="250"
 					data-aos-offset="300"
-					className="mx-auto mt-16 flex w-full max-w-page flex-col gap-6 px-4 md:flex-row lg:gap-[100px]"
+					className="mx-auto mt-16 flex w-full max-w-page flex-row flex-wrap-reverse gap-6 px-4 lg:gap-[100px]"
 				>
 					<Form userAlreadySendEmail={userAlreadySendEmail} />
 					<section
-						data-aos="fade-left"
+						data-aos="fade-up"
 						data-aos-delay="350"
 						data-aos-offset="300"
-						className="flex w-full flex-col justify-center gap-6  lg:w-[386px]"
+						className="flex w-full flex-col justify-center gap-6 lg:w-[386px]"
 					>
 						<h2 className="px-4 text-left text-lg font-bold text-blue-200 dark:text-blue-dark-200 md:text-xl">
 							Curioso para saber mais?
 						</h2>
-						<p className="px-4 text-lg font-bold text-neutral-900 dark:text-neutral-dark-900  md:text-xl">
+						<p className="px-4 text-lg font-bold text-neutral-900 dark:text-neutral-dark-900 md:text-xl">
 							Não perca tempo! Envie-me uma mensagem agora e saiba tudo sobre os
 							serviços personalizados e como podemos colaborar para transformar
 							ideias ambiciosas em projetos concretos.
@@ -49,7 +49,7 @@ export function Contact() {
 					</section>
 				</div>
 
-				<div className="pb-2 md:pb-4">
+				<div className="pb-20 md:pb-4">
 					<footer className="mx-auto flex max-w-page items-center justify-center px-6 pt-20 text-center text-xs leading-relaxed text-neutral-600 dark:text-neutral-dark-600 lg:pt-[70px]">
 						<p data-aos="fade-up" data-aos-offset="0">
 							Design criado por

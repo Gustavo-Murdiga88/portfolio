@@ -48,15 +48,15 @@ export function About() {
 					</Link>
 				</div>
 
-				<main
+				<article
 					data-aos="fade-up"
 					data-aos-delay="200"
-					className="mx-auto max-w-page"
+					className="prose mx-auto max-w-page"
 				>
 					<header
 						data-aos="fade-up"
 						data-aos-delay="250"
-						className=" mt-6 flex flex-col items-center gap-10 md:flex-row"
+						className="mt-6 flex flex-col items-center gap-10 md:flex-row"
 					>
 						<Image
 							data-aos="fade-up"
@@ -73,15 +73,15 @@ export function About() {
 							className="flex flex-col items-center justify-center gap-8 text-base font-semibold uppercase text-neutral-600 dark:text-neutral-dark-600 md:items-start"
 						>
 							<span>Full-stack developer</span>
-							<span className="text-center text-[54px] font-semibold leading-none text-blue-200 dark:text-blue-dark-200 md:text-left">
+							<h1 className="text-center font-semibold leading-none text-blue-200 dark:text-blue-dark-200 md:text-left">
 								Gustavo Murdiga
-							</span>
+							</h1>
 						</div>
 					</header>
 					<p
 						data-aos="fade-up"
 						data-aos-delay="50"
-						className="mt-[66px] text-justify text-xs font-normal leading-8 text-neutral-900 dark:text-neutral-dark-900"
+						className="text-neutral-900 dark:text-neutral-dark-900"
 					>
 						{`Olá, meu nome é Gustavo, moro em Jaú, interior de São Paulo. Aos meus
 					${yearsOld} anos sou um grande explorador da tecnologia e de todas as
@@ -97,17 +97,17 @@ export function About() {
 					</p>
 
 					<div className="mx-auto mb-9 mt-20 h-px w-full bg-blue-200 dark:bg-blue-dark-200 lg:w-[490px]" />
-					<h1
+					<h2
 						data-aos="fade-up"
 						data-aos-delay="150"
-						className="mb-16 text-center text-xl font-bold text-neutral-900 dark:text-neutral-dark-900"
+						className="mb-16 text-center text-neutral-900 dark:text-neutral-dark-900"
 					>
 						Mas de onde surgiu minha paixão pela tecnologia?
-					</h1>
+					</h2>
 					<p
 						data-aos="fade-up"
 						data-aos-delay="250"
-						className="text-justify text-xs font-normal leading-8 text-neutral-900 dark:text-neutral-dark-900"
+						className="text-neutral-900 dark:text-neutral-dark-900"
 					>
 						Tudo começou quando tive a iniciativa de exercer alguns trabalhos
 						secundários de redes de computadores – e acredite, eu gosto muito
@@ -123,7 +123,7 @@ export function About() {
 					<p
 						data-aos="fade-up"
 						data-aos-delay="350"
-						className="mt-8 text-justify text-xs font-normal leading-8 text-neutral-900 dark:text-neutral-dark-900"
+						className="text-neutral-900 dark:text-neutral-dark-900"
 					>
 						Inserido nesse insano mundo de estudo e programação, recebi a
 						proposta de uma empresa local para exercer a função de suporte
@@ -136,19 +136,20 @@ export function About() {
 						front-end, trabalhando em projetos de alta relevância, entregando
 						sempre o meu melhor e ganhando o meu merecido espaço.
 					</p>
-					<h1
+
+					<h2
 						data-aos="fade-up"
 						data-aos-delay="400"
-						className="mx-auto mt-16 max-w-[944px] text-center text-xl font-bold text-neutral-900 dark:text-neutral-dark-900"
+						className="mx-auto max-w-[944px] text-center text-neutral-900 dark:text-neutral-dark-900"
 					>
 						E como todo esforço é recompensado, em outubro de 2022 recebi a
 						inesperada proposta da atual empresa onde trabalho, Guarani
 						Sistemas...
-					</h1>
+					</h2>
 					<p
 						data-aos="fade-up"
 						data-aos-delay="450"
-						className="mt-8 text-justify text-xs font-normal leading-8 text-neutral-900 dark:text-neutral-dark-900"
+						className="text-neutral-900 dark:text-neutral-dark-900"
 					>
 						Hoje trabalho de forma remota, exercendo a função de desenvolvedor
 						front-end há cerca de 10 meses, e posso garantir que tem sido uma
@@ -161,7 +162,7 @@ export function About() {
 						aprendendo e buscando sempre o melhor para minha carreira e para o
 						mundo da tecnologia.
 					</p>
-				</main>
+				</article>
 			</div>
 		</section>
 	);

@@ -57,6 +57,10 @@ export const metadata: Metadata = {
 		"Desenvolvedor em Jaú",
 		"Tecnologia em Jaú",
 		"Computadores",
+		"gmdev",
+		"GM Dev",
+		"Gustavo Murdiga",
+		"GMDEV",
 	],
 };
 
@@ -103,19 +107,17 @@ const struttedDataOrganization = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
 	return (
-		<html lang="pt-br" className="dark overflow-hidden">
+		<html lang="pt-br" className="dark">
 			<head>
 				<meta
 					name="google-site-verification"
 					content="WQbYrmDaHz95-t54jPgWbYHPSBebm4LWjt1QC3UQtrg"
 				/>
 				<script
-					key="structured-data"
 					type="application/ld+json"
 					dangerouslySetInnerHTML={{ __html: JSON.stringify(struttedData) }}
 				/>
 				<script
-					key="structured-data"
 					type="application/ld+json"
 					dangerouslySetInnerHTML={{
 						__html: JSON.stringify(struttedDataOrganization),

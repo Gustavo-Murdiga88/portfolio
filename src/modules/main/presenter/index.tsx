@@ -1,3 +1,5 @@
+import { ComponentProps } from "react";
+
 import { Github, Instagram, Linkedin, PlusCircle } from "lucide-react";
 import Img from "next/image";
 import Link from "next/link";
@@ -12,17 +14,25 @@ import { Node } from "@/icons/node";
 import { Spotify } from "@/icons/spotify";
 import { TypeScript } from "@/icons/typesctipt";
 
+function LinkToCurrComponent({ className, ...props }: ComponentProps<"div">) {
+	return (
+		<div {...props} className={`flex-1 ${className}`}>
+			<Link
+				target="_blank"
+				href="/curr.pdf"
+				className="dark:bg-blue-dark-7 flex max-h-14 flex-1 items-center justify-center gap-2 rounded-md bg-blue-300 p-2 px-4 text-neutral-50 shadow-card transition-all hover:bg-blue-100 dark:text-neutral-dark-900 hover:dark:bg-blue-dark-800"
+			>
+				<PlusCircle />
+				<span>Informações</span>
+			</Link>
+		</div>
+	);
+}
+
 const TooltipContent = (
-	<span className="flex gap-2">
+	<span className="md:max-w-auto flex max-w-[300px] flex-wrap gap-2">
 		<span>Ao clicar neste botão você poderá visualizar mais informações</span>
-		<Link
-			target="_blank"
-			href="/curr.pdf"
-			className="dark:bg-blue-dark-7 flex max-h-14 flex-1 items-center justify-center gap-2 rounded-md bg-blue-300 p-2 px-4 text-neutral-50 shadow-card transition-all hover:bg-blue-100 dark:text-neutral-dark-900 hover:dark:bg-blue-dark-800"
-		>
-			<PlusCircle />
-			<span>Informações</span>
-		</Link>
+		<LinkToCurrComponent />
 	</span>
 );
 
@@ -73,7 +83,7 @@ export function Main() {
 									width={232}
 									loading="lazy"
 									decoding="async"
-									className="h-full w-full rounded-br-md rounded-tl-md shadow-card sm:h-[256px] sm:w-[232px]"
+									className="h-full w-full rounded-br-md rounded-tl-md object-contain shadow-card sm:h-[232px] sm:w-[232px]"
 									alt="Gustavo Murdiga"
 								/>
 								<div className="flex w-full flex-col items-start justify-between">
@@ -85,6 +95,7 @@ export function Main() {
 											Gustavo Murdiga.
 										</h1>
 									</span>
+									<LinkToCurrComponent className="my-4 md:hidden" />
 									<footer className="flex w-full items-center justify-between">
 										<span className="font-semibold uppercase text-neutral-600 dark:text-neutral-dark-600 ">
 											Desenvolver front end at Guarani
