@@ -23,7 +23,7 @@ function LinkToCurrComponent({ className, ...props }: ComponentProps<"div">) {
 				className="dark:bg-blue-dark-7 flex max-h-14 flex-1 items-center justify-center gap-2 rounded-md bg-blue-300 p-2 px-4 text-neutral-50 shadow-card transition-all hover:bg-blue-100 dark:text-neutral-dark-900 hover:dark:bg-blue-dark-800"
 			>
 				<PlusCircle />
-				<span>Informações</span>
+				<span>Mais informações</span>
 			</Link>
 		</div>
 	);
@@ -95,7 +95,7 @@ export function Main() {
 											Gustavo Murdiga.
 										</h1>
 									</span>
-									<LinkToCurrComponent className="my-4 md:hidden" />
+									<LinkToCurrComponent className="my-4 w-full md:hidden" />
 									<footer className="flex w-full items-center justify-between">
 										<span className="font-semibold uppercase text-neutral-600 dark:text-neutral-dark-600 ">
 											Desenvolver front end at Guarani
