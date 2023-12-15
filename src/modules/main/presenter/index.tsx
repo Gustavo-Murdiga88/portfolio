@@ -78,7 +78,7 @@ export function Main() {
 										aria-label="sobre mim"
 										className="text-blue-600 underline decoration-dashed underline-offset-4 transition-all hover:text-blue-800 hover:decoration-dotted"
 									>
-										sobre mim{" "}
+										sobre mim
 									</Link>
 								</span>
 								<footer className="flex w-full items-center justify-between">
