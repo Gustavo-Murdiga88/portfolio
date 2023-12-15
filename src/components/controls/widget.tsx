@@ -67,6 +67,7 @@ export function Controls() {
 					href="#home"
 					title="Home"
 				>
+					<span className="sr-only">Home</span>
 					<House className="h-6 w-6 fill-zinc-950 group-data-[selected=true]:fill-blue-600 dark:fill-zinc-100" />
 				</Link>
 			</li>
@@ -82,6 +83,7 @@ export function Controls() {
 					href="#skills"
 					title="Habilidades"
 				>
+					<span className="sr-only">Habilidades</span>
 					<Union className="h-6 w-6 fill-zinc-950 group-data-[selected=true]:fill-blue-600 dark:fill-zinc-100" />
 				</Link>
 			</li>
@@ -97,6 +99,7 @@ export function Controls() {
 					href="#time_line"
 					title="Linha do tempo"
 				>
+					<span className="sr-only">Linha</span>
 					<File className="h-6 w-6 stroke-zinc-950 group-data-[selected=true]:stroke-blue-600 dark:stroke-zinc-100" />
 				</Link>
 			</li>
@@ -112,6 +115,7 @@ export function Controls() {
 					href="#about"
 					title="Sobre"
 				>
+					<span className="sr-only">Sobre</span>
 					<User className="h-6 w-6 stroke-zinc-950 group-data-[selected=true]:stroke-blue-600 dark:stroke-zinc-100" />
 				</Link>
 			</li>
@@ -127,6 +131,7 @@ export function Controls() {
 					href="#show_case"
 					title="Projetos"
 				>
+					<span className="sr-only">Projetos</span>
 					<Square className="h-6 w-6 fill-zinc-950 group-data-[selected=true]:fill-blue-600 dark:fill-zinc-100" />
 				</Link>
 			</li>
@@ -142,6 +147,7 @@ export function Controls() {
 					href="#contract"
 					title="Contato"
 				>
+					<span className="sr-only">Contato</span>
 					<Mail className="h-6 w-6 stroke-zinc-950 group-data-[selected=true]:stroke-blue-600 dark:stroke-zinc-100" />
 				</Link>
 			</li>
