@@ -37,7 +37,9 @@ export function Main() {
 						className="transition-all hover:brightness-150"
 						href="https://www.linkedin.com/in/gustavo-murdiga-055470178/"
 						target="_blank"
+						aria-label="linkedin"
 					>
+						<span className="sr-only">linkedin</span>
 						<Linkedin />
 					</Link>
 					<Link
