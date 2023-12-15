@@ -36,14 +36,18 @@ export function About() {
 						className="h-6 w-6 transition-all hover:brightness-150 "
 						href="/"
 						target="_blank"
+						aria-label="github"
 					>
+						<span className="sr-only">github</span>
 						<Github />
 					</Link>
 					<Link
 						className="transition-all hover:brightness-150"
 						href="/"
+						aria-label="linkedin"
 						target="_blank"
 					>
+						<span className="sr-only">linkedin</span>
 						<Linkedin />
 					</Link>
 				</div>

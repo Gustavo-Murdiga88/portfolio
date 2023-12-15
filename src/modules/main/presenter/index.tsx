@@ -27,7 +27,10 @@ export function Main() {
 						className="h-6 w-6 transition-all hover:brightness-150"
 						href="https://github.com/Gustavo-Murdiga88"
 						target="_blank"
+						aria-label="github"
 					>
+						<span className="sr-only">github</span>
+
 						<Github />
 					</Link>
 					<Link
@@ -41,7 +44,9 @@ export function Main() {
 						className="transition-all hover:brightness-150"
 						href="https://www.instagram.com/gustaavo88/"
 						target="_blank"
+						aria-label="instagram"
 					>
+						<span className="sr-only">instagram</span>
 						<Instagram />
 					</Link>
 				</div>
