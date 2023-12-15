@@ -1,11 +1,8 @@
-import { ComponentProps } from "react";
-
-import { Github, Instagram, Linkedin, PlusCircle } from "lucide-react";
+import { Github, Instagram, Linkedin } from "lucide-react";
 import Img from "next/image";
 import Link from "next/link";
 
 import { ThemeButton } from "@/components/theme_button/widget";
-import { Tooltip } from "@/components/tooltip";
 import { Details } from "@/icons/details";
 import { Docker } from "@/icons/docker";
 import { Mouse } from "@/icons/mouse";
@@ -13,28 +10,6 @@ import { Next } from "@/icons/next";
 import { Node } from "@/icons/node";
 import { Spotify } from "@/icons/spotify";
 import { TypeScript } from "@/icons/typesctipt";
-
-function LinkToCurrComponent({ className, ...props }: ComponentProps<"div">) {
-	return (
-		<div {...props} className={`flex-1 ${className}`}>
-			<Link
-				target="_blank"
-				href="/curr.pdf"
-				className="dark:bg-blue-dark-7 flex max-h-14 flex-1 items-center justify-center gap-2 rounded-md bg-blue-300 p-2 px-4 text-neutral-50 shadow-card transition-all hover:bg-blue-100 dark:text-neutral-dark-900 hover:dark:bg-blue-dark-800"
-			>
-				<PlusCircle />
-				<span>Mais informações</span>
-			</Link>
-		</div>
-	);
-}
-
-const TooltipContent = (
-	<span className="md:max-w-auto flex max-w-[300px] flex-wrap gap-2">
-		<span>Ao clicar neste botão você poderá visualizar mais informações</span>
-		<LinkToCurrComponent />
-	</span>
-);
 
 export function Main() {
 	return (
@@ -74,43 +49,60 @@ export function Main() {
 			<main className="mx-auto mt-[2.8125rem] grid max-w-page grid-cols-1 gap-5 lg:grid-cols-[679px_1fr] lg:px-5 lg:pr-[26px]">
 				{/* left */}
 				<div className="flex flex-col gap-5">
-					<div className="animate__animated animated_stop animate__bounceInDown animate-delay-01s group rounded-md bg-neutral-200 p-8 shadow-card dark:bg-neutral-dark-200 lg:h-[320px]">
-						<Tooltip text={TooltipContent}>
-							<div className="flex w-full flex-col gap-[14px] duration-scale hover:scale-105 md:flex-row">
-								<Img
-									src="https://github.com/gustavo-murdiga88.png"
-									height={256}
-									width={232}
-									loading="lazy"
-									decoding="async"
-									className="h-full w-full rounded-br-md rounded-tl-md object-contain shadow-card sm:h-[232px] sm:w-[232px]"
-									alt="Gustavo Murdiga"
-								/>
-								<div className="flex w-full flex-col items-start justify-between">
-									<span>
-										<span className="font-normal uppercase text-neutral-600 dark:text-neutral-dark-600 ">
-											Desenvolvedor front-end
-										</span>
-										<h1 className="mb-2 mt-5 text-center text-3xl font-semibold leading-[60px] md:text-left md:text-3xl">
-											Gustavo Murdiga.
-										</h1>
+					<div className="animate__animated animated_stop animate__bounceInDown animate-delay-01s group rounded-md bg-neutral-200 p-6 shadow-card dark:bg-neutral-dark-200 lg:h-[320px]">
+						<div className="grid w-full grid-cols-1 items-start justify-start gap-[20px] md:grid-cols-[232px_1fr]">
+							<Img
+								src="https://github.com/gustavo-murdiga88.png"
+								height={300}
+								width={232}
+								loading="lazy"
+								quality={100}
+								decoding="async"
+								className="h-full w-full rounded-sm object-cover"
+								alt="Gustavo Murdiga"
+							/>
+							<div className="flex w-full flex-col items-start justify-between">
+								<span>
+									<span className="font-normal uppercase text-neutral-600 dark:text-neutral-dark-600 ">
+										Desenvolvedor front-end
 									</span>
-									<LinkToCurrComponent className="my-4 w-full md:hidden" />
-									<footer className="flex w-full items-center justify-between">
-										<span className="font-semibold uppercase text-neutral-600 dark:text-neutral-dark-600 ">
-											Desenvolver front end at Guarani
-										</span>
-										<Details
-											size={40}
-											className="font-normal uppercase text-neutral-600 dark:text-neutral-dark-600 "
-										/>
-									</footer>
-								</div>
+									<h1 className="text-center text-2xl font-semibold leading-[60px] md:mb-2 md:mt-5 md:text-left md:text-3xl">
+										Gustavo Murdiga.
+									</h1>
+								</span>
+								<span className="break-words py-2 tracking-tighter">
+									Olá,caso deseje saber mais&nbsp;
+									<Link
+										target="_blank"
+										href="/curr.pdf"
+										aria-label="sobre mim"
+										className="text-blue-600 underline decoration-dashed underline-offset-4 transition-all hover:text-blue-800 hover:decoration-dotted"
+									>
+										sobre mim{" "}
+									</Link>
+								</span>
+								<footer className="flex w-full items-center justify-between">
+									<span className="break-words font-semibold uppercase text-neutral-600 dark:text-neutral-dark-600">
+										Dev. full stack na&nbsp;
+										<Link
+											target="_blank"
+											href="https://www.guaranisistemas.com.br/"
+											aria-label="guarani sistemas"
+											className="text-blue-600 underline decoration-dashed underline-offset-4 transition-all hover:text-blue-800 hover:decoration-dotted"
+										>
+											Guarani sistemas
+										</Link>
+									</span>
+									<Details
+										size={40}
+										className="font-normal uppercase text-neutral-600 dark:text-neutral-dark-600 "
+									/>
+								</footer>
 							</div>
-						</Tooltip>
+						</div>
 					</div>
 					<div className="animate__animated animated_stop animate__bounceInDown animate-delay-02s w-full rounded-md bg-neutral-200 p-6 shadow-card dark:bg-neutral-dark-200 lg:h-[320px]">
-						<div className="flex w-full flex-col items-center gap-5 duration-scale hover:scale-105 md:flex-row lg:items-stretch">
+						<div className="flex w-full flex-col items-center gap-5 duration-scale  md:flex-row lg:items-stretch">
 							<Node className="h-32 w-32 md:h-[256px] md:w-[232px]" />
 							<div className="flex w-full flex-1 flex-col justify-between lg:items-start">
 								<span className="font-normal uppercase text-neutral-600 dark:text-neutral-dark-600 ">
@@ -136,7 +128,7 @@ export function Main() {
 				{/* right */}
 				<div className="flex flex-col gap-5">
 					<div className="animate__animated animated_stop animate__bounceInDown animate-delay-03s w-full rounded-md bg-neutral-200 p-2 px-8 shadow-card dark:bg-neutral-dark-200 sm:h-[54px] md:h-[42px]">
-						<div className="flex items-center gap-4 duration-scale hover:scale-105">
+						<div className="flex items-center gap-4 duration-scale ">
 							<Spotify />
 							<span className="tex text-[14px] font-bold">
 								Em breve você poderá saber o que estou ouvindo 🎧
@@ -145,7 +137,7 @@ export function Main() {
 					</div>
 					<div className="flex flex-col gap-5 md:flex-row lg:h-[16.125rem]">
 						<div className="animate__animated animated_stop animate__bounceInDown animate-delay-06s flex-1 rounded-md bg-neutral-200  p-8 shadow-card dark:bg-neutral-dark-200">
-							<div className="duration-scale hover:scale-105">
+							<div className="duration-scale ">
 								<Next
 									className="mx-auto"
 									style={{
@@ -165,7 +157,7 @@ export function Main() {
 							</div>
 						</div>
 						<div className="animate__animated animated_stop animate__bounceInDown animate-delay-04s flex-1 rounded-md bg-neutral-200 p-8 shadow-card dark:bg-neutral-dark-200">
-							<div className="duration-scale hover:scale-105">
+							<div className="duration-scale ">
 								<TypeScript
 									className="mx-auto"
 									style={{
@@ -187,7 +179,7 @@ export function Main() {
 					</div>
 
 					<div className="animate__animated animated_stop animate__bounceInDown animate-delay-05s flex flex-1 gap-5 rounded-md bg-neutral-200 p-8 shadow-card dark:bg-neutral-dark-200">
-						<div className="duration-scale hover:scale-105">
+						<div className="duration-scale ">
 							<div className="flex flex-col justify-between">
 								<div className="flex gap-7">
 									<TypeScript className="h-20 w-20 lg:h-[160px] lg:w-[135px]" />
@@ -210,7 +202,7 @@ export function Main() {
 					</div>
 				</div>
 			</main>
-			<div className="mb-4 ml-2 mt-[80px] flex h-[4.5rem] items-center justify-center rounded-sm bg-neutral-100 p-2 dark:bg-black">
+			<div className="mx-2 mb-4 mt-[80px] flex h-[4.5rem] items-center justify-center rounded-sm bg-zinc-400 p-2 dark:bg-black">
 				<Mouse size={40} />
 			</div>
 		</section>

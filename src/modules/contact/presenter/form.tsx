@@ -98,7 +98,7 @@ export function Form({ userAlreadySendEmail }: IFormProps) {
 				}}
 				id="name"
 				placeholder="Nome"
-				className="rounded-sm bg-neutral-50 p-4 text-xs font-semibold placeholder:text-neutral-600 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-neutral-dark-50 dark:placeholder:text-neutral-dark-600"
+				className="rounded-sm bg-neutral-50 p-4 text-xs font-semibold outline-none placeholder:text-neutral-600 focus-visible:ring-2 focus-visible:ring-zinc-100 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-neutral-dark-50 dark:placeholder:text-neutral-dark-600"
 			/>
 			<input
 				type="email"
@@ -116,7 +116,7 @@ export function Form({ userAlreadySendEmail }: IFormProps) {
 				inputMode="email"
 				id="email"
 				placeholder="E-mail"
-				className="rounded-sm bg-neutral-50 p-4 text-xs font-semibold placeholder:text-neutral-600 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-neutral-dark-50 dark:placeholder:text-neutral-dark-600"
+				className="rounded-sm bg-neutral-50 p-4 text-xs font-semibold outline-none placeholder:text-neutral-600 focus-visible:ring-2 focus-visible:ring-zinc-100 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-neutral-dark-50 dark:placeholder:text-neutral-dark-600"
 			/>
 
 			<textarea
@@ -133,7 +133,7 @@ export function Form({ userAlreadySendEmail }: IFormProps) {
 				required
 				disabled={formState.submitting}
 				placeholder="Digite uma mensagem..."
-				className="h-[250px] resize-none rounded-sm bg-neutral-50 p-4 text-xs font-semibold placeholder:text-neutral-600 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-neutral-dark-50 dark:placeholder:text-neutral-dark-600"
+				className="h-[250px] resize-none rounded-sm bg-neutral-50 p-4 text-xs font-semibold outline-none placeholder:text-neutral-600 focus-visible:ring-2 focus-visible:ring-zinc-100 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-neutral-dark-50 dark:placeholder:text-neutral-dark-600"
 			/>
 			<button
 				aria-label="Enviar mensagem"

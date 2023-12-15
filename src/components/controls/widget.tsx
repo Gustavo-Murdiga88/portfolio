@@ -66,7 +66,7 @@ export function Controls() {
 				href="#home"
 				title="Home"
 			>
-				<House className="h-6 w-6 group-data-[selected=true]:fill-blue-600" />
+				<House className="h-6 w-6 fill-zinc-950 group-data-[selected=true]:fill-blue-600 dark:fill-zinc-100" />
 			</Link>
 			<Link
 				aria-label="Habilidades"
@@ -79,7 +79,7 @@ export function Controls() {
 				href="#skills"
 				title="Habilidades"
 			>
-				<Union className="h-6 w-6 group-data-[selected=true]:fill-blue-600" />
+				<Union className="h-6 w-6 fill-zinc-950 group-data-[selected=true]:fill-blue-600 dark:fill-zinc-100" />
 			</Link>
 			<Link
 				data-control-link
@@ -92,7 +92,7 @@ export function Controls() {
 				href="#time_line"
 				title="Linha do tempo"
 			>
-				<File className="h-6 w-6 group-data-[selected=true]:stroke-blue-600" />
+				<File className="h-6 w-6 stroke-zinc-950 group-data-[selected=true]:stroke-blue-600 dark:stroke-zinc-100" />
 			</Link>
 			<Link
 				data-control-link
@@ -105,7 +105,7 @@ export function Controls() {
 				href="#about"
 				title="Sobre"
 			>
-				<User className="h-6 w-6 group-data-[selected=true]:stroke-blue-600" />
+				<User className="h-6 w-6 stroke-zinc-950 group-data-[selected=true]:stroke-blue-600 dark:stroke-zinc-100" />
 			</Link>
 			<Link
 				aria-label="Projetos"
@@ -118,7 +118,7 @@ export function Controls() {
 				href="#show_case"
 				title="Projetos"
 			>
-				<Square className="h-6 w-6 group-data-[selected=true]:fill-blue-600" />
+				<Square className="h-6 w-6 fill-zinc-950 group-data-[selected=true]:fill-blue-600 dark:fill-zinc-100" />
 			</Link>
 			<Link
 				aria-label="Contato"
@@ -131,7 +131,7 @@ export function Controls() {
 				href="#contract"
 				title="Contato"
 			>
-				<Mail className="h-6 w-6 group-data-[selected=true]:stroke-blue-600" />
+				<Mail className="h-6 w-6 stroke-zinc-950 group-data-[selected=true]:stroke-blue-600 dark:stroke-zinc-100" />
 			</Link>
 		</div>
 	);
