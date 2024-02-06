@@ -11,7 +11,6 @@ export function TimeLine() {
 			<main className="mx-auto max-w-[50rem]">
 				<h1
 					data-aos="fade-up"
-					data-aos-delay="25"
 					className="mx-auto my-4 px-6  text-[44px] font-semibold md:my-10 md:gap-10 md:px-4"
 				>
 					Experiência

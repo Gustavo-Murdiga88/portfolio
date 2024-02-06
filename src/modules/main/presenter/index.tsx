@@ -32,10 +32,9 @@ export function Main() {
 					</Link>
 				</div>
 			</Title>
-			<div className="my-10 flex flex-col-reverse items-center justify-center gap-10 px-6 lg:my-0 lg:min-h-content-height lg:flex-row lg:gap-24">
+			<div className="my-10 flex flex-col-reverse items-center justify-center gap-10 px-6 lg:my-0 lg:min-h-[54.375rem] lg:flex-row lg:gap-24">
 				<aside
 					data-aos="fade-up"
-					data-aos-delay="25"
 					className="flex flex-col items-start justify-center gap-6"
 				>
 					<div className="prose prose-zinc">
@@ -69,7 +68,7 @@ export function Main() {
 				</aside>
 				<div
 					data-aos="fade-up"
-					data-aos-delay="25"
+					
 					className="relative min-h-[300px] min-w-[18.75rem] overflow-hidden rounded-full before:absolute before:inset-0 before:origin-center before:scale-[200%] before:animate-rotate before:bg-gradient-to-r before:from-neutral-dark-1100 before:to-blue-300"
 				>
 					<Img

@@ -14,17 +14,17 @@ export function About() {
 
 			<article
 				data-aos="fade-up"
-				data-aos-delay="25"
+				
 				className="prose prose-zinc mx-auto max-w-[52rem] p-8"
 			>
 				<header
 					data-aos="fade-up"
-					data-aos-delay="25"
+					
 					className="mb-6 flex flex-col items-center gap-10 md:flex-row"
 				>
 					<Image
 						data-aos="fade-up"
-						data-aos-delay="25"
+						
 						src="https://github.com/gustavo-murdiga88.png"
 						height={270}
 						width={270}
@@ -33,7 +33,7 @@ export function About() {
 					/>
 					<div
 						data-aos="fade-up"
-						data-aos-delay="25"
+						
 						className="flex flex-col items-center justify-center gap-4 text-base font-semibold uppercase md:items-start"
 					>
 						<span className="text-neutral-200">Full-stack developer</span>
@@ -64,7 +64,7 @@ export function About() {
 				</header>
 				<p
 					data-aos="fade-up"
-					data-aos-delay="25"
+					
 					className="text-neutral-900 dark:text-neutral-dark-900"
 				>
 					{`Olá, meu nome é Gustavo, moro em Jaú, interior de São Paulo. Aos meus
@@ -82,14 +82,14 @@ export function About() {
 
 				<h2
 					data-aos="fade-up"
-					data-aos-delay="25"
+					
 					className="text-neutral-900 dark:text-neutral-dark-900"
 				>
 					Mas de onde surgiu minha paixão pela tecnologia?
 				</h2>
 				<p
 					data-aos="fade-up"
-					data-aos-delay="25"
+					
 					className="text-neutral-900 dark:text-neutral-dark-900"
 				>
 					Tudo começou quando tive a iniciativa de exercer alguns trabalhos
@@ -105,7 +105,7 @@ export function About() {
 
 				<p
 					data-aos="fade-up"
-					data-aos-delay="25"
+					
 					className="text-neutral-900 dark:text-neutral-dark-900"
 				>
 					Inserido nesse insano mundo de estudo e programação, recebi a proposta
@@ -122,7 +122,7 @@ export function About() {
 
 				<h2
 					data-aos="fade-up"
-					data-aos-delay="25"
+					
 					className="mx-auto text-neutral-900 dark:text-neutral-dark-900"
 				>
 					E como todo esforço é recompensado, em outubro de 2022 recebi a
@@ -131,7 +131,7 @@ export function About() {
 				</h2>
 				<p
 					data-aos="fade-up"
-					data-aos-delay="25"
+					
 					className="text-neutral-900 dark:text-neutral-dark-900"
 				>
 					Hoje trabalho de forma remota, exercendo a função de desenvolvedor

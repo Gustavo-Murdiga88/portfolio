@@ -25,16 +25,15 @@ export function TimeBox({
 	return (
 		<main
 			data-aos="fade-up"
-			data-aos-delay="25"
 			className={cn(
-				"flex flex-col md:flex-row justify-start border-b-zinc-100 mx-6 [&:not(:last-child)]:border-b-[0.0625rem] py-4 md:mx-auto gap-6 md:gap-10 mr-auto[&+&]:mt-6",
+				"flex min-h-[250px] flex-col md:flex-row justify-start border-b-zinc-100 mx-6 [&:not(:last-child)]:border-b-[0.0625rem] py-4 md:mx-auto gap-6 md:gap-10 mr-auto[&+&]:mt-6",
 			)}
 		>
 			<Link
 				href={url}
 				target="_blank"
 				aria-label={company}
-				className={cn("mx-auto py-4")}
+				className={cn("mx-auto py-4", type === "student" && "my-auto")}
 			>
 				<Img
 					src={img}
