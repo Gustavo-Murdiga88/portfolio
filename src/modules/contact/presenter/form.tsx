@@ -1,9 +1,8 @@
 "use client";
 
-import { ComponentRef, FormEvent, useRef, useState } from "react";
-
 import { Ring } from "@uiball/loaders";
-import { toast } from "react-toastify";
+import { ComponentRef, FormEvent, useRef, useState } from "react";
+import { toast } from "sonner";
 
 import { submitter } from "./submitter";
 
@@ -30,15 +29,11 @@ export function Form({ userAlreadySendEmail }: IFormProps) {
 		message: string;
 	}) {
 		if (type === "failure") {
-			toast(message, {
-				type: "error",
-			});
+			toast.error(message);
 			return;
 		}
 
-		toast(message, {
-			type: "success",
-		});
+		toast.success(message);
 	}
 	async function handleSubmit(formEvent: FormEvent) {
 		formEvent.preventDefault();
@@ -81,9 +76,9 @@ export function Form({ userAlreadySendEmail }: IFormProps) {
 		<form
 			ref={refForm}
 			onSubmit={handleSubmit}
-			className="relative flex w-full flex-col gap-6 rounded-sm bg-neutral-100 px-4 pb-[60px] pt-6 dark:bg-neutral-dark-100 lg:w-[668px] lg:rounded-md lg:px-10 lg:pt-14"
+			className="relative mx-4 flex w-full flex-col gap-8 rounded-xs border border-neutral-800 bg-neutral-950 px-4 py-6 lg:w-[668px] lg:px-10 "
 		>
-			<h1 className="mb-6 text-center text-lg font-normal text-neutral-950 dark:text-neutral-dark-950 md:mb-12 lg:text-[36px]">
+			<h1 className="mb-4 text-center text-lg font-semibold text-neutral-200 lg:text-[1.75rem]">
 				Vamos trabalhar juntos!
 			</h1>
 			<input
@@ -98,7 +93,7 @@ export function Form({ userAlreadySendEmail }: IFormProps) {
 				}}
 				id="name"
 				placeholder="Nome"
-				className="rounded-sm bg-neutral-50 p-4 text-xs font-semibold outline-none placeholder:text-neutral-600 focus-visible:ring-2 focus-visible:ring-zinc-100 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-neutral-dark-50 dark:placeholder:text-neutral-dark-600"
+				className="h-[1.75rem] rounded-xs border-[2px] border-neutral-800 bg-neutral-50 p-4 text-[14px] font-semibold outline-none placeholder:text-neutral-200 focus-visible:ring-2 focus-visible:ring-zinc-100 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-neutral-dark-50 "
 			/>
 			<input
 				type="email"
@@ -116,7 +111,7 @@ export function Form({ userAlreadySendEmail }: IFormProps) {
 				inputMode="email"
 				id="email"
 				placeholder="E-mail"
-				className="rounded-sm bg-neutral-50 p-4 text-xs font-semibold outline-none placeholder:text-neutral-600 focus-visible:ring-2 focus-visible:ring-zinc-100 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-neutral-dark-50 dark:placeholder:text-neutral-dark-600"
+				className="h-[1.75rem] rounded-xs border-[2px] border-neutral-800 bg-neutral-50 p-4 text-[14px] font-semibold outline-none placeholder:text-neutral-200 focus-visible:ring-2 focus-visible:ring-zinc-100 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-neutral-dark-50"
 			/>
 
 			<textarea
@@ -133,17 +128,17 @@ export function Form({ userAlreadySendEmail }: IFormProps) {
 				required
 				disabled={formState.submitting}
 				placeholder="Digite uma mensagem..."
-				className="h-[250px] resize-none rounded-sm bg-neutral-50 p-4 text-xs font-semibold outline-none placeholder:text-neutral-600 focus-visible:ring-2 focus-visible:ring-zinc-100 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-neutral-dark-50 dark:placeholder:text-neutral-dark-600"
+				className="h-[250px] resize-none rounded-xs border-[2px] border-neutral-800 bg-neutral-50 p-4 text-[14px] font-semibold outline-none placeholder:text-neutral-200 focus-visible:ring-2 focus-visible:ring-zinc-100 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-neutral-dark-50 "
 			/>
 			<button
-				aria-label="Enviar mensagem"
+				aria-label="Enviar"
 				disabled={formState.userAlreadySendEmail}
 				type="submit"
-				className="flex items-center justify-center gap-4 rounded-[999px] bg-neutral-200 py-3 text-xs font-normal uppercase text-neutral-900 transition-all hover:bg-neutral-400 active:text-neutral-50 active:shadow-btn1 disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:bg-neutral-200 disabled:active:text-neutral-900 disabled:active:shadow-none dark:bg-neutral-dark-200 dark:text-neutral-dark-900 dark:hover:bg-neutral-dark-400 dark:active:text-neutral-dark-50 disabled:hover:dark:bg-neutral-dark-200 disabled:active:dark:text-neutral-dark-900"
+				className="flex items-center justify-center gap-4 rounded-[0.25rem] bg-blue-500 p-2 font-semibold text-neutral-100 focus:ring-2 focus:ring-neutral-50 disabled:cursor-not-allowed disabled:opacity-60"
 			>
-				Enviar mensagem
+				Enviar
 				{formState.isLoading && (
-					<Ring size={16} lineWeight={5} speed={2} color="#0078C5" />
+					<Ring size={16} lineWeight={5} speed={2} color="#fff" />
 				)}
 			</button>
 		</form>

@@ -2,8 +2,6 @@ module.exports = {
 	root: true,
 	extends: ["@gm-dev/eslint-config/next", "plugin:tailwindcss/recommended"],
 
-	plugins: ["eslint-plugin-import-helpers"],
-
 	rules: {
 		"import/first": "off",
 		"no-shadow": "off",
@@ -13,23 +11,5 @@ module.exports = {
 		"global-require": "off",
 		"prefer-const": "off",
 		"tailwindcss/no-custom-classname": "off",
-		"import-helpers/order-imports": [
-			"warn",
-			{
-				newlinesBetween: "always",
-				groups: [
-					"/^(react)$/",
-					"/^(lucide-react|dayjs|next|@radix-ui|react-toastify|@uiball)/",
-					"/^(@/)/",
-					"/^(@)/",
-					"/^(/assets|styles)/",
-					"/^(./)/",
-				],
-				alphabetize: {
-					order: "asc",
-					ignoreCase: true,
-				},
-			},
-		],
 	},
 };

@@ -1,17 +1,13 @@
-import Image from "next/image";
-
 import docker from "@/assets/docker.svg";
 import expo from "@/assets/expo.svg";
-import fastify from "@/assets/fastify.svg";
 import flutter from "@/assets/flutter.svg";
-import nest from "@/assets/nestjs.svg";
 import next from "@/assets/nextjs.svg";
-import radixui from "@/assets/radix-ui.svg";
+import node from "@/assets/node.svg";
 import react from "@/assets/react.svg";
 import typescript from "@/assets/typescript.svg";
 import vitejs from "@/assets/vitejs.svg";
-import { Tooltip } from "@/components/tooltip";
-import { Node } from "@/icons/node";
+import { CardPresenter } from "@/components/card-presenter";
+import { Title } from "@/components/title";
 
 export function Skills() {
 	return (
@@ -20,221 +16,69 @@ export function Skills() {
 			className="flex justify-center lg:min-h-content-height"
 			id="skills"
 		>
-			<div className="flex max-w-page flex-col justify-evenly">
-				<div>
-					<strong className="inline-block w-full max-w-page border-b border-b-neutral-300 bg-neutral-100 px-5 py-4 dark:bg-neutral-dark-100">
-						<span className="cursor-default uppercase text-neutral-600 transition-colors hover:text-blue-dark-700 dark:text-neutral-dark-600 dark:hover:text-blue-dark-700">
-							habilidades
-						</span>
-					</strong>
+			<div className="mb-20 flex w-full max-w-page flex-col justify-evenly">
+				<Title title="Habilidades e Tecnologias" />
 
-					<main className="mt-[64px] flex flex-wrap justify-center gap-5 gap-y-[64px] md:gap-x-[77px]">
-						<Tooltip text="NextJs">
-							<div
-								data-aos="fade-up"
-								data-aos-delay="10"
-								className="flex h-[126px] w-[145px] items-center justify-center rounded-md bg-neutral-200 dark:bg-neutral-dark-200"
-							>
-								<Image
-									src={next}
-									height={80}
-									width={80}
-									loading="lazy"
-									alt="NextJS"
-									title="NextJs"
-									aria-label="NextJs"
-									className="dark:invert"
-								/>
-							</div>
-						</Tooltip>
-						<Tooltip text="Fastify">
-							<div
-								data-aos="fade-up"
-								data-aos-delay="50"
-								className="flex h-[126px] w-[145px] items-center justify-center rounded-md bg-neutral-200 dark:bg-neutral-dark-200"
-							>
-								<Image
-									src={fastify}
-									height={80}
-									width={80}
-									loading="lazy"
-									alt="Fastify"
-									title="Fastify"
-									aria-label="Fastify"
-									className="dark:invert"
-								/>
-							</div>
-						</Tooltip>
-
-						<Tooltip text="Node Js">
-							<div
-								data-aos="fade-up"
-								data-aos-delay="100"
-								className="flex h-[126px] w-[145px] items-center justify-center rounded-md bg-neutral-200 dark:bg-neutral-dark-200"
-							>
-								<Node className="h-[48.193px] w-20" />
-							</div>
-						</Tooltip>
-
-						<Tooltip text="Docker">
-							<div
-								data-aos="fade-up"
-								data-aos-delay="150"
-								className="flex h-[126px] w-[145px] items-center justify-center rounded-md bg-neutral-200 dark:bg-neutral-dark-200"
-							>
-								<Image
-									src={docker}
-									height={80}
-									width={80}
-									loading="lazy"
-									alt="Docker"
-									title="Docker"
-									aria-label="Docker"
-								/>
-							</div>
-						</Tooltip>
-
-						<Tooltip text="React">
-							<div
-								data-aos="fade-up"
-								data-aos-delay="200"
-								className="flex h-[126px] w-[145px] items-center justify-center rounded-md bg-neutral-200 dark:bg-neutral-dark-200"
-							>
-								<Image
-									src={react}
-									height={80}
-									width={80}
-									loading="lazy"
-									alt="React"
-									title="React"
-									aria-label="React"
-								/>
-							</div>
-						</Tooltip>
-
-						<Tooltip text="TypeScript">
-							<div
-								data-aos="fade-up"
-								data-aos-delay="250"
-								className="flex h-[126px] w-[145px] items-center justify-center rounded-md bg-neutral-200 dark:bg-neutral-dark-200"
-							>
-								<Image
-									src={typescript}
-									height={80}
-									width={80}
-									loading="lazy"
-									alt="Typescript"
-									title="Typescript"
-									aria-label="Typescript"
-								/>
-							</div>
-						</Tooltip>
-
-						<Tooltip text="Vite JS">
-							<div
-								data-aos="fade-up"
-								data-aos-delay="300"
-								className="flex h-[126px] w-[145px] items-center justify-center rounded-md bg-neutral-200 dark:bg-neutral-dark-200"
-							>
-								<Image
-									src={vitejs}
-									height={80}
-									width={80}
-									loading="lazy"
-									alt="ViteJs"
-									title="ViteJs"
-									aria-label="ViteJs"
-								/>
-							</div>
-						</Tooltip>
-
-						<Tooltip text="Radix-ui">
-							<div
-								data-aos="fade-up"
-								data-aos-delay="350"
-								className="flex h-[126px] w-[145px] items-center justify-center rounded-md bg-neutral-200 dark:bg-neutral-dark-200"
-							>
-								<Image
-									src={radixui}
-									height={80}
-									width={80}
-									loading="lazy"
-									alt="Radix-ui"
-									title="Radix-ui"
-									aria-label="Radix-ui"
-									className="dark:invert"
-								/>
-							</div>
-						</Tooltip>
-
-						<Tooltip text="Flutter">
-							<div
-								data-aos="fade-up"
-								data-aos-delay="400"
-								className="flex h-[126px] w-[145px] items-center justify-center rounded-md bg-neutral-200 dark:bg-neutral-dark-200"
-							>
-								<Image
-									src={flutter}
-									height={80}
-									width={80}
-									loading="lazy"
-									alt="Flutter logo"
-									title="Flutter"
-									aria-label="Flutter logo"
-								/>
-							</div>
-						</Tooltip>
-
-						<Tooltip text="Nest JS ">
-							<div
-								data-aos="fade-up"
-								data-aos-delay="450"
-								className="flex h-[126px] w-[145px] items-center justify-center rounded-md bg-neutral-200 dark:bg-neutral-dark-200"
-							>
-								<Image
-									src={nest}
-									height={80}
-									width={80}
-									loading="lazy"
-									alt="NestJS logo"
-									title="NestJS"
-									aria-label="NestJS Logo"
-								/>
-							</div>
-						</Tooltip>
-
-						<Tooltip text="Expo">
-							<div
-								data-aos="fade-up"
-								data-aos-delay="500"
-								className="flex h-[126px] w-[145px] items-center justify-center rounded-md bg-neutral-200 dark:bg-neutral-dark-200"
-							>
-								<Image
-									src={expo}
-									height={80}
-									width={80}
-									loading="lazy"
-									alt="Expo react"
-									title="Expo"
-									aria-label="Expo"
-								/>
-							</div>
-						</Tooltip>
-					</main>
-
-					<div className="mx-auto mt-[80px] h-[2px] w-full rounded-full bg-blue-200 lg:w-[490px]" />
-				</div>
-				<div>
-					<p
-						data-aos="fade-up"
-						data-aos-delay="350"
-						className="mx-auto mb-10 mt-5 text-center text-xs font-semibold leading-relaxed text-neutral-700 dark:text-neutral-dark-700 lg:mb-0 lg:w-[956px]"
-					>
-						Além destas, tenho visado durante minha jornada a especialização em
-						tecnologias que englobam todo o ecossistema Node.JS, tanto no
-						front-end como também no back-end, e também em DevOps, almejando
-						alcançar o STAGE FULL CYCLE.
-					</p>
+				<div className="mx-auto mt-8 flex flex-col gap-10 p-4 lg:max-w-[80%] lg:p-0">
+					<CardPresenter
+						description="O React marcou o ponto inicial da minha jornada no desenvolvimento. Graças a ele, tive a oportunidade de integrar equipes e contribuir para projetos desafiadores, abrangendo tanto o desenvolvimento web quanto mobile, incluindo o React Native. Essa tecnologia foi a chave para minha participação em diversos produtos inovadores."
+						imageUrl={react}
+						side="left"
+						title="React"
+						urlDoc="https://react.dev/"
+					/>
+					<CardPresenter
+						urlDoc="https://nodejs.org/en"
+						description="Node.js é um ambiente de execução JavaScript no lado do servidor, construído com a engine V8 do Chrome. Ele permite aos desenvolvedores usar JavaScript para operações do lado do servidor, além do tradicional lado do cliente. Com um modelo de I/O não bloqueante e orientado a eventos, Node.js é eficiente para operações intensivas de entrada e saída. É comumente utilizado para construir aplicações escaláveis e em tempo real, como servidores web e APIs, devido à sua capacidade de lidar com muitas conexões simultâneas de forma eficiente. Sua abordagem assíncrona permite um melhor desempenho em cenários de alta concorrência, sem alocar muitos recursos."
+						imageUrl={node}
+						side="right"
+						title="Node JS"
+					/>
+					<CardPresenter
+						urlDoc="https://expo.dev/"
+						description="O Expo destaca-se como um framework essencial para o desenvolvimento multi-plataforma. Através dele, tive a oportunidade de conceber várias aplicações mobile, abrangendo tanto o ambiente IOS quanto Android. Recentemente, concluí um projeto significativo: a criação de um aplicativo para vendas de ingressos online."
+						imageUrl={expo}
+						side="left"
+						title="Expo"
+					/>
+					<CardPresenter
+						urlDoc="https://nextjs.org/"
+						description="O Next.js é um framework que utiliza o React e que simplifica o desenvolvimento de aplicações web, oferecendo uma estrutura pronta para produção, roteamento intuitivo e suporte a renderização tanto no lado do servidor quanto no lado do cliente. Ele facilita a criação de páginas dinâmicas e otimizações para melhor desempenho, tornando o desenvolvimento web mais eficiente e acessível. Hoje 99% dos meus trabalhos são criados com esta tecnologia."
+						imageUrl={next}
+						side="right"
+						title="Next"
+					/>
+					<CardPresenter
+						urlDoc="https://devblogs.microsoft.com/typescript/"
+						description="TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft. Ela é uma extensão do JavaScript que adiciona tipos estáticos opcionais ao código. Isso proporciona aos desenvolvedores maior robustez e eficiência no desenvolvimento de software, ajudando a evitar erros comuns antes mesmo da execução do código. TypeScript é transpilado para JavaScript padrão, o que significa que pode ser executado em qualquer ambiente que suporte JavaScript. Ele é amplamente adotado em projetos grandes e complexos, oferecendo benefícios como melhor manutenção de código, ferramentas de desenvolvimento mais poderosas e facilitação da colaboração em equipes de programação."
+						imageUrl={typescript}
+						side="left"
+						title="Typescript"
+					/>
+					<CardPresenter
+						urlDoc="https://vitest.dev/"
+						description="O VitestJS é um framework de testes JavaScript moderno que te ajuda a escrever código mais confiável e eficiente. Com uma velocidade até 20x superior ao Jest, o VitestJS te permite obter feedback mais rápido sobre suas alterações de código, otimizando o seu processo de desenvolvimento.
+						Sua API amigável e documentação clara facilitam a criação de testes simples e intuitivos, mesmo para iniciantes. O VitestJS é flexível e pode ser usado para testar diferentes tipos de aplicações JavaScript, desde front-end e back-end até frameworks populares como React, Vue.js, Svelte, Node.js e Electron."
+						imageUrl={vitejs}
+						side="right"
+						title="Vitest"
+					/>
+					<CardPresenter
+						urlDoc="https://www.flutter.com/"
+						description="
+						ChatGPT
+						Flutter é um framework de código aberto desenvolvido pelo Google para a criação de aplicativos nativos multiplataforma. Utilizando a linguagem de programação Dart, o Flutter permite o desenvolvimento eficiente de interfaces de usuário atraentes e responsivas, compartilhando o código-base entre plataformas como iOS e Android. Sua arquitetura centrada em widgets proporciona flexibilidade e desempenho, enquanto o Hot Reload permite alterações em tempo real durante o desenvolvimento, acelerando o ciclo de criação e testes."
+						imageUrl={flutter}
+						side="left"
+						title="Flutter"
+					/>{" "}
+					<CardPresenter
+						urlDoc="https://www.docker.com/"
+						description="desenvolvimento, distribuição e execução de aplicativos. Os contêineres Docker encapsulam aplicativos e suas dependências, garantindo consistência em diferentes ambientes. Isso facilita a implantação rápida, escalabilidade e gerenciamento eficiente de aplicações em diversos sistemas operacionais."
+						imageUrl={docker}
+						side="right"
+						title="Docker"
+					/>{" "}
 				</div>
 			</div>
 		</section>

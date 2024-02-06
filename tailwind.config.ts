@@ -5,6 +5,9 @@ const config: Config = {
 	content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
 	theme: {
 		extend: {
+			fontFamily: {
+				poppins: ["var(--font-poppins)"],
+			},
 			transitionDuration: {
 				scale: ".200s",
 			},
@@ -14,92 +17,31 @@ const config: Config = {
 			},
 
 			keyframes: {
-				modal: {
+				rotate: {
 					"0%": {
-						opacity: "0",
-						transform: "translate(-50%, 100%) scale(0.5)",
+						transform: "rotate(0deg)",
 					},
 					"100%": {
-						opacity: "1",
-						transform: "translate(-50%, -50%) scale(1)",
+						transform: "rotate(360deg)",
 					},
 				},
-				modalOut: {
-					"0%": {
-						opacity: "1",
-						transform: "translate(-50%, -50%) scale(1)",
-					},
-					"100%": {
-						opacity: "0",
-						transform: "translate(-50%, 100%) scale(0.5)",
-					},
-				},
-
-				fadeOut: {
-					"100%": {
-						transform: "translateY(-120%)",
-						opacity: "1",
-					},
-				},
-
-				scroll: {
-					"100%": {
-						transform: "translateY(-6%)",
-					},
-				},
-
-				fadeInTooltip: {
-					"0%": {
-						transform: "translateY(10px)",
+				"fade-in": {
+					from: {
 						opacity: "0",
 					},
-					"100%": {
-						transform: "translateY(0px)",
+					to: {
 						opacity: "1",
-					},
-				},
-
-				fadeOutTooltip: {
-					"0%": {
-						transform: "translateY(0px)",
-						opacity: "1",
-					},
-					"100%": {
-						transform: "translateY(10px)",
-						opacity: "0",
-					},
-				},
-
-				fadeIn: {
-					"100%": {
-						opacity: "1",
-					},
-				},
-
-				fadeOutControl: {
-					"100%": {
-						opacity: "0",
 					},
 				},
 			},
 
 			animation: {
-				modal: "modal 150ms cubic-bezier(0.16, 1, 0.3, 1)",
-				modalOut: "modalOut 200ms cubic-bezier(0.16, 1, 0.3, 1) forwards",
-				fadeOut: "fadeOut .6s ease-in-out forwards",
-				scroll: "scroll .6s ease-in infinite alternate",
-				tooltipOpen: "fadeInTooltip .3s cubic-bezier(0.16, 1, 0.3, 1)",
-				tooltipClose: "fadeOutTooltip .3s cubic-bezier(0.16, 1, 0.3, 1)",
-				fadeIn: "fadeIn .6s ease-in .2s forwards",
-				fadeOutControl: "fadeOut .6s ease-in .2s forwards",
-			},
-
-			height: {
-				modal: "700px",
+				rotate: "rotate 2s cubic-bezier(.26,.09,.81,.55) infinite",
+				"fade-in": "fade-in 1s ease-in-out forwards",
 			},
 
 			minHeight: {
-				"content-height": "1080px",
+				"content-height": "900px",
 			},
 
 			width: {
@@ -107,7 +49,7 @@ const config: Config = {
 			},
 
 			maxWidth: {
-				page: "1255px",
+				page: "1140px",
 			},
 
 			inset: {
@@ -137,6 +79,7 @@ const config: Config = {
 			},
 
 			borderRadius: {
+				xs: "8px",
 				sm: "16px",
 				md: "20px",
 				lg: "24px",
@@ -148,6 +91,7 @@ const config: Config = {
 				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
 				"gradient-conic":
 					"conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+				card: `linear-gradient(to right top, rgb(139, 92, 246), rgb(253, 186, 116))`,
 			},
 
 			colors: {
@@ -210,13 +154,11 @@ const config: Config = {
 					"900": "#E5E5E5",
 					"950": "#F2F2F2",
 					"1000": "rgba(0,0,0, 0.2)",
+					"1100": "#121214",
 				},
 			},
 		},
 	},
-	plugins: [
-		require("tailwind-scrollbar")({ nocompatible: true }),
-		require("@tailwindcss/typography"),
-	],
+	plugins: [require("@tailwindcss/typography")],
 };
 export default config;
