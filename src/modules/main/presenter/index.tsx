@@ -68,7 +68,6 @@ export function Main() {
 				</aside>
 				<div
 					data-aos="fade-up"
-					
 					className="relative min-h-[300px] min-w-[18.75rem] overflow-hidden rounded-full before:absolute before:inset-0 before:origin-center before:scale-[200%] before:animate-rotate before:bg-gradient-to-r before:from-neutral-dark-1100 before:to-blue-300"
 				>
 					<Img

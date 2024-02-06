@@ -40,7 +40,6 @@ export function Card({
 	return (
 		<section
 			data-aos="fade-up"
-			
 			{...props}
 			className="max-h-[25rem] w-[16.25rem] rounded-xs bg-card p-[0.125rem]"
 		>

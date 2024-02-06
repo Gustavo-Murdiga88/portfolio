@@ -13,13 +13,11 @@ export function Contact() {
 			<Title title="Contato" />
 			<div
 				data-aos="fade-up"
-				
 				className="mx-auto mb-20 mt-10 flex max-w-[62.5rem] flex-1 flex-col-reverse items-center justify-center gap-10 px-4 md:flex-row lg:mb-10"
 			>
 				<Form userAlreadySendEmail={userAlreadySendEmail} />
 				<section
 					data-aos="fade-up"
-					
 					className="flex w-full flex-col justify-center gap-6 lg:w-[25rem]"
 				>
 					<h2 className="px-4 text-left text-lg font-bold dark:text-blue-dark-200 md:text-xl">
