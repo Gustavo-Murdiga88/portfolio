@@ -66,7 +66,6 @@ export function Skills() {
 					<CardPresenter
 						urlDoc="https://www.flutter.com/"
 						description="
-						ChatGPT
 						Flutter é um framework de código aberto desenvolvido pelo Google para a criação de aplicativos nativos multiplataforma. Utilizando a linguagem de programação Dart, o Flutter permite o desenvolvimento eficiente de interfaces de usuário atraentes e responsivas, compartilhando o código-base entre plataformas como iOS e Android. Sua arquitetura centrada em widgets proporciona flexibilidade e desempenho, enquanto o Hot Reload permite alterações em tempo real durante o desenvolvimento, acelerando o ciclo de criação e testes."
 						imageUrl={flutter}
 						side="left"
@@ -74,11 +73,11 @@ export function Skills() {
 					/>{" "}
 					<CardPresenter
 						urlDoc="https://www.docker.com/"
-						description="desenvolvimento, distribuição e execução de aplicativos. Os contêineres Docker encapsulam aplicativos e suas dependências, garantindo consistência em diferentes ambientes. Isso facilita a implantação rápida, escalabilidade e gerenciamento eficiente de aplicações em diversos sistemas operacionais."
+						description="Desenvolvimento, distribuição e execução de aplicativos. Os contêineres Docker encapsulam aplicativos e suas dependências, garantindo consistência em diferentes ambientes. Isso facilita a implantação rápida, escalabilidade e gerenciamento eficiente de aplicações em diversos sistemas operacionais."
 						imageUrl={docker}
 						side="right"
 						title="Docker"
-					/>{" "}
+					/>
 				</div>
 			</div>
 		</section>
