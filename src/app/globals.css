@@ -3,17 +3,24 @@
 @tailwind utilities;
 
 @layer utilities {    
+  * {
+    scroll-behavior: smooth;
+  }
   
-  .scroll {
-    scrollbar-width: thin;
-    scrollbar-color: #A1A1A5 #E5E5E5
-  } 
+  @supports selector(::-webkit-scrollbar){
+    html::-webkit-scrollbar{
+      width: 8px;
+    }
   
-  html.dark {
-    scrollbar-color: #000000 #262626;
+    html::-webkit-scrollbar-thumb {
+      background-color: #000;
+      border-radius: 3px;
+    }
+    
+    html::-webkit-scrollbar-track {
+      background-color: #121214;
+    }
   }
 }
 
-*{
-  scroll-behavior: smooth;
-}
+
