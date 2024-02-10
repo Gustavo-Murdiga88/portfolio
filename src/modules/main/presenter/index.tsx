@@ -32,7 +32,7 @@ export function Main() {
 					</Link>
 				</div>
 			</Title>
-			<div className="my-10 flex flex-col-reverse items-center justify-center gap-10 px-6 lg:my-0 lg:min-h-[56.25rem] lg:flex-row lg:gap-24">
+			<div className="my-10 flex flex-col-reverse items-center justify-center gap-10 px-6 lg:my-0 lg:min-h-[870px] lg:flex-row lg:gap-24">
 				<aside
 					data-aos="fade-up"
 					className="flex flex-col items-start justify-center gap-6"
