@@ -10,7 +10,7 @@ export function Main() {
 
 	return (
 		<main data-main id="home" className="mx-auto max-w-page">
-			<Title title="Apresentação">
+			<Title title="Apresentação" animation={false}>
 				<div className="ml-auto flex gap-4">
 					<Link
 						aria-label="github"
@@ -32,7 +32,7 @@ export function Main() {
 					</Link>
 				</div>
 			</Title>
-			<div className="my-10 flex flex-col-reverse items-center justify-center gap-10 px-6 lg:my-0 lg:min-h-[870px] lg:flex-row lg:gap-24">
+			<div className="my-10 flex flex-col-reverse items-center justify-center gap-10 px-6 lg:my-0 lg:min-h-[50rem] lg:flex-row lg:gap-24 2xl:min-h-[890px]">
 				<aside
 					data-aos="fade-up"
 					className="flex flex-col items-start justify-center gap-6"

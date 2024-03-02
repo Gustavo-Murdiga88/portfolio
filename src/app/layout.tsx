@@ -26,7 +26,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 				/>
 			</head>
 			<body
-				className={`${poppins.className} ${poppins.variable} bg-neutral-100 font-poppins antialiased dark:bg-neutral-dark-1100 dark:text-neutral-dark-900`}
+				className={`${poppins.className} ${poppins.variable} min-h-screen bg-neutral-100 font-poppins antialiased dark:bg-neutral-dark-1100 dark:text-neutral-dark-900`}
 			>
 				<Toaster />
 				{children}
