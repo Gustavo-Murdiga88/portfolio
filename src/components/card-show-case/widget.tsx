@@ -5,9 +5,11 @@ import { ComponentProps } from "react";
 import eslint from "@/assets/eslint.jpg";
 import flutterBanner from "@/assets/flutter-banner.png";
 import native from "@/assets/native.svg";
+import nest from "@/assets/nestjs.svg";
 import next from "@/assets/next-js.svg";
 import node from "@/assets/node-banner.svg";
 import react from "@/assets/react-banner.svg";
+import vite from "@/assets/vitejs.svg";
 import vscode from "@/assets/vscode.png";
 
 const banners = {
@@ -18,6 +20,8 @@ const banners = {
 	next,
 	eslint,
 	vscode,
+	vite,
+	nest,
 };
 
 export interface IBannerProps {

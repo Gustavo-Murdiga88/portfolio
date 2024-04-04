@@ -2,6 +2,20 @@ import { IBannerProps } from "@/components/card-show-case/widget";
 
 export const projects: IBannerProps[] = [
 	{
+		repo: "https://github.com/Gustavo-Murdiga88/dashskins-front",
+		details:
+			"Este projeto foi criado com o intuito de mostrar minhas experiencias com react, vite, integrações com banco de dados, tailwindcss e muito mais",
+		nameOfProject: "Dashskins - Front End",
+		type: "vite",
+	},
+	{
+		repo: "https://github.com/Gustavo-Murdiga88/dashskins",
+		details:
+			"Este projeto foi criado com o intuito de mostrar minha experiência em nodejs docker, postgres, vitest, testes unitários e de integrações",
+		nameOfProject: "Dashskins - Back End",
+		type: "nest",
+	},
+	{
 		repo: "https://github.com/Gustavo-Murdiga88/pokedex",
 		details:
 			"App Pókedex criado para que novos desenvolvedores possam entender de uma forma visual como utilizar a api poke.co",
