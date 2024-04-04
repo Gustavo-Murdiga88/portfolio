@@ -47,7 +47,7 @@ export function Controls() {
 	return (
 		<ul
 			id="controls"
-			className="fixed inset-x-0 bottom-0 z-50 flex animate-fade-in flex-row items-center justify-evenly   border border-neutral-600 bg-neutral-100 p-4 dark:border-neutral-dark-600 dark:bg-neutral-dark-100 xl:inset-x-auto xl:bottom-auto xl:right-[4.75rem] xl:top-1/2 xl:-translate-y-1/2 xl:translate-x-[100%] xl:flex-col xl:gap-7 xl:rounded-[9999px] xl:py-[40px] 2xl:right-controls"
+			className="fixed inset-x-0 bottom-2 z-50 mx-2 flex animate-fade-in flex-row items-center justify-evenly rounded-sm border border-neutral-600 bg-neutral-100 p-4 dark:border-neutral-dark-600 dark:bg-neutral-dark-100 xl:inset-x-auto xl:bottom-auto xl:right-[4.75rem] xl:top-1/2 xl:-translate-y-1/2 xl:translate-x-[100%] xl:flex-col xl:gap-7 xl:rounded-[9999px] xl:py-[40px] 2xl:right-controls"
 		>
 			<li>
 				<Link

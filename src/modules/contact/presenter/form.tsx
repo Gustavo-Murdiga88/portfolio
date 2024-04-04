@@ -134,7 +134,7 @@ export function Form({ userAlreadySendEmail }: IFormProps) {
 				aria-label="Enviar"
 				disabled={formState.userAlreadySendEmail}
 				type="submit"
-				className="flex items-center justify-center gap-4 rounded-[0.25rem] bg-blue-500 p-2 font-semibold text-neutral-100 focus:ring-2 focus:ring-neutral-50 disabled:cursor-not-allowed disabled:opacity-60"
+				className="flex items-center justify-center gap-4 rounded-[0.25rem] bg-blue-200 p-2 font-semibold text-neutral-100 focus:ring-2 focus:ring-neutral-50 disabled:cursor-not-allowed disabled:opacity-60"
 			>
 				Enviar
 				{formState.isLoading && (

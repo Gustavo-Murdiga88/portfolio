@@ -11,6 +11,7 @@ import node from "@/assets/node-banner.svg";
 import react from "@/assets/react-banner.svg";
 import vite from "@/assets/vitejs.svg";
 import vscode from "@/assets/vscode.png";
+import { cn } from "@/core/utils/fn";
 
 const banners = {
 	react,
@@ -55,7 +56,10 @@ export function Card({
 					src={banners[type]}
 					alt={nameOfProject}
 					loading="lazy"
-					className={`h-[6.8125rem] w-[16.25rem] rounded-xs object-contain ${props.className}`}
+					className={cn(
+						"h-[6.8125rem] w-[16.25rem] rounded-xs object-contain",
+						props.className,
+					)}
 				/>
 
 				<div className="mb-3 mt-4 flex h-full flex-col gap-4 overflow-hidden">

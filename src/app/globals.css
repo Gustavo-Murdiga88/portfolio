@@ -7,6 +7,10 @@
     scroll-behavior: smooth;
   }
 
+  html {
+    scrollbar-gutter: stable both-edges;
+  }
+
   @supports selector(::-webkit-scrollbar) {
     html::-webkit-scrollbar {
       width: 8px;
