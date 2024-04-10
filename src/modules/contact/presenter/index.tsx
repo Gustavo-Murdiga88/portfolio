@@ -9,7 +9,12 @@ export function Contact() {
 	const userAlreadySendEmail = !userCanSendEmail(cookies);
 
 	return (
-		<section data-main id="contract" className="flex flex-col lg:h-[960px]">
+		<section
+			aria-label="Contato comigo"
+			data-main
+			id="contract"
+			className="flex flex-col lg:h-[960px]"
+		>
 			<Title title="Contato" />
 			<div
 				data-aos="fade-up"

@@ -18,7 +18,7 @@ export function CardPresenter({
 	urlDoc,
 }: ICardPresenter) {
 	return (
-		<div
+		<article
 			data-aos="fade-up"
 			data-aos-delay="20"
 			className={twMerge(
@@ -38,8 +38,9 @@ export function CardPresenter({
 				aria-label="NextJs"
 			/>
 
-			<aside className="prose mx-auto w-full lg:max-w-[65%]">
+			<figure className="prose mx-auto w-full lg:max-w-[65%]">
 				<Link
+					role="link"
 					className="text-lg text-neutral-100 no-underline transition-colors hover:text-blue-600 hover:underline"
 					href={urlDoc}
 					target="_blank"
@@ -50,7 +51,7 @@ export function CardPresenter({
 				<p className="prose text-neutral-950 dark:text-neutral-50">
 					{description}
 				</p>
-			</aside>
-		</div>
+			</figure>
+		</article>
 	);
 }

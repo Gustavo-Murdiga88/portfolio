@@ -9,7 +9,7 @@ export function About() {
 	const yearsOld = currentYear - 1999;
 
 	return (
-		<section data-main id="about" className="lg:mt-8">
+		<section aria-label="Sobre mim" data-main id="about" className="lg:mt-8">
 			<Title title="Sobre" />
 
 			<article

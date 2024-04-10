@@ -1,39 +1,20 @@
-import { Atom, Github, Linkedin } from "lucide-react";
+import { Atom } from "lucide-react";
 import Img from "next/image";
 import Link from "next/link";
-
-import { Title } from "@/components/title";
 
 export function Main() {
 	const currentYear = new Date().getFullYear();
 	const myYearsOld = currentYear - 1999;
 
 	return (
-		<main data-main id="home" className="mx-auto max-w-page">
-			<Title title="Apresentação" animation={false}>
-				<div className="ml-auto flex gap-4">
-					<Link
-						aria-label="github"
-						href="https://github.com/Gustavo-Murdiga88"
-						target="_blank"
-						className="text-neutral-100 transition-colors hover:text-neutral-400 focus-visible:ring-2 focus-visible:ring-neutral-100"
-					>
-						<span className="sr-only">github</span>
-						<Github />
-					</Link>
-					<Link
-						aria-label="LinkedIn"
-						href="https://www.linkedin.com/in/gustavo-murdiga-055470178/"
-						target="_blank"
-						className="text-neutral-100 transition-colors hover:text-neutral-400 focus-visible:ring-2 focus-visible:ring-neutral-100"
-					>
-						<span className="sr-only">LinkedIn</span>
-						<Linkedin />
-					</Link>
-				</div>
-			</Title>
-			<div className="my-10 flex flex-col-reverse items-center justify-center gap-10 px-6 lg:my-0 lg:min-h-[50rem] lg:flex-row lg:gap-24 2xl:min-h-[890px]">
-				<aside
+		<section
+			aria-label="Apresentação"
+			data-main
+			id="home"
+			className="mx-auto max-w-page"
+		>
+			<article className="my-10 flex flex-col-reverse items-center justify-center gap-10 px-6 lg:my-0 lg:min-h-[50rem] lg:flex-row lg:gap-24 2xl:min-h-[890px]">
+				<div
 					data-aos="fade-up"
 					className="flex flex-col items-start justify-center gap-6"
 				>
@@ -65,8 +46,8 @@ export function Main() {
 						Minhas informações
 						<Atom size={18} />
 					</Link>
-				</aside>
-				<div
+				</div>
+				<figure
 					data-aos="fade-up"
 					className="relative min-h-[300px] min-w-[18.75rem] overflow-hidden rounded-full before:absolute before:inset-0 before:origin-center before:scale-[200%] before:animate-rotate before:bg-gradient-to-r before:from-neutral-dark-1100 before:to-blue-300"
 				>
@@ -78,10 +59,10 @@ export function Main() {
 						quality={100}
 						decoding="async"
 						className="absolute left-1/2 top-1/2 origin-center -translate-x-1/2  -translate-y-1/2 rounded-full object-cover"
-						alt="Gustavo Murdiga"
+						alt="Uma imagem que representes o perfil do Gustavo Murdiga"
 					/>
-				</div>
-			</div>
-		</main>
+				</figure>
+			</article>
+		</section>
 	);
 }

@@ -5,16 +5,23 @@ import { time_line } from "./data";
 
 export function TimeLine() {
 	return (
-		<section data-main className="lg:min-h-content-height" id="time_line">
+		<section
+			aria-label="Minha experiência"
+			data-main
+			className="lg:min-h-content-height"
+			id="time_line"
+		>
 			<Title title="Trajetória" />
 
-			<main className="mx-auto max-w-[50rem]">
-				<h1
-					data-aos="fade-up"
-					className="mx-auto my-4 px-6  text-[44px] font-semibold md:my-10 md:gap-10 md:px-4"
-				>
-					Experiência
-				</h1>
+			<article className="mx-auto max-w-[50rem]">
+				<header>
+					<h1
+						data-aos="fade-up"
+						className="mx-auto my-4 px-6  text-[44px] font-semibold md:my-10 md:gap-10 md:px-4"
+					>
+						Experiência
+					</h1>
+				</header>
 
 				{time_line.map(
 					({ company, date, title, description, url, img, type }) => (
@@ -30,7 +37,7 @@ export function TimeLine() {
 						/>
 					),
 				)}
-			</main>
+			</article>
 		</section>
 	);
 }

@@ -43,26 +43,28 @@ export function Card({
 	...props
 }: ICardProps) {
 	return (
-		<section
+		<article
 			data-aos="fade-up"
 			{...props}
 			className="max-h-[25rem] w-[16.25rem] rounded-xs bg-card p-[0.125rem]"
 		>
-			<main className="flex h-full flex-col rounded-xs bg-neutral-dark-50 p-4">
-				<Image
-					draggable={false}
-					height={109}
-					width={260}
-					src={banners[type]}
-					alt={nameOfProject}
-					loading="lazy"
-					className={cn(
-						"h-[6.8125rem] w-[16.25rem] rounded-xs object-contain",
-						props.className,
-					)}
-				/>
+			<div className="flex h-full flex-col rounded-xs bg-neutral-dark-50 p-4">
+				<figure>
+					<Image
+						draggable={false}
+						height={109}
+						width={260}
+						src={banners[type]}
+						alt={nameOfProject}
+						loading="lazy"
+						className={cn(
+							"h-[6.8125rem] w-[16.25rem] rounded-xs object-contain",
+							props.className,
+						)}
+					/>
+				</figure>
 
-				<div className="mb-3 mt-4 flex h-full flex-col gap-4 overflow-hidden">
+				<header className="mb-3 mt-4 flex h-full flex-col gap-4 overflow-hidden">
 					<span className="block text-base font-semibold text-neutral-100 ">
 						{nameOfProject}
 					</span>
@@ -71,7 +73,7 @@ export function Card({
 							? details.substring(0, 280).concat("...")
 							: details}
 					</p>
-				</div>
+				</header>
 				<Link
 					className="block rounded-[0.5rem] border-[0.125rem] border-purple-700 p-2 text-center text-[12px] font-bold transition-all hover:bg-purple-700"
 					href={url || repo}
@@ -80,7 +82,7 @@ export function Card({
 				>
 					{url ? "Ver projeto" : "Ver repositório"}
 				</Link>
-			</main>
-		</section>
+			</div>
+		</article>
 	);
 }

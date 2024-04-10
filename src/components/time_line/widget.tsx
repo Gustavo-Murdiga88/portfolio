@@ -23,7 +23,7 @@ export function TimeBox({
 	img,
 }: ITimeLineProps) {
 	return (
-		<main
+		<article
 			data-aos="fade-up"
 			className={cn(
 				"flex min-h-[250px] flex-col md:flex-row justify-start border-b-zinc-100 mx-6 [&:not(:last-child)]:border-b-[0.0625rem] py-4 md:mx-auto gap-6 md:gap-10 mr-auto[&+&]:mt-6",
@@ -46,7 +46,7 @@ export function TimeBox({
 				/>
 			</Link>
 
-			<aside className="flex flex-1 flex-col items-center justify-center px-2 py-4 md:items-start md:px-8">
+			<div className="flex flex-1 flex-col items-center justify-center px-2 py-4 md:items-start md:px-8">
 				<header className="mb-1">
 					<span className="text-base font-semibold text-neutral-400">
 						{date}
@@ -71,7 +71,7 @@ export function TimeBox({
 						{description}
 					</pre>
 				</section>
-			</aside>
-		</main>
+			</div>
+		</article>
 	);
 }
