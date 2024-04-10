@@ -13,7 +13,7 @@ export function TimeLine() {
 		>
 			<Title title="Trajetória" />
 
-			<article className="mx-auto max-w-[50rem]">
+			<div className="mx-auto max-w-[50rem]">
 				<header>
 					<h1
 						data-aos="fade-up"
@@ -37,7 +37,7 @@ export function TimeLine() {
 						/>
 					),
 				)}
-			</article>
+			</div>
 		</section>
 	);
 }
