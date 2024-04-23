@@ -46,7 +46,7 @@ export function Card({
 		<article
 			data-aos="fade-up"
 			{...props}
-			className="max-h-[25rem] w-[16.25rem] rounded-xs bg-card p-[0.125rem]"
+			className="max-h-[25rem] w-[16.25rem] rounded-xs bg-card p-0.5"
 		>
 			<div className="flex h-full flex-col rounded-xs bg-neutral-dark-50 p-4">
 				<figure>

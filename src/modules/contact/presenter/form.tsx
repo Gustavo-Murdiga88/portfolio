@@ -93,7 +93,7 @@ export function Form({ userAlreadySendEmail }: IFormProps) {
 				}}
 				id="name"
 				placeholder="Nome"
-				className="h-[1.75rem] rounded-xs border-[2px] border-neutral-800 bg-neutral-50 p-4 text-[14px] font-semibold outline-none placeholder:text-neutral-200 focus-visible:ring-2 focus-visible:ring-zinc-100 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-neutral-dark-50 "
+				className="h-7 rounded-xs border-2 border-neutral-800 bg-neutral-50 p-4 text-[14px] font-semibold outline-none placeholder:text-neutral-200 focus-visible:ring-2 focus-visible:ring-zinc-100 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-neutral-dark-50 "
 			/>
 			<input
 				type="email"
@@ -111,7 +111,7 @@ export function Form({ userAlreadySendEmail }: IFormProps) {
 				inputMode="email"
 				id="email"
 				placeholder="E-mail"
-				className="h-[1.75rem] rounded-xs border-[2px] border-neutral-800 bg-neutral-50 p-4 text-[14px] font-semibold outline-none placeholder:text-neutral-200 focus-visible:ring-2 focus-visible:ring-zinc-100 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-neutral-dark-50"
+				className="h-7 rounded-xs border-2 border-neutral-800 bg-neutral-50 p-4 text-[14px] font-semibold outline-none placeholder:text-neutral-200 focus-visible:ring-2 focus-visible:ring-zinc-100 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-neutral-dark-50"
 			/>
 
 			<textarea
@@ -128,13 +128,13 @@ export function Form({ userAlreadySendEmail }: IFormProps) {
 				required
 				disabled={formState.submitting}
 				placeholder="Digite uma mensagem..."
-				className="h-[250px] resize-none rounded-xs border-[2px] border-neutral-800 bg-neutral-50 p-4 text-[14px] font-semibold outline-none placeholder:text-neutral-200 focus-visible:ring-2 focus-visible:ring-zinc-100 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-neutral-dark-50 "
+				className="h-[250px] resize-none rounded-xs border-2 border-neutral-800 bg-neutral-50 p-4 text-[14px] font-semibold outline-none placeholder:text-neutral-200 focus-visible:ring-2 focus-visible:ring-zinc-100 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-neutral-dark-50 "
 			/>
 			<button
 				aria-label="Enviar"
 				disabled={formState.userAlreadySendEmail}
 				type="submit"
-				className="flex items-center justify-center gap-4 rounded-[0.25rem] bg-blue-200 p-2 font-semibold text-neutral-100 focus:ring-2 focus:ring-neutral-50 disabled:cursor-not-allowed disabled:opacity-60"
+				className="flex items-center justify-center gap-4 rounded-DEFAULT bg-blue-200 p-2 font-semibold text-neutral-100 focus:ring-2 focus:ring-neutral-50 disabled:cursor-not-allowed disabled:opacity-60"
 			>
 				Enviar
 				{formState.isLoading && (

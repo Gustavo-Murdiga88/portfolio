@@ -13,7 +13,7 @@ import { TimeLine } from "@/modules/time_line/presenter";
 export default function Home() {
 	return (
 		<>
-			<Title title="Apresentação" animation={false}>
+			<Title id="home" dataMain title="Apresentação" animation={false}>
 				<nav aria-label="Redes sociais" className="ml-auto flex gap-4">
 					<Link
 						aria-label="github"

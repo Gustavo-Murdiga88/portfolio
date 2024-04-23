@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --scroll-background: #121214;
+  --scroll-thumb-background: #000;
+}
+
+
 @layer utilities {
   * {
     scroll-behavior: smooth;
@@ -13,16 +19,16 @@
 
   @supports selector(::-webkit-scrollbar) {
     html::-webkit-scrollbar {
-      width: 8px;
+      width: 0.5rem;
     }
 
     html::-webkit-scrollbar-thumb {
-      background-color: #000;
-      border-radius: 3px;
+      background-color: var(--scroll-thumb-background);
+      border-radius: 0.1875rem;
     }
 
     html::-webkit-scrollbar-track {
-      background-color: #121214;
+      background-color: var(--scroll-background);
     }
   }
 }
