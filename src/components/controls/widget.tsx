@@ -13,9 +13,7 @@ type ControlsProps =
 	| "about";
 
 export function Controls() {
-	const location = window.location.hash?.replace("#", "") as ControlsProps;
-
-	const [selected, setSelected] = useState<ControlsProps>(location);
+	const [selected, setSelected] = useState<ControlsProps>("home");
 
 	function changeStates(value: ControlsProps) {
 		setSelected(value);
@@ -45,6 +43,11 @@ export function Controls() {
 				observer.unobserve(node);
 			});
 		};
+	}, []);
+
+	useEffect(() => {
+		const location = window?.location.hash?.replace("#", "") as ControlsProps;
+		setSelected(location);
 	}, []);
 
 	return (
