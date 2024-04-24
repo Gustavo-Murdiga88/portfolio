@@ -8,11 +8,11 @@ export function Skills() {
 		<section
 			aria-label="Habilidades e Tecnologias"
 			data-main
+			data-section="skills"
 			className="flex justify-center lg:min-h-content-height"
-			id="skills"
 		>
 			<div className="mb-20 flex w-full flex-col">
-				<Title title="Habilidades e Tecnologias" />
+				<Title title="Habilidades e Tecnologias" id="skills" />
 
 				<div className="mx-auto mt-8 flex flex-col gap-10 p-4 lg:p-0">
 					{frameworks.map(({ description, id, imageUrl, title, urlDoc }) => (

@@ -1,6 +1,8 @@
-import { Atom } from "lucide-react";
+import { Atom, Github, Linkedin } from "lucide-react";
 import Img from "next/image";
 import Link from "next/link";
+
+import { Title } from "@/components/title";
 
 export function Main() {
 	const currentYear = new Date().getFullYear();
@@ -8,11 +10,33 @@ export function Main() {
 
 	return (
 		<section
-			aria-label="Apresentação"
 			data-main
-			id="home"
+			data-section="home"
+			aria-label="Apresentação"
 			className="mx-auto max-w-page"
 		>
+			<Title id="home" title="Apresentação">
+				<nav aria-label="Redes sociais" className="ml-auto flex gap-4">
+					<Link
+						aria-label="github"
+						href="https://github.com/Gustavo-Murdiga88"
+						target="_blank"
+						className="text-neutral-100 transition-colors hover:text-neutral-400 focus-visible:ring-2 focus-visible:ring-neutral-100"
+					>
+						<span className="sr-only">github</span>
+						<Github />
+					</Link>
+					<Link
+						aria-label="LinkedIn"
+						href="https://www.linkedin.com/in/gustavo-murdiga-055470178/"
+						target="_blank"
+						className="text-neutral-100 transition-colors hover:text-neutral-400 focus-visible:ring-2 focus-visible:ring-neutral-100"
+					>
+						<span className="sr-only">LinkedIn</span>
+						<Linkedin />
+					</Link>
+				</nav>
+			</Title>
 			<article className="my-10 flex flex-col-reverse items-center justify-center gap-10 px-6 lg:my-0 lg:min-h-[50rem] lg:flex-row lg:gap-24 2xl:min-h-[890px]">
 				<div
 					data-aos="fade-up"

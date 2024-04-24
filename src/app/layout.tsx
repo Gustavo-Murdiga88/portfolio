@@ -1,5 +1,4 @@
 import "./globals.css";
-import "@/lib/aos";
 import "@/lib/nodemailer";
 
 import { Poppins } from "next/font/google";

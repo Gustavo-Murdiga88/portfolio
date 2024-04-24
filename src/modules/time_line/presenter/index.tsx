@@ -8,10 +8,10 @@ export function TimeLine() {
 		<section
 			aria-label="Minha experiência"
 			data-main
+			data-section="time_line"
 			className="lg:min-h-content-height"
-			id="time_line"
 		>
-			<Title title="Trajetória" />
+			<Title title="Trajetória" id="time_line" />
 
 			<div className="mx-auto max-w-[50rem]">
 				<header>

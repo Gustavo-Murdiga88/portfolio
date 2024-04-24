@@ -25,12 +25,11 @@ export function CardPresenter({
 				),
 			)}
 		>
-			<figure>
+			<figure className="mx-auto">
 				<Image
 					src={imageUrl}
 					height={120}
 					width={120}
-					className="mx-auto"
 					loading="lazy"
 					alt={title}
 					title={title}

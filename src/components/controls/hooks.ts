@@ -5,7 +5,7 @@ export type ControlsProps =
 	| "skills"
 	| "time_line"
 	| "show_case"
-	| "contract"
+	| "contact"
 	| "about";
 export function useControls() {
 	const [selected, setSelected] = useState<ControlsProps>("home");
@@ -21,12 +21,14 @@ export function useControls() {
 		const observer = new IntersectionObserver(
 			(value) => {
 				if (value[0].isIntersecting) {
-					setSelected(value[0].target.id as ControlsProps);
-					window.history.pushState({}, "", `/#${value[0].target.id}`);
+					const data = (value[0].target as HTMLElement).dataset
+						.section as ControlsProps;
+					setSelected(data);
+					window.history.pushState({}, "", `/#${data}`);
 				}
 			},
 			{
-				threshold: [0.2],
+				threshold: [0.1],
 			},
 		);
 

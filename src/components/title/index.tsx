@@ -1,25 +1,13 @@
-import { ReactNode } from "react";
+import { ComponentProps, ReactNode } from "react";
 
-interface ITitleProps {
+interface ITitleProps extends ComponentProps<"header"> {
 	title: string;
 	children?: ReactNode;
-	animation?: boolean;
-	id?: string;
-	dataMain?: boolean;
 }
-export function Title({
-	title,
-	children,
-	id,
-	dataMain = false,
-	animation = true,
-}: ITitleProps) {
+export function Title({ title, children, ...props }: ITitleProps) {
 	return (
-		<header id={id} data-main={dataMain}>
-			<strong
-				data-aos={animation ? "fade-up" : undefined}
-				className="mx-4 flex max-w-page border-b border-b-neutral-300 px-5 py-4 md:mx-auto md:w-full"
-			>
+		<header {...props}>
+			<strong className="mx-4 flex max-w-page border-b border-b-neutral-300 px-5 py-4 md:mx-auto md:w-full">
 				<span className="cursor-default uppercase text-neutral-600  dark:text-neutral-dark-900">
 					{title}
 				</span>

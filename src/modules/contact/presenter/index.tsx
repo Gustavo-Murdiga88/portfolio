@@ -12,10 +12,10 @@ export function Contact() {
 		<section
 			aria-label="Contato comigo"
 			data-main
-			id="contract"
+			data-section="contact"
 			className="flex flex-col lg:h-[960px]"
 		>
-			<Title title="Contato" />
+			<Title title="Contato" id="contact" />
 			<div
 				data-aos="fade-up"
 				className="mx-auto mb-20 mt-10 flex max-w-[62.5rem] flex-1 flex-col-reverse items-center justify-center gap-10 px-4 md:flex-row lg:mb-10"

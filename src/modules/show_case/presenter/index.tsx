@@ -8,10 +8,10 @@ export function ShowCase() {
 		<section
 			aria-label="Projetos práticos"
 			data-main
-			id="show_case"
+			data-section="show_case"
 			className="mx-auto max-w-page"
 		>
-			<Title title="Projetos práticos" />
+			<Title title="Projetos práticos" id="show_case" />
 
 			<div className="grid-col-1 mx-auto my-8 grid max-w-[56.25rem] justify-center gap-5 px-8 md:grid-cols-3">
 				{projects.map((props) => (

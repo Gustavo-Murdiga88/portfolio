@@ -9,29 +9,27 @@ export function About() {
 	const yearsOld = currentYear - 1999;
 
 	return (
-		<section aria-label="Sobre mim" data-main id="about" className="lg:mt-8">
-			<Title title="Sobre" />
+		<section
+			aria-label="Sobre mim"
+			data-main
+			data-section="about"
+			className="lg:mt-8"
+		>
+			<Title title="Sobre" id="about" />
 
-			<article
-				data-aos="fade-up"
-				className="prose prose-zinc mx-auto max-w-[52rem] p-8"
-			>
+			<article className="prose prose-zinc mx-auto max-w-[52rem] p-8">
 				<header
 					data-aos="fade-up"
 					className="mb-6 flex flex-col items-center gap-10 md:flex-row"
 				>
 					<Image
-						data-aos="fade-up"
 						src="https://github.com/gustavo-murdiga88.png"
 						height={270}
 						width={270}
 						className="m-0 rounded-xl"
 						alt="Github avatar"
 					/>
-					<div
-						data-aos="fade-up"
-						className="flex flex-col items-center justify-center gap-4 text-base font-semibold uppercase md:items-start"
-					>
+					<div className="flex flex-col items-center justify-center gap-4 text-base font-semibold uppercase md:items-start">
 						<span className="text-neutral-200">Full-stack developer</span>
 						<h1 className="mb-1 text-center font-semibold leading-none text-zinc-50  md:text-start">
 							Gustavo Murdiga
