@@ -33,11 +33,21 @@ const config: Config = {
 						opacity: "1",
 					},
 				},
+				gradient: {
+					"50%": {
+						"background-position": "100% 50%",
+					},
+					"100%": {
+						"background-position": "0% 50%",
+					},
+				},
 			},
 
 			animation: {
 				rotate: "rotate 2s cubic-bezier(.26,.09,.81,.55) infinite",
+				"rotate-linear": "rotate 3s linear infinite",
 				"fade-in": "fade-in 1s ease-in-out forwards",
+				gradient: "gradient 5s ease-in-out infinite alternate",
 			},
 
 			minHeight: {
@@ -92,6 +102,9 @@ const config: Config = {
 				"gradient-conic":
 					"conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
 				card: `linear-gradient(to right top, rgb(139, 92, 246), rgb(253, 186, 116))`,
+				subtitle: "linear-gradient(180deg, #2af598 0%, #009efd 100%)",
+				profile:
+					"linear-gradient(to right, transparent 10%, rgba(42,245,152,0.2) 30%, #2af598 50%, #009efd 100%)",
 			},
 
 			colors: {

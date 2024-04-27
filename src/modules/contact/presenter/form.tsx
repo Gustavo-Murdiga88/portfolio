@@ -74,6 +74,8 @@ export function Form({ userAlreadySendEmail }: IFormProps) {
 
 	return (
 		<form
+			data-main
+			data-section="contact"
 			ref={refForm}
 			onSubmit={handleSubmit}
 			className="relative mx-4 flex w-full flex-col gap-8 rounded-xs border border-neutral-800 bg-neutral-950 px-4 py-6 lg:w-[668px] lg:px-10 "
@@ -134,7 +136,9 @@ export function Form({ userAlreadySendEmail }: IFormProps) {
 				aria-label="Enviar"
 				disabled={formState.userAlreadySendEmail}
 				type="submit"
-				className="flex items-center justify-center gap-4 rounded-DEFAULT bg-blue-200 p-2 font-semibold text-neutral-100 focus:ring-2 focus:ring-neutral-50 disabled:cursor-not-allowed disabled:opacity-60"
+				data-main
+				data-section="contact"
+				className="flex items-center justify-center gap-4 rounded-DEFAULT rounded-xs bg-blue-200 p-2 font-semibold text-neutral-100 focus:ring-2 focus:ring-neutral-50 disabled:cursor-not-allowed disabled:opacity-60"
 			>
 				Enviar
 				{formState.isLoading && (

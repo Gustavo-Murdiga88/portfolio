@@ -13,7 +13,7 @@ export function Controls() {
 	const { selected } = useControls();
 
 	return (
-		<nav className="fixed inset-x-0 bottom-2 z-50 mx-2 animate-fade-in rounded-sm border border-neutral-600 bg-neutral-100 p-4 dark:border-neutral-dark-600 dark:bg-neutral-dark-100 xl:inset-x-auto xl:bottom-auto xl:right-[4.75rem] xl:top-1/2 xl:-translate-y-1/2 xl:translate-x-full xl:rounded-[9999px] xl:py-[40px] 2xl:right-controls">
+		<nav className="fixed inset-x-0 bottom-2 z-50 mx-2 animate-fade-in rounded-sm border border-neutral-600 bg-neutral-100 p-2 dark:border-neutral-dark-600 dark:bg-neutral-dark-100 xl:inset-x-auto xl:bottom-auto xl:right-[4.75rem] xl:top-1/2 xl:-translate-y-1/2 xl:translate-x-full xl:rounded-[9999px] xl:py-[40px] 2xl:right-controls">
 			<ul
 				role="menu"
 				aria-label="Navegação principal"

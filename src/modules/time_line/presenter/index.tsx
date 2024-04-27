@@ -5,28 +5,21 @@ import { time_line } from "./data";
 
 export function TimeLine() {
 	return (
-		<section
-			aria-label="Minha experiência"
-			data-main
-			data-section="time_line"
-			className="lg:min-h-content-height"
-		>
-			<Title title="Trajetória" id="time_line" />
+		<section aria-label="Minha experiência" className="lg:min-h-content-height">
+			<Title
+				title="Trajetória professional"
+				id="time_line"
+				data-main
+				data-section="time_line"
+			/>
 
 			<div className="mx-auto max-w-[50rem]">
-				<header>
-					<h1
-						data-aos="fade-up"
-						className="mx-auto my-4 px-6  text-[44px] font-semibold md:my-10 md:gap-10 md:px-4"
-					>
-						Experiência
-					</h1>
-				</header>
-
 				{time_line.map(
-					({ company, date, title, description, url, img, type }) => (
+					({ company, date, title, description, url, img, type }, index) => (
 						<TimeBox
 							key={title}
+							data-main={index === time_line.length - 1 || index === 0}
+							data-section="time_line"
 							company={company}
 							date={date}
 							description={description}

@@ -31,6 +31,11 @@ export interface IBannerProps {
 	repo?: string;
 	url?: string;
 	type?: keyof typeof banners;
+	objectFit?:
+		| "object-contain"
+		| "object-cover"
+		| "object-fill"
+		| "object-scale-down";
 }
 interface ICardProps extends ComponentProps<"section">, IBannerProps {}
 
@@ -40,13 +45,14 @@ export function Card({
 	url,
 	repo,
 	type = "react",
+	objectFit = "object-scale-down",
 	...props
 }: ICardProps) {
 	return (
 		<article
 			data-aos="fade-up"
 			{...props}
-			className="max-h-[25rem] w-[16.25rem] rounded-xs bg-card p-0.5"
+			className="rounded-xs bg-card p-0.5 md:max-h-[25rem] md:w-[16.25rem]"
 		>
 			<div className="flex h-full flex-col rounded-xs bg-neutral-dark-50 p-4">
 				<figure>
@@ -58,7 +64,8 @@ export function Card({
 						alt={nameOfProject}
 						loading="lazy"
 						className={cn(
-							"h-[6.8125rem] w-[16.25rem] rounded-xs object-contain",
+							objectFit,
+							"w-full h-[5.625rem] md:w-[16.25rem] rounded-xs",
 							props.className,
 						)}
 					/>

@@ -28,7 +28,7 @@ export function useControls() {
 				}
 			},
 			{
-				threshold: [0.1],
+				threshold: [1],
 			},
 		);
 

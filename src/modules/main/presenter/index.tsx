@@ -9,13 +9,8 @@ export function Main() {
 	const myYearsOld = currentYear - 1999;
 
 	return (
-		<section
-			data-main
-			data-section="home"
-			aria-label="Apresentação"
-			className="mx-auto max-w-page"
-		>
-			<Title id="home" title="Apresentação">
+		<section aria-label="Apresentação" className="mx-auto max-w-page">
+			<Title id="home" title="Apresentação" data-main data-section="home">
 				<nav aria-label="Redes sociais" className="ml-auto flex gap-4">
 					<Link
 						aria-label="github"
@@ -37,19 +32,22 @@ export function Main() {
 					</Link>
 				</nav>
 			</Title>
-			<article className="my-10 flex flex-col-reverse items-center justify-center gap-10 px-6 lg:my-0 lg:min-h-[50rem] lg:flex-row lg:gap-24 2xl:min-h-[890px]">
+
+			<article className="relative my-10 flex flex-col-reverse items-center justify-center gap-10 px-6 lg:my-0 lg:min-h-[50rem] lg:flex-row lg:gap-24 2xl:min-h-[890px]">
+				<div className="absolute left-1/2 top-1/2 h-[25rem] w-[25rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-300 blur-[15.625rem] " />
+
 				<div
 					data-aos="fade-up"
-					className="flex flex-col items-start justify-center gap-6"
+					className="z-10 flex flex-col items-start justify-center gap-6"
 				>
 					<div className="prose prose-zinc">
 						<h1 className="mb-2 text-2xl font-semibold leading-tight tracking-tighter text-neutral-100 lg:text-3xl">
 							Gustavo Murdiga
 						</h1>
-						<strong className="text-xs font-semibold text-blue-600 transition-colors hover:text-blue-800 hover:underline hover:underline-offset-8 lg:text-lg">
+						<strong className="subtitle text-xs font-semibold text-blue-600 transition-colors hover:text-blue-800 hover:underline hover:underline-offset-8 lg:text-lg">
 							Desenvolvedor Full-stack
 						</strong>
-						<p className="font-semibold tracking-tighter text-neutral-400">
+						<p className="text-[0.75rem] font-semibold tracking-tighter text-neutral-100 md:text-base">
 							Jauense de {myYearsOld} anos, entusiasta e dedicado a criar novos
 							projetos, busco constantemente desafios que me permitam aprimorar
 							minhas habilidades tanto no front-end quanto no back-end. Minha
@@ -65,7 +63,9 @@ export function Main() {
 						target="_blank"
 						aria-label="Minhas informações"
 						href="/curr.pdf"
-						className="flex w-full items-center justify-center gap-4 rounded-xs border border-neutral-400 p-2 px-4 font-semibold text-neutral-100 transition-colors hover:bg-neutral-100 hover:text-neutral-950 lg:max-w-[15.625rem]"
+						data-main
+						data-section="home"
+						className="flex w-full animate-gradient items-center justify-center gap-4 rounded-xs bg-subtitle bg-[length:300%_300%] p-2 px-4 text-base font-semibold text-neutral-950 lg:max-w-[15.625rem]"
 					>
 						Minhas informações
 						<Atom size={18} />
@@ -73,7 +73,7 @@ export function Main() {
 				</div>
 				<figure
 					data-aos="fade-up"
-					className="relative min-h-[300px] min-w-[18.75rem] overflow-hidden rounded-full before:absolute before:inset-0 before:origin-center before:scale-[200%] before:animate-rotate before:bg-gradient-to-r before:from-neutral-dark-1100 before:to-blue-300"
+					className="relative min-h-[300px] min-w-[18.75rem] overflow-hidden rounded-full before:absolute before:inset-0 before:origin-center before:scale-[200%] before:animate-rotate-linear before:bg-profile"
 				>
 					<Img
 						src="https://github.com/gustavo-murdiga88.png"
@@ -81,6 +81,8 @@ export function Main() {
 						width={292}
 						loading="lazy"
 						quality={100}
+						data-main
+						data-section="home"
 						decoding="async"
 						className="absolute left-1/2 top-1/2 origin-center -translate-x-1/2  -translate-y-1/2 rounded-full object-cover"
 						alt="Uma imagem que representes o perfil do Gustavo Murdiga"

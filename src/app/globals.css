@@ -32,3 +32,10 @@
     }
   }
 }
+
+@layer components {
+  .subtitle {
+    @apply bg-subtitle bg-clip-text animate-rotate;
+    -webkit-text-fill-color: transparent;
+  }
+}
