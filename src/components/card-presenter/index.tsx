@@ -30,9 +30,9 @@ export function CardPresenter({
 				),
 			)}
 		>
-			<div className="absolute left-1/2 top-1/2 h-2/5 w-2/5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-300 blur-[200px] md:h-1/2 md:w-1/2  md:blur-[18.75rem] " />
-			<div className="z-10 flex flex-col justify-center">
-				<figure className="mx-auto">
+			<div className="relative mx-auto">
+				<div className="absolute left-1/2 top-1/2 h-[7.5rem] w-[7.5rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-200 blur-[90px]" />
+				<figure className="z-10">
 					<Image
 						src={imageUrl}
 						height={120}
@@ -43,22 +43,22 @@ export function CardPresenter({
 						aria-label={title}
 					/>
 				</figure>
-
-				<article className="prose mx-auto p-4">
-					<Link
-						role="link"
-						className="text-sm text-neutral-100 no-underline transition-colors hover:text-blue-600 hover:underline md:text-lg"
-						href={urlDoc}
-						target="_blank"
-						aria-label={urlDoc}
-					>
-						{title}
-					</Link>
-					<p className="prose text-[0.75rem] text-neutral-950 dark:text-neutral-50 md:text-[0.875rem]">
-						{description}
-					</p>
-				</article>
 			</div>
+
+			<article className="prose mx-auto p-4">
+				<Link
+					role="link"
+					className="text-sm text-neutral-100 no-underline transition-colors hover:text-blue-600 hover:underline md:text-lg"
+					href={urlDoc}
+					target="_blank"
+					aria-label={urlDoc}
+				>
+					{title}
+				</Link>
+				<p className="prose text-[0.75rem] text-neutral-950 dark:text-neutral-50 md:text-[0.875rem]">
+					{description}
+				</p>
+			</article>
 		</div>
 	);
 }
