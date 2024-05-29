@@ -50,7 +50,6 @@ export function Card({
 }: ICardProps) {
 	return (
 		<article
-			data-aos="fade-up"
 			{...props}
 			className="rounded-xs bg-card p-0.5 md:max-h-[25rem] md:w-[16.25rem]"
 		>
@@ -63,6 +62,7 @@ export function Card({
 						src={banners[type]}
 						alt={nameOfProject}
 						loading="lazy"
+						decoding="async"
 						className={cn(
 							objectFit,
 							"w-full h-[5.625rem] md:w-[16.25rem] rounded-xs",

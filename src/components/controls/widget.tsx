@@ -3,13 +3,9 @@
 import { GraduationCap, Home, Mail, Shapes, Tv, User } from "lucide-react";
 import Link from "next/link";
 
-import { InitAOS } from "@/lib/aos";
-
 import { useControls } from "./hooks";
 
 export function Controls() {
-	InitAOS();
-
 	const { selected } = useControls();
 
 	return (

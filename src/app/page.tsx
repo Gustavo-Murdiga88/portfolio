@@ -6,6 +6,8 @@ import { ShowCase } from "@/modules/show_case/presenter";
 import { Skills } from "@/modules/skills/presenter";
 import { TimeLine } from "@/modules/time_line/presenter";
 
+export const dynamic = "force-static";
+
 export default function Home() {
 	return (
 		<>

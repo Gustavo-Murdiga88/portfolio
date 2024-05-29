@@ -5,33 +5,26 @@ import { frameworks } from "./data";
 
 export function Skills() {
 	return (
-		<section
-			aria-label="Habilidades e Tecnologias"
-			className="flex justify-center lg:min-h-content-height"
-		>
-			<div className="mb-20 flex w-full flex-col">
+		<section aria-label="Habilidades e Tecnologias">
+			<div className="flex w-full flex-col">
 				<Title
 					title="Habilidades e Tecnologias"
 					id="skills"
-					data-aos="fade-up"
 					data-main
 					data-section="skills"
 				/>
 
-				<div className="mx-auto mt-8 flex flex-col gap-10 p-4 lg:p-0">
-					{frameworks.map(
-						({ description, id, imageUrl, title, urlDoc }, index) => (
-							<CardPresenter
-								key={id}
-								data-main={index === frameworks.length - 1 || index === 0}
-								data-section="skills"
-								description={description}
-								imageUrl={imageUrl}
-								title={title}
-								urlDoc={urlDoc}
-							/>
-						),
-					)}
+				<div className="mx-auto my-8 grid grid-cols-2 gap-10 lg:my-20 lg:grid-cols-4">
+					{frameworks.map(({ id, imageUrl, title, urlDoc }, index) => (
+						<CardPresenter
+							key={id}
+							data-main={index === frameworks.length - 1 || index === 0}
+							data-section="skills"
+							imageUrl={imageUrl}
+							title={title}
+							urlDoc={urlDoc}
+						/>
+					))}
 				</div>
 			</div>
 		</section>

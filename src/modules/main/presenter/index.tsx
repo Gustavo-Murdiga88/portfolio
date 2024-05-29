@@ -13,22 +13,20 @@ export function Main() {
 			<Title id="home" title="Apresentação" data-main data-section="home">
 				<nav aria-label="Redes sociais" className="ml-auto flex gap-4">
 					<Link
-						aria-label="github"
+						aria-labelledby="github"
 						href="https://github.com/Gustavo-Murdiga88"
 						target="_blank"
 						className="text-neutral-100 transition-colors hover:text-neutral-400 focus-visible:ring-2 focus-visible:ring-neutral-100"
 					>
-						<span className="sr-only">github</span>
-						<Github />
+						<Github id="github" aria-label="github" />
 					</Link>
 					<Link
-						aria-label="LinkedIn"
+						aria-labelledby="LinkedIn"
 						href="https://www.linkedin.com/in/gustavo-murdiga-055470178/"
 						target="_blank"
 						className="text-neutral-100 transition-colors hover:text-neutral-400 focus-visible:ring-2 focus-visible:ring-neutral-100"
 					>
-						<span className="sr-only">LinkedIn</span>
-						<Linkedin />
+						<Linkedin id="LinkedIn" aria-label="LinkedIn" />
 					</Link>
 				</nav>
 			</Title>
@@ -48,15 +46,10 @@ export function Main() {
 							Desenvolvedor Full-stack
 						</strong>
 						<p className="text-[0.75rem] font-semibold tracking-tighter text-neutral-100 md:text-base">
-							Jauense de {myYearsOld} anos, entusiasta e dedicado a criar novos
-							projetos, busco constantemente desafios que me permitam aprimorar
-							minhas habilidades tanto no front-end quanto no back-end. Minha
-							experiência sólida em tecnologias como React, Next.js, Node.js e
-							Flutter me proporcionou a capacidade de enfrentar obstáculos
-							complexos e contribuir para projetos inovadores. Tenho paixão por
-							superar desafios, desenvolver soluções robustas e manter-me
-							atualizado com as últimas tendências tecnológicas. Estou sempre
-							preparado para criar projetos ambiciosos.
+							Brasileiro, nascido em Jaú no interior de São paulo, com{" "}
+							{myYearsOld} anos, católico, estudante e um desenvolvedor que
+							buscar ser melhor, não apenas nas linhas de código, mas como
+							pessoa.
 						</p>
 					</div>
 					<Link
@@ -65,9 +58,9 @@ export function Main() {
 						href="/curr.pdf"
 						data-main
 						data-section="home"
-						className="flex w-full animate-gradient items-center justify-center gap-4 rounded-xs bg-subtitle bg-[length:300%_300%] p-2 px-4 text-base font-semibold text-neutral-950 lg:max-w-[15.625rem]"
+						className="flex w-full animate-gradient items-center justify-center gap-4 rounded-xs bg-subtitle bg-[length:300%_300%] p-2 px-4 text-base font-semibold text-neutral-950 lg:max-w-[200px]"
 					>
-						Minhas informações
+						saiba mais
 						<Atom size={18} />
 					</Link>
 				</div>
