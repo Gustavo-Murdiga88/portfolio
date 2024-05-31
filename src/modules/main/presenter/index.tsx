@@ -72,13 +72,15 @@ export function Main() {
 						src="https://github.com/gustavo-murdiga88.png"
 						height={292}
 						width={292}
-						loading="lazy"
-						quality={100}
+						loading="eager"
+						placeholder="blur"
+						fetchPriority="high"
 						data-main
 						data-section="home"
-						decoding="async"
+						blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkD9l9BAADXAHcNBnuMgAAAABJRU5ErkJggg=="
+						decoding="sync"
 						className="absolute left-1/2 top-1/2 origin-center -translate-x-1/2  -translate-y-1/2 rounded-full object-cover"
-						alt="Uma imagem que representes o perfil do Gustavo Murdiga"
+						alt="Uma imagem que representa o perfil do Gustavo Murdiga"
 					/>
 				</figure>
 			</article>

@@ -32,6 +32,9 @@ export function CardPresenter({
 					height={110}
 					width={110}
 					loading="lazy"
+					decoding="async"
+					placeholder="blur"
+					blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN89PLTEQAI9QODPBr4ewAAAABJRU5ErkJggg=="
 					alt={title}
 					title={title}
 					aria-label={title}
