@@ -46,6 +46,9 @@ export function Main() {
 							Desenvolvedor Full-stack
 						</strong>
 						<p className="text-[0.75rem] font-semibold tracking-tighter text-neutral-100 md:text-base">
+							Sou um engenheiro de software com 4 anos de experiência,
+							especializado em tecnologias como React.js, Next.js, Node.js,
+							NestJS e AWS. <br />
 							Brasileiro, nascido em Jaú no interior de São paulo, com{" "}
 							{myYearsOld} anos, católico, estudante e um desenvolvedor que
 							buscar ser melhor, não apenas nas linhas de código, mas como
