@@ -1,6 +1,6 @@
 "use client";
 
-import { Ring } from "@uiball/loaders";
+import { Loader2 } from "lucide-react";
 import { ComponentRef, FormEvent, useRef, useState } from "react";
 import { toast } from "sonner";
 
@@ -142,7 +142,7 @@ export function Form({ userAlreadySendEmail }: IFormProps) {
 			>
 				Enviar
 				{formState.isLoading && (
-					<Ring size={16} lineWeight={5} speed={2} color="#fff" />
+					<Loader2 className="animate-spin" size={16} color="#fff" />
 				)}
 			</button>
 		</form>
