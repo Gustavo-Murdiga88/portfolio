@@ -1,4 +1,4 @@
-import { Atom, Github, Linkedin } from "lucide-react";
+import { Atom, Book, Github, Linkedin } from "lucide-react";
 import Img from "next/image";
 import Link from "next/link";
 
@@ -11,14 +11,26 @@ export function Main() {
 	return (
 		<section aria-label="Apresentação" className="mx-auto max-w-page">
 			<Title id="home" title="Apresentação" data-main data-section="home">
-				<nav aria-label="Redes sociais" className="ml-auto flex gap-4">
+				<nav
+					aria-label="Redes sociais"
+					className="ml-auto flex items-center gap-4"
+				>
+					<Link
+						aria-labelledby="bible"
+						href="/daily-liturgy"
+						title="Liturgia diária"
+						className="text-neutral-100 transition-colors hover:text-neutral-400 focus-visible:ring-2 focus-visible:ring-neutral-100"
+					>
+						<Book id="bible" aria-label="Bíblia" size={20} />
+					</Link>
+
 					<Link
 						aria-labelledby="github"
 						href="https://github.com/Gustavo-Murdiga88"
 						target="_blank"
 						className="text-neutral-100 transition-colors hover:text-neutral-400 focus-visible:ring-2 focus-visible:ring-neutral-100"
 					>
-						<Github id="github" aria-label="github" />
+						<Github id="github" aria-label="github" size={20} />
 					</Link>
 					<Link
 						aria-labelledby="LinkedIn"
@@ -26,7 +38,7 @@ export function Main() {
 						target="_blank"
 						className="text-neutral-100 transition-colors hover:text-neutral-400 focus-visible:ring-2 focus-visible:ring-neutral-100"
 					>
-						<Linkedin id="LinkedIn" aria-label="LinkedIn" />
+						<Linkedin id="LinkedIn" aria-label="LinkedIn" size={20} />
 					</Link>
 				</nav>
 			</Title>

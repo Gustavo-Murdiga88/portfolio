@@ -32,6 +32,9 @@ export const options: Metadata = {
 		description:
 			"Este projeto visa destacar minhas habilidades para recrutadores e desenvolvedores, demonstrando minha capacidade de contribuir para a criação de um mundo mais feliz.",
 		title: "Olá, eu sou o Gustavo!",
+		images: [
+			"https://1drv.ms/i/c/a37e0f73b46925c9/UQPJJWm0cw9-IICjyA8AAAAAADMOnQ4yAdE9meQ?width=1024",
+		],
 	},
 	category: "Portfólios",
 	creator: "GM Dev",

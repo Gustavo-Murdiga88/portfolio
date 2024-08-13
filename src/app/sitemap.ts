@@ -8,5 +8,11 @@ export default function siteMap(): MetadataRoute.Sitemap {
 			lastModified: new Date(),
 			priority: 1,
 		},
+		{
+			url: "https://gustavomurdiga.vercel.app/daily-liturgy",
+			changeFrequency: "weekly",
+			lastModified: new Date(),
+			priority: 1,
+		},
 	];
 }
