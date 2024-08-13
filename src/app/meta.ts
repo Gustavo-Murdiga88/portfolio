@@ -6,8 +6,7 @@ export const options: Metadata = {
 		canonical: "/",
 	},
 	title: "Olá, eu sou o Gustavo!",
-	description:
-		"Este é um projeto para exibir às recrutas e a todos os desenvolvedores as minhas habilidades, mostrando que posso contribuir para tornar o mundo um lugar mais feliz.",
+	description: "Seja bem vindo, espero que goste da minha história",
 	authors: [
 		{
 			name: "Gustavo Murdiga",
@@ -18,23 +17,17 @@ export const options: Metadata = {
 		type: "profile",
 		title: "Olá, eu sou o Gustavo!",
 		url: "https://gustavomurdiga.vercel.app/",
-		description:
-			"Este projeto visa destacar minhas habilidades para recrutadores e desenvolvedores, demonstrando minha capacidade de contribuir para a criação de um mundo mais feliz.",
+		description: "Seja bem vindo, espero que goste da minha história",
 		firstName: "Gustavo",
 		lastName: "Murdiga",
 		username: "Gustavo Murdiga",
-		images: [
-			"https://1drv.ms/i/c/a37e0f73b46925c9/UQPJJWm0cw9-IICjyA8AAAAAADMOnQ4yAdE9meQ?width=1024",
-		],
+		images: ["https://avatars.githubusercontent.com/u/74632138?v=4"],
 	},
 	twitter: {
 		site: "@GuMurdiga",
-		description:
-			"Este projeto visa destacar minhas habilidades para recrutadores e desenvolvedores, demonstrando minha capacidade de contribuir para a criação de um mundo mais feliz.",
 		title: "Olá, eu sou o Gustavo!",
-		images: [
-			"https://1drv.ms/i/c/a37e0f73b46925c9/UQPJJWm0cw9-IICjyA8AAAAAADMOnQ4yAdE9meQ?width=1024",
-		],
+		description: "Seja bem vindo, espero que goste da minha história",
+		images: ["https://avatars.githubusercontent.com/u/74632138?v=4"],
 	},
 	category: "Portfólios",
 	creator: "GM Dev",
@@ -43,11 +36,8 @@ export const options: Metadata = {
 		"Jaú",
 		"Desenvolvedor em Jaú",
 		"Tecnologia em Jaú",
-		"Computadores",
-		"gmdev",
 		"GM Dev",
 		"Gustavo Murdiga",
-		"GMDEV",
 	],
 };
 

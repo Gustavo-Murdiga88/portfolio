@@ -1,8 +1,11 @@
+import dayjs from "dayjs";
 import { Metadata } from "next";
 import type { ReactNode } from "react";
 
+const today = dayjs().format("DD/MM/YYYY");
+
 export const metadata: Metadata = {
-	title: "Liturgia Diária 🙏",
+	title: `Liturgia Diária 🙏 ${today}`,
 	description: "Aqui será mostrado à você a liturgia diária da igreja católica",
 	authors: [
 		{
@@ -18,7 +21,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		type: "article",
 		locale: "Pt-br",
-		title: "Liturgia diária",
+		title: `Liturgia Diária 🙏 ${today}`,
 		description: "Liturgia diária",
 		tags: ["gospel", "evangelho"],
 		images: [
@@ -27,8 +30,8 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		site: "@GuMurdiga",
-		description: "Liturgia diária",
-		title: "Tenha sua minuto de fé!",
+		description: "Tenha seu minuto de fé!",
+		title: `Liturgia Diária 🙏 ${today}`,
 		images: [
 			"https://1drv.ms/i/c/a37e0f73b46925c9/UQPJJWm0cw9-IICjyA8AAAAAADMOnQ4yAdE9meQ?width=1024",
 		],
