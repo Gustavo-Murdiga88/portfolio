@@ -38,12 +38,15 @@ export default async function Page() {
 	const today = new Date();
 	const restInMiliSeconds = (24 - today.getHours()) * (60 * 60);
 
-	const data = (await fetch("https://liturgiadiaria.site?dia=13&mes=08", {
-		method: "GET",
-		next: {
-			revalidate: restInMiliSeconds,
+	const data = (await fetch(
+		`https://liturgiadiaria.site?dia=${today.getDate()}&mes=${today.getMonth() + 1}`,
+		{
+			method: "GET",
+			next: {
+				revalidate: restInMiliSeconds,
+			},
 		},
-	}).then((result) => result.json())) as IFetchReturn;
+	).then((result) => result.json())) as IFetchReturn;
 
 	const gospel = `${data.evangelho.texto.replaceAll(/(\d)/g, "<sup class='font-semibold'>$1 </sup>")}`;
 	const title = data.evangelho.titulo.replace("✠", "✞");
