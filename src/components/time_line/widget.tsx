@@ -43,7 +43,7 @@ export function TimeBox({
 					width={170}
 					alt={company}
 					objectFit="cover"
-					fetchPriority="low"
+					fetchPriority="high"
 					placeholder="blur"
 					blurDataURL="data:image/png;base64,"
 					className="rounded-sm"
