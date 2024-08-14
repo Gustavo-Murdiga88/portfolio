@@ -17,7 +17,7 @@ export const metadata = options;
 
 export default function RootLayout({ children }: { children: ReactNode }) {
 	return (
-		<html lang="pt-br" className="dark">
+		<html lang="pt-br" className="dark" suppressHydrationWarning>
 			<head>
 				<meta
 					name="google-site-verification"

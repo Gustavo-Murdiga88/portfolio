@@ -44,7 +44,7 @@ export function TimeBox({
 					alt={company}
 					loading="lazy"
 					title={company}
-					className="rounded-sm object-cover"
+					className="rounded-sm"
 				/>
 			</Link>
 
