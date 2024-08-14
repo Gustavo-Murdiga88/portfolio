@@ -1,5 +1,5 @@
 import { clsx } from "clsx";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import { ComponentProps } from "react";
 import { twMerge } from "tailwind-merge";
@@ -32,7 +32,9 @@ export function CardPresenter({
 					height={110}
 					width={110}
 					loading="lazy"
-					fetchPriority="auto"
+					fetchPriority="low"
+					placeholder="blur"
+					blurDataURL="data:image/png;base64,"
 					decoding="async"
 					alt={title}
 					title={title}

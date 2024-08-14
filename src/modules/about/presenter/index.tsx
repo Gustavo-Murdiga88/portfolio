@@ -1,5 +1,5 @@
 import { Github, Linkedin } from "lucide-react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 
 import { Title } from "@/components/title";
@@ -22,6 +22,10 @@ export function About() {
 						height={250}
 						width={250}
 						data-main
+						decoding="async"
+						fetchPriority="high"
+						placeholder="blur"
+						blurDataURL="data:image/png;base64,"
 						data-section="about"
 						className="m-0 rounded-xl"
 						alt="Github avatar"

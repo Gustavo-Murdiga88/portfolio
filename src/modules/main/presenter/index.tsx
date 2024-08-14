@@ -1,5 +1,5 @@
 import { Atom, Book, Github, Linkedin } from "lucide-react";
-import Img from "next/image";
+import Img from "next/legacy/image";
 import Link from "next/link";
 
 import { Title } from "@/components/title";
@@ -46,10 +46,7 @@ export function Main() {
 			<article className="relative my-10 flex flex-col-reverse items-center justify-center gap-10 px-6 lg:my-0 lg:min-h-[50rem] lg:flex-row lg:gap-24 2xl:min-h-[890px]">
 				<div className="absolute left-1/2 top-1/2  h-1/2 w-1/2  -translate-x-1/2 -translate-y-1/2 bg-blue-200 blur-[100px] md:h-[25rem] md:w-[25rem] md:blur-[15.625rem] " />
 
-				<div
-					data-aos="fade-up"
-					className="z-10 flex flex-col items-start justify-center gap-6"
-				>
+				<div className="z-10 flex flex-col items-start justify-center gap-6">
 					<div className="prose prose-zinc">
 						<h1 className="mb-2 text-2xl font-semibold leading-tight tracking-tighter text-neutral-100 lg:text-3xl">
 							Gustavo Murdiga
@@ -79,24 +76,23 @@ export function Main() {
 						<Atom size={18} />
 					</Link>
 				</div>
-				<figure
-					data-aos="fade-up"
-					className="relative min-h-[300px] min-w-[18.75rem] overflow-hidden rounded-full before:absolute before:inset-0 before:origin-center before:scale-[200%] before:animate-rotate-linear before:bg-profile"
-				>
-					<Img
-						src="https://github.com/gustavo-murdiga88.png"
-						height={292}
-						width={292}
-						loading="eager"
-						placeholder="blur"
-						fetchPriority="high"
-						data-main
-						data-section="home"
-						blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkD9l9BAADXAHcNBnuMgAAAABJRU5ErkJggg=="
-						decoding="sync"
-						className="absolute left-1/2 top-1/2 origin-center -translate-x-1/2  -translate-y-1/2 rounded-full object-cover"
-						alt="Uma imagem que representa o perfil do Gustavo Murdiga"
-					/>
+				<figure className="relative flex min-h-[300px] min-w-[18.75rem] items-center justify-center overflow-hidden rounded-full before:absolute before:inset-0 before:origin-center before:scale-[200%] before:animate-rotate-linear before:bg-profile">
+					<div className="flex h-[18.25rem] w-[18.25rem] items-center justify-center overflow-hidden rounded-full">
+						<Img
+							src="https://github.com/gustavo-murdiga88.png"
+							height={292}
+							width={292}
+							loading="eager"
+							placeholder="blur"
+							fetchPriority="high"
+							objectFit="cover"
+							data-main
+							data-section="home"
+							blurDataURL="data:image/png;base64,"
+							decoding="sync"
+							alt="Uma imagem que representa o perfil do Gustavo Murdiga"
+						/>
+					</div>
 				</figure>
 			</article>
 		</section>

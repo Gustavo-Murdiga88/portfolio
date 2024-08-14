@@ -1,4 +1,4 @@
-import Img from "next/image";
+import Img from "next/legacy/image";
 import Link from "next/link";
 import { ComponentProps } from "react";
 
@@ -35,16 +35,20 @@ export function TimeBox({
 				href={url}
 				target="_blank"
 				aria-label={company}
-				className={cn("mx-auto py-2", type === "student" && "my-auto")}
+				className={cn("mx-auto py-2", "self-start")}
 			>
 				<Img
 					src={img}
-					height={220}
-					width={150}
+					height={90}
+					width={170}
 					alt={company}
+					objectFit="cover"
+					fetchPriority="low"
+					placeholder="blur"
+					blurDataURL="data:image/png;base64,"
+					className="rounded-sm"
 					loading="lazy"
 					title={company}
-					className="rounded-sm"
 				/>
 			</Link>
 

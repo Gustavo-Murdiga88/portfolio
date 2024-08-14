@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import { ComponentProps } from "react";
 
@@ -11,7 +11,6 @@ import node from "@/assets/node-banner.svg";
 import react from "@/assets/react-banner.svg";
 import vite from "@/assets/vitejs.svg";
 import vscode from "@/assets/vscode.png";
-import { cn } from "@/core/utils/fn";
 
 const banners = {
 	react,
@@ -45,34 +44,36 @@ export function Card({
 	return (
 		<article
 			{...props}
-			className="rounded-xs bg-card p-0.5 md:max-h-[25rem] md:w-[16.25rem]"
+			className="rounded-xs bg-card p-0.5 md:max-h-[400px] md:w-[16.25rem]"
 		>
-			<div className="flex h-full flex-col rounded-xs bg-neutral-dark-50 p-4">
-				<figure>
+			<div className="flex h-full flex-col gap-2 rounded-xs bg-neutral-dark-50 p-4">
+				<figure className="w-full overflow-hidden rounded">
 					<Image
 						draggable={false}
-						height={90}
-						width={260}
+						height={60}
+						width={120}
 						src={banners[type]}
 						alt={nameOfProject}
 						loading="lazy"
+						fetchPriority="high"
+						placeholder="blur"
+						blurDataURL="data:image/png;base64,"
 						decoding="async"
-						className={cn("rounded-xs")}
+						layout="responsive"
+						objectFit="cover"
 					/>
 				</figure>
 
-				<header className="mb-3 mt-4 flex h-full flex-col gap-4 overflow-hidden">
+				<header className="mb-3 mt-4 flex  flex-col gap-4 overflow-hidden">
 					<span className="block text-base font-semibold text-neutral-100 ">
 						{nameOfProject}
 					</span>
-					<p className="whitespace-break-space h-full flex-1 font-poppins text-[0.75rem] font-semibold text-neutral-300">
-						{details.length > 280
-							? details.substring(0, 280).concat("...")
-							: details}
+					<p className="whitespace-break-space line-clamp-5 h-full flex-1 font-poppins text-[0.75rem] font-semibold text-neutral-300">
+						{details}
 					</p>
 				</header>
 				<Link
-					className="block rounded-[0.5rem] border-[0.125rem] border-purple-700 p-2 text-center text-[12px] font-bold transition-all hover:bg-purple-700"
+					className="mt-auto block rounded-[0.5rem] border-[0.125rem] border-purple-700 p-2 text-center text-[12px] font-bold transition-all hover:bg-purple-700"
 					href={url || repo}
 					aria-label={url ? "Ver projeto" : "Ver repositório"}
 					target="_blank"
