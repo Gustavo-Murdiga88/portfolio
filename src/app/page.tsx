@@ -1,12 +1,28 @@
+import nextDynamic from "next/dynamic";
+
 import { Controls } from "@/components/controls/widget";
-import { About } from "@/modules/about/presenter";
-import { Contact } from "@/modules/contact/presenter";
 import { Main } from "@/modules/main/presenter";
-import { ShowCase } from "@/modules/show_case/presenter";
-import { Skills } from "@/modules/skills/presenter";
-import { TimeLine } from "@/modules/time_line/presenter";
 
 export const dynamic = "force-static";
+
+const About = nextDynamic(() =>
+	import("@/modules/about/presenter").then(({ About }) => About),
+);
+const ShowCase = nextDynamic(() =>
+	import("@/modules/show_case/presenter").then(({ ShowCase }) => ShowCase),
+);
+
+const Skills = nextDynamic(() =>
+	import("@/modules/skills/presenter").then(({ Skills }) => Skills),
+);
+
+const TimeLine = nextDynamic(() =>
+	import("@/modules/time_line/presenter").then(({ TimeLine }) => TimeLine),
+);
+
+const Contact = nextDynamic(() =>
+	import("@/modules/contact/presenter").then(({ Contact }) => Contact),
+);
 
 export default function Home() {
 	return (

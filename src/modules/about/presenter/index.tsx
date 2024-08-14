@@ -22,13 +22,13 @@ export function About() {
 						height={250}
 						width={250}
 						data-main
-						decoding="async"
+						decoding="sync"
 						fetchPriority="high"
 						placeholder="blur"
 						blurDataURL="data:image/png;base64,"
 						data-section="about"
 						className="m-0 rounded-xl"
-						alt="Github avatar"
+						alt="Perfil do Gustavo Murdiga"
 					/>
 					<div className="flex flex-col items-center  justify-center gap-4 text-base font-semibold uppercase md:items-start">
 						<span className="text-neutral-200">Full-stack developer</span>

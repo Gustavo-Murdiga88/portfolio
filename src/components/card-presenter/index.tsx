@@ -35,7 +35,7 @@ export function CardPresenter({
 					fetchPriority="high"
 					placeholder="blur"
 					blurDataURL="data:image/png;base64,"
-					decoding="async"
+					decoding="sync"
 					alt={title}
 					title={title}
 					aria-label={title}

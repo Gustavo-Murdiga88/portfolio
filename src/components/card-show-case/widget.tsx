@@ -58,7 +58,7 @@ export function Card({
 						fetchPriority="high"
 						placeholder="blur"
 						blurDataURL="data:image/png;base64,"
-						decoding="async"
+						decoding="sync"
 						layout="responsive"
 						objectFit="cover"
 					/>
