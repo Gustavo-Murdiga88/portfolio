@@ -118,6 +118,7 @@ export function Form({ userAlreadySendEmail }: IFormProps) {
 
 			<textarea
 				name="text"
+				inputMode="text"
 				id="text"
 				onInvalid={(event) => {
 					event.currentTarget.setCustomValidity(
@@ -142,7 +143,7 @@ export function Form({ userAlreadySendEmail }: IFormProps) {
 			>
 				Enviar
 				{formState.isLoading && (
-					<Loader2 className="animate-spin" size={16} color="#fff" />
+					<Loader2 className="animate-spin" size={16} color="#f4f0f2" />
 				)}
 			</button>
 		</form>

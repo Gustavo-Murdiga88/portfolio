@@ -1,6 +1,7 @@
 import "./globals.css";
 import "@/lib/nodemailer";
 
+import { Viewport } from "next";
 import { Poppins } from "next/font/google";
 import { ReactNode } from "react";
 import { Toaster } from "sonner";
@@ -14,16 +15,20 @@ const poppins = Poppins({
 });
 
 export const metadata = options;
+export const viewport: Viewport = {
+	maximumScale: 1,
+	minimumScale: 1,
+	viewportFit: "auto",
+	colorScheme: "dark light",
+	themeColor: [
+		{ media: "(prefers-color-scheme: dark)", color: "#121214" },
+		{ media: "(prefers-color-scheme: light)", color: "#c3c3c3" },
+	],
+};
 
 export default function RootLayout({ children }: { children: ReactNode }) {
 	return (
 		<html lang="pt-br" className="dark" suppressHydrationWarning>
-			<head>
-				<meta
-					name="google-site-verification"
-					content="WQbYrmDaHz95-t54jPgWbYHPSBebm4LWjt1QC3UQtrg"
-				/>
-			</head>
 			<body
 				className={`${poppins.className} ${poppins.variable} min-h-screen bg-neutral-100 font-poppins antialiased dark:bg-neutral-dark-1100 dark:text-neutral-dark-900`}
 			>

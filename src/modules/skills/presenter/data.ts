@@ -2,14 +2,14 @@ import bun from "@/assets/bun.svg";
 import docker from "@/assets/docker.svg";
 import expo from "@/assets/expo.svg";
 import fastify from "@/assets/fastify.svg";
-import flutter from "@/assets/flutter.svg";
-import nest from "@/assets/nestjs.svg";
-import next from "@/assets/nextjs.svg";
+import flutter from "@/assets/flutter-lg.svg";
+import nest from "@/assets/nest-lg.svg";
+import next from "@/assets/nextjs-lg.svg";
 import node from "@/assets/node.svg";
 import prisma from "@/assets/prisma.svg";
 import react from "@/assets/react.svg";
 import typescript from "@/assets/typescript.svg";
-import vitejs from "@/assets/vitejs.svg";
+import vitejs from "@/assets/vitejs-lg.svg";
 
 type FrameworksProps = {
 	id: string;

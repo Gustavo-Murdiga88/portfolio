@@ -1,11 +1,30 @@
 import { Metadata } from "next";
 
 export const options: Metadata = {
+	abstract: "Um portfólio da minha trajetória profissional",
+	applicationName: "Gustavo Murdiga",
+	formatDetection: {
+		address: true,
+		date: false,
+		email: true,
+		telephone: true,
+		url: true,
+	},
+	verification: {
+		google: "WQbYrmDaHz95-t54jPgWbYHPSBebm4LWjt1QC3UQtrg",
+	},
+	appleWebApp: {
+		statusBarStyle: "black-translucent",
+		capable: false,
+		title: "Olá, eu sou o Gustavo! 🤓",
+	},
+	publisher: "Gustavo Murdiga",
+	classification: "Portfólio",
 	metadataBase: new URL("https://gustavomurdiga.vercel.app/"),
 	alternates: {
 		canonical: "/",
 	},
-	title: "Olá, eu sou o Gustavo!",
+	title: "Olá, eu sou o Gustavo! 🤓",
 	description: "Seja bem vindo, espero que goste da minha história",
 	authors: [
 		{
@@ -15,7 +34,7 @@ export const options: Metadata = {
 	],
 	openGraph: {
 		type: "profile",
-		title: "Olá, eu sou o Gustavo!",
+		title: "Olá, eu sou o Gustavo! 🤓",
 		url: "https://gustavomurdiga.vercel.app/",
 		description: "Seja bem vindo, espero que goste da minha história",
 		firstName: "Gustavo",
@@ -25,7 +44,7 @@ export const options: Metadata = {
 	},
 	twitter: {
 		site: "@GuMurdiga",
-		title: "Olá, eu sou o Gustavo!",
+		title: "Olá, eu sou o Gustavo! 🤓",
 		description: "Seja bem vindo, espero que goste da minha história",
 		images: ["https://avatars.githubusercontent.com/u/74632138?v=4"],
 	},

@@ -14,7 +14,7 @@ export function Skills() {
 					data-section="skills"
 				/>
 
-				<div className="mx-auto my-8 grid grid-cols-2 gap-10 lg:my-20 lg:grid-cols-4">
+				<div className="mx-auto my-8 grid grid-cols-2 gap-4 lg:my-20 lg:grid-cols-4">
 					{frameworks.map(({ id, imageUrl, title, urlDoc }, index) => (
 						<CardPresenter
 							key={id}
