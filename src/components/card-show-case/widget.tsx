@@ -1,22 +1,22 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 import { ComponentProps } from "react";
 
-import eslint from "@/assets/eslint.jpg";
-import flutterBanner from "@/assets/flutter-banner.png";
+import eslint from "@/assets/eslint.svg";
+import flutter from "@/assets/flutter.svg";
 import native from "@/assets/native.svg";
 import nest from "@/assets/nestjs.svg";
-import next from "@/assets/next-js.svg";
+import next from "@/assets/nextjs.svg";
 import node from "@/assets/node-banner.svg";
 import react from "@/assets/react-banner.svg";
 import vite from "@/assets/vitejs.svg";
-import vscode from "@/assets/vscode.png";
+import vscode from "@/assets/vscode.svg";
 
 const banners = {
 	react,
 	native,
 	node,
-	flutter: flutterBanner,
+	flutter,
 	next,
 	eslint,
 	vscode,
@@ -47,20 +47,16 @@ export function Card({
 			className="rounded-xs bg-card p-0.5 md:max-h-[400px] md:w-[16.25rem]"
 		>
 			<div className="flex h-full flex-col gap-2 rounded-xs bg-neutral-dark-50 p-4">
-				<figure className="w-full overflow-hidden rounded">
+				<figure className="flex h-[6.875rem] items-center justify-center rounded-xs bg-zinc-800/50 [&_img]:max-h-[6.25rem]">
 					<Image
 						draggable={false}
-						height={60}
-						width={120}
+						height={90}
+						width={240}
 						src={banners[type]}
 						alt={nameOfProject}
 						loading="lazy"
-						fetchPriority="high"
-						placeholder="blur"
-						blurDataURL="data:image/png;base64,"
-						decoding="sync"
-						layout="responsive"
-						objectFit="cover"
+						decoding="async"
+						className="aspect-square rounded-xs"
 					/>
 				</figure>
 

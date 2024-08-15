@@ -13,7 +13,7 @@ export function ShowCase() {
 				data-section="show_case"
 			/>
 
-			<div className="grid-col-1 mx-auto my-8 grid max-w-[56.25rem] justify-center gap-5 px-8 md:grid-cols-3">
+			<div className="mx-auto my-8 grid max-w-[56.25rem] grid-cols-1 justify-center gap-5 px-8 md:grid-cols-3">
 				{projects.map((props, index) => (
 					<Card
 						{...props}

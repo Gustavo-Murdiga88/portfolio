@@ -1,4 +1,4 @@
-import Img from "next/legacy/image";
+import Img from "next/image";
 import Link from "next/link";
 import { ComponentProps } from "react";
 

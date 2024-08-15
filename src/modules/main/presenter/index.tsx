@@ -1,5 +1,5 @@
 import { Atom, Book, Github, Linkedin } from "lucide-react";
-import Img from "next/legacy/image";
+import Img from "next/image";
 import Link from "next/link";
 
 import { Title } from "@/components/title";
@@ -43,7 +43,7 @@ export function Main() {
 				</nav>
 			</Title>
 
-			<article className="relative my-10 flex flex-col-reverse items-center justify-center gap-10 px-6 lg:my-0 lg:min-h-[50rem] lg:flex-row lg:gap-24 2xl:min-h-[890px]">
+			<article className="relative my-10 flex flex-col-reverse items-center justify-center gap-10 px-6 lg:my-0 lg:min-h-[50rem] lg:flex-row lg:gap-24 2xl:h-[100svh]">
 				<div className="absolute left-1/2 top-1/2  h-1/2 w-1/2  -translate-x-1/2 -translate-y-1/2 bg-blue-200 blur-[100px] md:h-[25rem] md:w-[25rem] md:blur-[15.625rem] " />
 
 				<div className="z-10 flex flex-col items-start justify-center gap-6">
@@ -85,11 +85,11 @@ export function Main() {
 							loading="eager"
 							placeholder="blur"
 							fetchPriority="high"
-							objectFit="cover"
 							data-main
 							data-section="home"
 							blurDataURL="data:image/png;base64,"
 							decoding="sync"
+							className="absolute rounded-full"
 							alt="Uma imagem que representa o perfil do Gustavo Murdiga"
 						/>
 					</div>

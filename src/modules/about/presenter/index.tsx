@@ -1,5 +1,5 @@
 import { Github, Linkedin } from "lucide-react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 
 import { Title } from "@/components/title";
