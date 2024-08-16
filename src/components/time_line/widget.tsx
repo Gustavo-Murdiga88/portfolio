@@ -27,7 +27,7 @@ export function TimeBox({
 	return (
 		<article
 			className={cn(
-				"flex min-h-[250px] flex-col md:flex-row justify-start border-b-zinc-100 mx-6 [&:not(:last-child)]:border-b-[0.0625rem] py-4 md:mx-auto gap-6 md:gap-10 mr-auto[&+&]:mt-6",
+				"flex  flex-col md:flex-row justify-start border-b-zinc-100 mx-6 [&:not(:last-child)]:border-b-[0.0625rem] py-4 md:mx-auto gap-6 md:gap-10 mr-auto[&+&]:mt-6",
 			)}
 			{...props}
 		>
@@ -42,7 +42,6 @@ export function TimeBox({
 					height={90}
 					width={170}
 					alt={company}
-					objectFit="cover"
 					fetchPriority="high"
 					placeholder="blur"
 					blurDataURL="data:image/png;base64,"
