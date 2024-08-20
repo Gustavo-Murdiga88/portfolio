@@ -14,5 +14,11 @@ export default function siteMap(): MetadataRoute.Sitemap {
 			lastModified: new Date(),
 			priority: 1,
 		},
+		{
+			url: "https://gustavomurdiga.vercel.app/setup",
+			changeFrequency: "weekly",
+			lastModified: new Date(),
+			priority: 1,
+		},
 	];
 }
