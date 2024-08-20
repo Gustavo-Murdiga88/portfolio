@@ -1,5 +1,5 @@
 /* eslint-disable react/no-danger */
-import { Github, Home, Linkedin } from "lucide-react";
+import { Github, Home, Laptop, Linkedin } from "lucide-react";
 import Link from "next/link";
 
 import { Title } from "@/components/title";
@@ -55,10 +55,7 @@ export default async function Page() {
 		<main className="grid min-h-screen grid-cols-1  md:grid-cols-[1fr_750px_1fr]">
 			<div className="h-svh col-start-2 col-end-2 flex flex-col gap-6">
 				<Title id="home" title="Liturgia diária" data-main data-section="home">
-					<nav
-						aria-label="Redes sociais"
-						className="ml-auto flex items-center gap-4"
-					>
+					<nav aria-label="Ações" className="ml-auto flex items-center gap-4">
 						<Link
 							aria-labelledby="home"
 							href="/"
@@ -66,6 +63,15 @@ export default async function Page() {
 							className="text-neutral-100 transition-colors hover:text-neutral-400 focus-visible:ring-2 focus-visible:ring-neutral-100"
 						>
 							<Home id="home" aria-label="Bíblia" size={20} />
+						</Link>
+
+						<Link
+							aria-labelledby="bible"
+							href="/setup"
+							title="Meu setup"
+							className="text-neutral-100 transition-colors hover:text-neutral-400 focus-visible:ring-2 focus-visible:ring-neutral-100"
+						>
+							<Laptop id="setup" aria-label="setup" />
 						</Link>
 
 						<Link

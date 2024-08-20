@@ -1,0 +1,88 @@
+{
+  "equipments": [
+    {
+      "name": "Astra Elements",
+      "link": "https://amzn.to/3AvUr7D",
+      "img": "/setup/astra.png",
+      "height": 160,
+      "width": 160
+    },
+    {
+      "name": "Logitech MX Master 3S",
+      "link": "https://amzn.to/3Mcc66D",
+      "img": "/setup/mouse.png",
+      "height": 140,
+      "width": 140
+    },
+    {
+      "name": "Base Multilaser",
+      "link": "https://amzn.to/46RN4TO",
+      "img": "/setup/suporte.png",
+      "height": 150,
+      "width": 150
+    },
+    {
+      "name": "Suporte ELG F80N",
+      "link": "https://amzn.to/4fVLQLF",
+      "img": "/setup/suporte-monitor.png",
+      "height": 110,
+      "width": 110
+    },
+    {
+      "name": "Alexa Echo pop",
+      "link": "https://amzn.to/3XemWhR",
+      "img": "/setup/alexa.png",
+      "height": 110,
+      "width": 110
+    },
+    {
+      "name": "Teclado fizz sunrise",
+      "link": "https://amzn.to/3MfSLkY",
+      "img": "/setup/teclado.png",
+      "height": 170,
+      "width": 170
+    },
+    {
+      "name": "iPhone 13",
+      "link": "https://amzn.to/4duHx8f",
+      "img": "/setup/iphone.png",
+      "height": 110,
+      "width": 110
+    },
+    {
+      "name": "Mouse Pad Gamer Speed",
+      "link": "https://amzn.to/3WR3I1j",
+      "img": "/setup/mouse-pad.png",
+      "height": 170,
+      "width": 170
+    },
+    {
+      "name": "Mesa Hayonik",
+      "link": "https://amzn.to/4dNBZFK",
+      "img": "/setup/mesa.png",
+      "height": 150,
+      "width": 150
+    },
+    {
+      "name": "Edifier W800BT PLUS",
+      "link": "https://amzn.to/4dM5Cam",
+      "img": "/setup/fone.png",
+      "height": 110,
+      "width": 110
+    },
+    {
+      "name": "Suporte para Headset",
+      "link": "https://amzn.to/3YT6uFT",
+      "img": "/setup/suporte-fone.png",
+      "height": 70,
+      "width": 70
+    },
+    {
+      "name": "Porta copos DEV - React JS",
+      "link": "https://amzn.to/3yOUlat",
+      "img": "/setup/porta-copos.png",
+      "height": 170,
+      "width": 170
+    }
+  ]
+}

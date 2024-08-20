@@ -1,4 +1,4 @@
-import { Atom, Book, Github, Linkedin } from "lucide-react";
+import { Atom, Book, Github, Laptop, Linkedin } from "lucide-react";
 import Img from "next/image";
 import Link from "next/link";
 
@@ -11,10 +11,16 @@ export function Main() {
 	return (
 		<section aria-label="Apresentação" className="mx-auto max-w-page">
 			<Title id="home" title="Apresentação" data-main data-section="home">
-				<nav
-					aria-label="Redes sociais"
-					className="ml-auto flex items-center gap-4"
-				>
+				<nav aria-label="Ações" className="ml-auto flex items-center gap-4">
+					<Link
+						aria-labelledby="bible"
+						href="/setup"
+						title="Meu setup"
+						className="text-neutral-100 transition-colors hover:text-neutral-400 focus-visible:ring-2 focus-visible:ring-neutral-100"
+					>
+						<Laptop id="setup" aria-label="setup" />
+					</Link>
+
 					<Link
 						aria-labelledby="bible"
 						href="/daily-liturgy"
