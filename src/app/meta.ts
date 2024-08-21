@@ -5,7 +5,7 @@ const myYearsOld = currentYear - 1999;
 const exp = currentYear - 2020;
 
 export const options: Metadata = {
-	abstract: "Um portfólio da minha trajetória profissional",
+	abstract: `Sou um engenheiro de software com +${exp} anos de experiência, especializado em tecnologias como React.js, Next.js, Node.js,NestJS e AWS.Brasileiro, nascido em Jaú no interior de São paulo, com ${myYearsOld} anos, católico, estudante e um desenvolvedor que busca ser melhor, não apenas nas linhas de código, mas como pessoa.`,
 	applicationName: "Gustavo Murdiga",
 	formatDetection: {
 		address: true,
