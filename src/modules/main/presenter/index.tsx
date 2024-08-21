@@ -7,6 +7,7 @@ import { Title } from "@/components/title";
 export function Main() {
 	const currentYear = new Date().getFullYear();
 	const myYearsOld = currentYear - 1999;
+	const exp = currentYear - 2020;
 
 	return (
 		<section aria-label="Apresentação" className="mx-auto max-w-page">
@@ -62,13 +63,13 @@ export function Main() {
 						<strong className="subtitle text-xs font-semibold text-blue-600 transition-colors hover:text-blue-800 hover:underline hover:underline-offset-8 lg:text-lg">
 							Desenvolvedor Full-stack
 						</strong>
-						<p className="text-[0.75rem] font-semibold tracking-tighter text-neutral-100 md:text-base">
-							Sou um engenheiro de software com 4 anos de experiência,
+						<p className="text-balance text-[0.75rem] font-semibold tracking-normal text-neutral-100 md:text-base">
+							Sou um engenheiro de software com +{exp} anos de experiência,
 							especializado em tecnologias como React.js, Next.js, Node.js,
 							NestJS e AWS. <br />
 							Brasileiro, nascido em Jaú no interior de São paulo, com{" "}
 							{myYearsOld} anos, católico, estudante e um desenvolvedor que
-							buscar ser melhor, não apenas nas linhas de código, mas como
+							busca ser melhor, não apenas nas linhas de código, mas como
 							pessoa.
 						</p>
 					</div>

@@ -1,5 +1,9 @@
 import { Metadata } from "next";
 
+const currentYear = new Date().getFullYear();
+const myYearsOld = currentYear - 1999;
+const exp = currentYear - 2020;
+
 export const options: Metadata = {
 	abstract: "Um portfólio da minha trajetória profissional",
 	applicationName: "Gustavo Murdiga",
@@ -25,7 +29,7 @@ export const options: Metadata = {
 		canonical: "/",
 	},
 	title: "Olá, eu sou o Gustavo! 🤓",
-	description: "Seja bem vindo, espero que goste da minha história",
+	description: `Sou um engenheiro de software com +${exp} anos de experiência, especializado em tecnologias como React.js, Next.js, Node.js,NestJS e AWS.Brasileiro, nascido em Jaú no interior de São paulo, com ${myYearsOld} anos, católico, estudante e um desenvolvedor que busca ser melhor, não apenas nas linhas de código, mas como pessoa.`,
 	authors: [
 		{
 			name: "Gustavo Murdiga",
