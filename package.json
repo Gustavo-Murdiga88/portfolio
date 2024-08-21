@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "autoprefixer": "10.4.15",
+    "caniuse-lite": "^1.0.30001651",
     "clsx": "^2.1.1",
     "dayjs": "^1.11.13",
     "lucide-react": "^0.271.0",
