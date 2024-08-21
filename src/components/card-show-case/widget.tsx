@@ -60,8 +60,8 @@ export function Card({
 					/>
 				</figure>
 
-				<header className="mb-3 mt-4 flex  flex-col gap-4 overflow-hidden">
-					<span className="block text-base font-semibold text-neutral-100 ">
+				<header className="mb-3 mt-4 flex flex-col gap-4 overflow-hidden">
+					<span className="block text-base font-semibold text-neutral-100">
 						{nameOfProject}
 					</span>
 					<p className="whitespace-break-space line-clamp-5 h-full flex-1 font-poppins text-[0.75rem] font-semibold text-neutral-300">

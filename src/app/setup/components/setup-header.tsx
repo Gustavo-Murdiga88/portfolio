@@ -33,6 +33,7 @@ export function SetupHeader() {
 						aria-labelledby="github"
 						href="https://github.com/Gustavo-Murdiga88"
 						target="_blank"
+						title="github"
 						className="text-neutral-100 transition-colors hover:text-neutral-400 focus-visible:ring-2 focus-visible:ring-neutral-100"
 					>
 						<Github id="github" aria-label="github" size={20} />
@@ -41,6 +42,7 @@ export function SetupHeader() {
 						aria-labelledby="LinkedIn"
 						href="https://www.linkedin.com/in/gustavo-murdiga-055470178/"
 						target="_blank"
+						title="LinkedIn"
 						className="text-neutral-100 transition-colors hover:text-neutral-400 focus-visible:ring-2 focus-visible:ring-neutral-100"
 					>
 						<Linkedin id="LinkedIn" aria-label="LinkedIn" size={20} />

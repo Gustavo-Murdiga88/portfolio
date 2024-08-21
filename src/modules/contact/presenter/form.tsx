@@ -78,7 +78,7 @@ export function Form({ userAlreadySendEmail }: IFormProps) {
 			data-section="contact"
 			ref={refForm}
 			onSubmit={handleSubmit}
-			className="relative mx-4 flex w-full flex-col gap-8 rounded-xs border border-neutral-800 bg-neutral-950 px-4 py-6 lg:w-[668px] lg:px-10 "
+			className="relative mx-4 flex w-full flex-col gap-8 rounded-xs border border-neutral-800 bg-neutral-950 px-4 py-6 lg:w-[668px] lg:px-10"
 		>
 			<h1 className="mb-4 text-center text-lg font-semibold text-neutral-200 lg:text-[1.75rem]">
 				Vamos trabalhar juntos!
@@ -95,7 +95,7 @@ export function Form({ userAlreadySendEmail }: IFormProps) {
 				}}
 				id="name"
 				placeholder="Nome"
-				className="h-7 rounded-xs border-2 border-neutral-800 bg-neutral-50 p-4 text-[14px] font-semibold outline-none placeholder:text-neutral-200 focus-visible:ring-2 focus-visible:ring-zinc-100 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-neutral-dark-50 "
+				className="h-7 rounded-xs border-2 border-neutral-800 bg-neutral-50 p-4 text-[14px] font-semibold outline-none placeholder:text-neutral-200 focus-visible:ring-2 focus-visible:ring-zinc-100 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-neutral-dark-50"
 			/>
 			<input
 				type="email"
@@ -131,7 +131,7 @@ export function Form({ userAlreadySendEmail }: IFormProps) {
 				required
 				disabled={formState.submitting}
 				placeholder="Digite uma mensagem..."
-				className="h-[250px] resize-none rounded-xs border-2 border-neutral-800 bg-neutral-50 p-4 text-[14px] font-semibold outline-none placeholder:text-neutral-200 focus-visible:ring-2 focus-visible:ring-zinc-100 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-neutral-dark-50 "
+				className="h-[250px] resize-none rounded-xs border-2 border-neutral-800 bg-neutral-50 p-4 text-[14px] font-semibold outline-none placeholder:text-neutral-200 focus-visible:ring-2 focus-visible:ring-zinc-100 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-neutral-dark-50"
 			/>
 			<button
 				aria-label="Enviar"

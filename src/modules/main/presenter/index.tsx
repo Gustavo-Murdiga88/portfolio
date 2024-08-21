@@ -34,6 +34,7 @@ export function Main() {
 						aria-labelledby="github"
 						href="https://github.com/Gustavo-Murdiga88"
 						target="_blank"
+						title="github"
 						className="text-neutral-100 transition-colors hover:text-neutral-400 focus-visible:ring-2 focus-visible:ring-neutral-100"
 					>
 						<Github id="github" aria-label="github" size={20} />
@@ -42,6 +43,7 @@ export function Main() {
 						aria-labelledby="LinkedIn"
 						href="https://www.linkedin.com/in/gustavo-murdiga-055470178/"
 						target="_blank"
+						title="LinkedIn"
 						className="text-neutral-100 transition-colors hover:text-neutral-400 focus-visible:ring-2 focus-visible:ring-neutral-100"
 					>
 						<Linkedin id="LinkedIn" aria-label="LinkedIn" size={20} />
@@ -49,8 +51,8 @@ export function Main() {
 				</nav>
 			</Title>
 
-			<article className="relative my-10 flex flex-col-reverse items-center justify-center gap-10 px-6 lg:my-0 lg:min-h-[50rem] lg:flex-row lg:gap-24 2xl:h-[100svh]">
-				<div className="absolute left-1/2 top-1/2  h-1/2 w-1/2  -translate-x-1/2 -translate-y-1/2 bg-blue-200 blur-[100px] md:h-[25rem] md:w-[25rem] md:blur-[15.625rem] " />
+			<article className="relative my-10 flex flex-col-reverse items-center justify-center gap-10 px-6 lg:my-0 lg:min-h-[50rem] lg:flex-row lg:gap-24 2xl:h-svh">
+				<div className="absolute left-1/2 top-1/2 size-1/2 -translate-x-1/2 -translate-y-1/2 bg-blue-200 blur-[100px] md:size-[25rem] md:blur-[15.625rem]" />
 
 				<div className="z-10 flex flex-col items-start justify-center gap-6">
 					<div className="prose prose-zinc">
@@ -83,7 +85,7 @@ export function Main() {
 					</Link>
 				</div>
 				<figure className="relative flex min-h-[300px] min-w-[18.75rem] items-center justify-center overflow-hidden rounded-full before:absolute before:inset-0 before:origin-center before:scale-[200%] before:animate-rotate-linear before:bg-profile">
-					<div className="flex h-[18.25rem] w-[18.25rem] items-center justify-center overflow-hidden rounded-full">
+					<div className="flex size-[18.25rem] items-center justify-center overflow-hidden rounded-full">
 						<Img
 							src="https://github.com/gustavo-murdiga88.png"
 							height={292}

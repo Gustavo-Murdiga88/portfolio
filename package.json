@@ -19,12 +19,13 @@
     "next": "^14.2.5",
     "nodemailer": "^6.9.14",
     "postcss": "8.4.28",
+    "prettier-plugin-tailwindcss": "^0.6.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sharp": "^0.33.5",
     "sonner": "^1.5.0",
     "tailwind-merge": "^2.5.2",
-    "tailwindcss": "3.3.3",
+    "tailwindcss": "3.4.10",
     "typescript": "5.2.2"
   },
   "devDependencies": {
@@ -36,10 +37,12 @@
     "@types/nodemailer": "^6.4.15",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-tailwindcss": "^3.17.4"
+    "@typescript-eslint/eslint-plugin": "^6.21.0"
+  },
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-tailwindcss"
+    ]
   },
   "eslintConfig": {
     "ignorePatterns": [
@@ -48,19 +51,7 @@
     ],
     "root": true,
     "extends": [
-      "@gm-dev/eslint-config/next",
-      "plugin:tailwindcss/recommended"
-    ],
-    "rules": {
-      "import/first": "off",
-      "no-shadow": "off",
-      "react/jsx-no-bind": "off",
-      "@typescript-eslint/ban-ts-comment": "off",
-      "@typescript-eslint/no-var-requires": "off",
-      "global-require": "off",
-      "prefer-const": "off",
-      "tailwindcss/no-custom-classname": "off"
-    }
-  },
-  "packageManager": "pnpm@9.6.0+sha512.38dc6fba8dba35b39340b9700112c2fe1e12f10b17134715a4aa98ccf7bb035e76fd981cf0bb384dfa98f8d6af5481c2bef2f4266a24bfa20c34eb7147ce0b5e"
+      "@gm-dev/eslint-config/tailwind/next"
+    ]
+  }
 }

@@ -27,7 +27,7 @@ export function TimeBox({
 	return (
 		<article
 			className={cn(
-				"flex  flex-col md:flex-row justify-start border-b-zinc-100 mx-6 [&:not(:last-child)]:border-b-[0.0625rem] py-4 md:mx-auto gap-6 md:gap-10 mr-auto[&+&]:mt-6",
+				"mr-auto[&+&]:mt-6 mx-6 flex flex-col justify-start gap-6 border-b-zinc-100 py-4 md:mx-auto md:flex-row md:gap-10 [&:not(:last-child)]:border-b-[0.0625rem]",
 			)}
 			{...props}
 		>
@@ -73,7 +73,7 @@ export function TimeBox({
 						<span className="mb-1 mt-4 block font-semibold leading-none text-neutral-50">
 							{type === "xp" ? "Função:" : ""}
 						</span>
-						<p className="text-balance break-before-auto text-start">
+						<p className="break-before-auto text-balance text-start">
 							{description}
 						</p>
 					</pre>

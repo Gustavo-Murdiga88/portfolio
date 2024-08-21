@@ -52,8 +52,8 @@ export default async function Page() {
 	const title = data.evangelho.titulo.replace("✠", "✞");
 
 	return (
-		<main className="grid min-h-screen grid-cols-1  md:grid-cols-[1fr_750px_1fr]">
-			<div className="h-svh col-start-2 col-end-2 flex flex-col gap-6">
+		<main className="grid min-h-screen grid-cols-1 md:grid-cols-[1fr_750px_1fr]">
+			<div className="col-start-2 col-end-2 flex h-svh flex-col gap-6">
 				<Title id="home" title="Liturgia diária" data-main data-section="home">
 					<nav aria-label="Ações" className="ml-auto flex items-center gap-4">
 						<Link
@@ -78,6 +78,7 @@ export default async function Page() {
 							aria-labelledby="github"
 							href="https://github.com/Gustavo-Murdiga88"
 							target="_blank"
+							title="github"
 							className="text-neutral-100 transition-colors hover:text-neutral-400 focus-visible:ring-2 focus-visible:ring-neutral-100"
 						>
 							<Github id="github" aria-label="github" size={20} />
@@ -86,6 +87,7 @@ export default async function Page() {
 							aria-labelledby="LinkedIn"
 							href="https://www.linkedin.com/in/gustavo-murdiga-055470178/"
 							target="_blank"
+							title="LinkedIn"
 							className="text-neutral-100 transition-colors hover:text-neutral-400 focus-visible:ring-2 focus-visible:ring-neutral-100"
 						>
 							<Linkedin id="LinkedIn" aria-label="LinkedIn" size={20} />

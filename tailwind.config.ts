@@ -8,13 +8,6 @@ const config: Config = {
 			fontFamily: {
 				poppins: ["var(--font-poppins)"],
 			},
-			transitionDuration: {
-				scale: ".200s",
-			},
-
-			willChange: {
-				tooltip: "opacity, transform",
-			},
 
 			keyframes: {
 				rotate: {

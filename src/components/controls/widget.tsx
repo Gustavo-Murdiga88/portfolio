@@ -14,14 +14,14 @@ export function Controls() {
 				role="menu"
 				aria-label="Navegação principal"
 				id="controls"
-				className=" flex flex-row items-center justify-evenly xl:flex-col xl:gap-7"
+				className="flex flex-row items-center justify-evenly xl:flex-col xl:gap-7"
 			>
 				<li role="menuitem">
 					<Link
 						aria-label="Home"
 						data-control-link
 						data-selected={selected === "home"}
-						className="group duration-scale hover:scale-110"
+						className="duration-scale group hover:scale-110"
 						href="#home"
 						title="Home"
 					>
@@ -34,12 +34,12 @@ export function Controls() {
 						aria-label="Habilidades"
 						data-control-link
 						data-selected={selected === "skills"}
-						className="group duration-scale hover:scale-110"
+						className="duration-scale group hover:scale-110"
 						href="#skills"
 						title="Habilidades"
 					>
 						<span className="sr-only">Habilidades</span>
-						<Shapes className="size-6 m-1 group-data-[selected=true]:stroke-blue-600" />
+						<Shapes className="m-1 size-6 group-data-[selected=true]:stroke-blue-600" />
 					</Link>
 				</li>
 				<li role="menuitem">
@@ -47,7 +47,7 @@ export function Controls() {
 						data-control-link
 						aria-label="Linha do tempo"
 						data-selected={selected === "time_line"}
-						className="group duration-scale  hover:scale-110"
+						className="duration-scale group hover:scale-110"
 						href="#time_line"
 						title="Linha do tempo"
 					>
@@ -60,7 +60,7 @@ export function Controls() {
 						data-control-link
 						aria-label="Sobre"
 						data-selected={selected === "about"}
-						className="group duration-scale  hover:scale-110"
+						className="duration-scale group hover:scale-110"
 						href="#about"
 						title="Sobre"
 					>
@@ -73,12 +73,12 @@ export function Controls() {
 						aria-label="Projetos"
 						data-control-link
 						data-selected={selected === "show_case"}
-						className="group duration-scale  hover:scale-110"
+						className="duration-scale group hover:scale-110"
 						href="#show_case"
 						title="Projetos"
 					>
 						<span className="sr-only">Projetos</span>
-						<Tv className="size-6  group-data-[selected=true]:stroke-blue-600" />
+						<Tv className="size-6 group-data-[selected=true]:stroke-blue-600" />
 					</Link>
 				</li>
 				<li role="menuitem">
@@ -86,7 +86,7 @@ export function Controls() {
 						aria-label="Contato"
 						data-control-link
 						data-selected={selected === "contact"}
-						className="group duration-scale  hover:scale-110"
+						className="duration-scale group hover:scale-110"
 						href="#contact"
 						title="Contato"
 					>

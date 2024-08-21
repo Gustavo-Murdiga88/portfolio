@@ -78,11 +78,67 @@
       "width": 70
     },
     {
-      "name": "Porta copos DEV - React JS",
+      "name": "Porta copos",
       "link": "https://amzn.to/3yOUlat",
       "img": "/setup/porta-copos.png",
       "height": 170,
       "width": 170
+    },
+    {
+      "name": "Monitor 165hz",
+      "link": "https://amzn.to/4fPb4Lr",
+      "img": "/setup/monitor.png",
+      "height": 170,
+      "width": 170
+    },
+    {
+      "name": "Notebook Dell Latitude",
+      "link": "https://amzn.to/4dtYBeM",
+      "img": "/setup/notebook.png",
+      "height": 170,
+      "width": 170
+    },
+    {
+      "name": "Notebook Acer nitro 5",
+      "link": "https://amzn.to/3SZrPtD",
+      "img": "/setup/notebook-acer.png",
+      "height": 170,
+      "width": 170
+    },
+    {
+      "name": "Arquitetura limpa",
+      "link": "https://amzn.to/4dOdurW",
+      "img": "/setup/clean-arch.jpg",
+      "height": 110,
+      "width": 110
+    },
+    {
+      "name": "Entendendo algoritmos",
+      "link": "https://amzn.to/4dMdzME",
+      "img": "/setup/entendendo-algoritmos.jpg",
+      "height": 110,
+      "width": 110
+    },
+    {
+      "name": "A única coisa",
+      "link": "https://amzn.to/3yN4zrU",
+      "img": "/setup/unica-coisa.jpg",
+      "height": 110,
+      "width": 110
+    },
+    {
+      "name": "Administração de Redes Linux",
+      "link": "https://amzn.to/46VGxaQ",
+      "img": "/setup/linux.jpg",
+      "height": 110,
+      "width": 110
+    },
+    {
+      "name": "Rocketseat",
+      "link": "https://app.rocketseat.com.br/cart/rocketseat-one?referral=gustavo-murdiga-260299&coupon=indicamgm&utm_source=platform&utm_medium=organic&utm_campaign=venda&utm_term=mgm&utm_content=indication-lp_one",
+      "img": "/setup/rockeatseat.svg",
+      "height": 130,
+      "width": 130
     }
   ]
 }

@@ -30,9 +30,9 @@ export function About() {
 						className="m-0 rounded-xl"
 						alt="Perfil do Gustavo Murdiga"
 					/>
-					<div className="flex flex-col items-center  justify-center gap-4 text-base font-semibold uppercase md:items-start">
+					<div className="flex flex-col items-center justify-center gap-4 text-base font-semibold uppercase md:items-start">
 						<span className="text-neutral-200">Full-stack developer</span>
-						<h1 className="mb-1 text-center text-[1.5rem] font-semibold leading-none text-zinc-50 md:text-start  md:text-[2rem]">
+						<h1 className="mb-1 text-center text-[1.5rem] font-semibold leading-none text-zinc-50 md:text-start md:text-[2rem]">
 							Gustavo Murdiga
 						</h1>
 						<div className="flex items-center justify-start gap-3">
@@ -57,7 +57,7 @@ export function About() {
 						</div>
 					</div>
 				</header>
-				<p className="text-balance  text-center text-[0.75rem] text-neutral-900 dark:text-neutral-dark-900 md:text-start md:text-[0.875rem]">
+				<p className="text-balance text-center text-[0.75rem] text-neutral-900 dark:text-neutral-dark-900 md:text-start md:text-[0.875rem]">
 					{`Olá, meu nome é Gustavo, moro em Jaú, interior de São Paulo. Aos meus
 					${yearsOld} anos sou um grande explorador da tecnologia e de todas as
 					coisas que ela pode oferecer. Mas, devo lhe dizer que nem sempre foi
@@ -99,7 +99,7 @@ export function About() {
 					melhor e ganhando o meu merecido espaço.
 				</p>
 
-				<h2 className="text-center  text-sm text-neutral-900 dark:text-neutral-dark-900 md:text-start md:text-[1.375rem]">
+				<h2 className="text-center text-sm text-neutral-900 dark:text-neutral-dark-900 md:text-start md:text-[1.375rem]">
 					E como todo esforço é recompensado, em outubro de 2022 recebi a
 					inesperada proposta da atual empresa onde trabalho, Guarani
 					Sistemas...

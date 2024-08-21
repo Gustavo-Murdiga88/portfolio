@@ -28,7 +28,7 @@ export default function SetupPage() {
 							className="min-h-[13.8125rem] rounded-xs border border-zinc-400/20 p-2 transition-all duration-300 hover:scale-105 hover:bg-zinc-800/30"
 						>
 							<div className="z-10 flex h-full flex-col gap-4">
-								<figure className="flex flex-1 items-center self-center ">
+								<figure className="flex flex-1 items-center self-center">
 									<Img
 										alt={`Imagem do produto ${name}`}
 										height={height}
