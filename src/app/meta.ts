@@ -40,7 +40,7 @@ export const options: Metadata = {
 		type: "profile",
 		title: "Olá, eu sou o Gustavo! 🤓",
 		url: "https://gustavomurdiga.vercel.app/",
-		description: "Seja bem vindo, espero que goste da minha história",
+		description: `Sou um engenheiro de software com +${exp} anos de experiência, especializado em tecnologias como React.js, Next.js, Node.js,NestJS e AWS.Brasileiro, nascido em Jaú no interior de São paulo, com ${myYearsOld} anos, católico, estudante e um desenvolvedor que busca ser melhor, não apenas nas linhas de código, mas como pessoa.`,
 		firstName: "Gustavo",
 		lastName: "Murdiga",
 		username: "Gustavo Murdiga",
@@ -49,7 +49,7 @@ export const options: Metadata = {
 	twitter: {
 		site: "@GuMurdiga",
 		title: "Olá, eu sou o Gustavo! 🤓",
-		description: "Seja bem vindo, espero que goste da minha história",
+		description: `Sou um engenheiro de software com +${exp} anos de experiência, especializado em tecnologias como React.js, Next.js, Node.js,NestJS e AWS.Brasileiro, nascido em Jaú no interior de São paulo, com ${myYearsOld} anos, católico, estudante e um desenvolvedor que busca ser melhor, não apenas nas linhas de código, mas como pessoa.`,
 		images: ["/setup/thumbnail.png"],
 	},
 	category: "Portfólios",
