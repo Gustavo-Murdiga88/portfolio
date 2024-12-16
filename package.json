@@ -13,31 +13,30 @@
   },
   "dependencies": {
     "autoprefixer": "10.4.15",
-    "caniuse-lite": "^1.0.30001651",
     "clsx": "^2.1.1",
     "dayjs": "^1.11.13",
     "lucide-react": "^0.271.0",
-    "next": "^14.2.5",
-    "nodemailer": "^6.9.14",
+    "next": "15.1.0",
+    "nodemailer": "^6.9.16",
     "postcss": "8.4.28",
-    "prettier-plugin-tailwindcss": "^0.6.6",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "prettier-plugin-tailwindcss": "^0.6.9",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
     "sharp": "^0.33.5",
-    "sonner": "^1.5.0",
-    "tailwind-merge": "^2.5.2",
+    "sonner": "^1.7.1",
+    "tailwind-merge": "^2.5.5",
     "tailwindcss": "3.4.10",
     "typescript": "5.2.2"
   },
   "devDependencies": {
-    "eslint-config-next": "13.4.19",
+    "eslint-config-next": "15.1.0",
     "eslint": "8.48.0",
     "@gm-dev/eslint-config": "latest",
-    "@tailwindcss/typography": "^0.5.14",
+    "@tailwindcss/typography": "^0.5.15",
     "@types/node": "20.5.6",
-    "@types/nodemailer": "^6.4.15",
-    "@types/react": "18.2.21",
-    "@types/react-dom": "18.2.7",
+    "@types/nodemailer": "^6.4.17",
+    "@types/react": "19.0.1",
+    "@types/react-dom": "19.0.2",
     "@typescript-eslint/eslint-plugin": "^6.21.0"
   },
   "prettier": {
@@ -54,5 +53,9 @@
     "extends": [
       "@gm-dev/eslint-config/tailwind/next"
     ]
+  },
+  "overrides": {
+    "@types/react": "19.0.1",
+    "@types/react-dom": "19.0.2"
   }
 }

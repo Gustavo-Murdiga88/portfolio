@@ -12,7 +12,8 @@ interface IResponseEmail {
 }
 
 export async function submitter(form: FormData): Promise<IResponseEmail> {
-	const userCan = userCanSendEmail(cookies);
+	const cookie = await cookies();
+	const userCan = userCanSendEmail(cookie);
 
 	const { email, name, text } = {
 		email: form.get("email")?.toString(),
@@ -28,7 +29,7 @@ export async function submitter(form: FormData): Promise<IResponseEmail> {
 		});
 
 		if (success) {
-			cookies().set({
+			(await cookies()).set({
 				name: "dateSendLastEmail",
 				value: dayjs().toISOString(),
 				expires: 60 * 60 * 1000 * 20, // TWENTY MINUTES,

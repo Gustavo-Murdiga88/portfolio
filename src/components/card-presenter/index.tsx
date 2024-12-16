@@ -31,7 +31,7 @@ export function CardPresenter({
 					src={imageUrl}
 					height={110}
 					width={110}
-					loading="lazy"
+					loading="eager"
 					fetchPriority="high"
 					placeholder="blur"
 					blurDataURL="data:image/png;base64,"

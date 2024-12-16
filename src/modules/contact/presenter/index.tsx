@@ -5,8 +5,9 @@ import { userCanSendEmail } from "@/util/useCanSendEmail";
 
 import { Form } from "./form";
 
-export function Contact() {
-	const userAlreadySendEmail = !userCanSendEmail(cookies);
+export async function Contact() {
+	const cookie = await cookies();
+	const userAlreadySendEmail = !userCanSendEmail(cookie);
 
 	return (
 		<section aria-label="Contato comigo" className="flex flex-col lg:h-[960px]">

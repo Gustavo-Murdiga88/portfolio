@@ -39,7 +39,7 @@ export default async function Page() {
 	const restInMiliSeconds = (24 - today.getHours()) * (60 * 60);
 
 	const data = (await fetch(
-		`https://liturgiadiaria.site?dia=${today.getDate()}&mes=${today.getMonth() + 1}`,
+		`${process.env.DAILY_LITURGY_URL}?dia=${today.getDate()}&mes=${today.getMonth() + 1}`,
 		{
 			method: "GET",
 			next: {
