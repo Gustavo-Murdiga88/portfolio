@@ -1,3 +1,5 @@
+"use client";
+
 import { Atom, Book, Github, Laptop, Linkedin } from "lucide-react";
 import Img from "next/image";
 import Link from "next/link";
@@ -53,10 +55,8 @@ export function Main() {
 			</Title>
 
 			<article className="relative my-10 flex flex-col-reverse items-center justify-center gap-10 px-6 lg:my-0 lg:min-h-[50rem] lg:flex-row lg:gap-24 2xl:h-svh">
-				<div className="absolute left-1/2 top-1/2 size-1/2 -translate-x-1/2 -translate-y-1/2 bg-blue-200 blur-[100px] md:size-[25rem] md:blur-[15.625rem]" />
-
 				<div className="z-10 flex flex-col items-start justify-center gap-6">
-					<div className="prose prose-zinc">
+					<div className="prose prose-zinc text-center md:text-left">
 						<h1 className="mb-2 text-2xl font-semibold leading-tight tracking-tighter text-neutral-100 lg:text-3xl">
 							Gustavo Murdiga
 						</h1>
@@ -98,7 +98,7 @@ export function Main() {
 							data-section="home"
 							blurDataURL="data:image/png;base64,"
 							decoding="sync"
-							className="absolute rounded-full"
+							className="pointer-events-none absolute rounded-full"
 							alt="Uma imagem que representa o perfil do Gustavo Murdiga"
 						/>
 					</div>

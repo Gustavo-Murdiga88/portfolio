@@ -31,9 +31,15 @@
       background-color: var(--scroll-background);
     }
   }
+
+
 }
 
 @layer components {
+  .main-blur-background {
+    backdrop-filter: blur(10px);
+  }
+
   .subtitle {
     @apply bg-subtitle bg-clip-text animate-rotate;
     -webkit-text-fill-color: transparent;
