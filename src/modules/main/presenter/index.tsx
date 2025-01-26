@@ -54,7 +54,7 @@ export function Main() {
 				</nav>
 			</Title>
 
-			<article className="relative my-10 flex flex-col-reverse items-center justify-center gap-10 px-6 lg:my-0 lg:min-h-[50rem] lg:flex-row lg:gap-24 2xl:h-svh">
+			<article className="relative my-6 flex flex-col-reverse items-center justify-center gap-4 px-6 lg:my-0 lg:min-h-[50rem] lg:flex-row lg:gap-24 2xl:h-svh">
 				<div className="z-10 flex flex-col items-start justify-center gap-6">
 					<div className="prose prose-zinc text-center md:text-left">
 						<h1 className="mb-2 text-2xl font-semibold leading-tight tracking-tighter text-neutral-100 lg:text-3xl">
@@ -85,8 +85,8 @@ export function Main() {
 						<Atom size={18} />
 					</Link>
 				</div>
-				<figure className="relative flex min-h-[300px] min-w-[18.75rem] items-center justify-center overflow-hidden rounded-full before:absolute before:inset-0 before:origin-center before:scale-[200%] before:animate-rotate-linear before:bg-profile">
-					<div className="flex size-[18.25rem] items-center justify-center overflow-hidden rounded-full">
+				<figure className="relative flex items-center justify-center overflow-hidden rounded-full before:absolute before:inset-0 before:origin-center before:scale-[200%] before:animate-rotate-linear before:bg-profile">
+					<div className="flex size-[210px] md:size-[300px] items-center justify-center overflow-hidden rounded-full">
 						<Img
 							src="https://github.com/gustavo-murdiga88.png"
 							height={292}
@@ -98,7 +98,7 @@ export function Main() {
 							data-section="home"
 							blurDataURL="data:image/png;base64,"
 							decoding="sync"
-							className="pointer-events-none absolute rounded-full"
+							className="pointer-events-none absolute rounded-full size-[12.5rem] md:size-[18.25rem]"
 							alt="Uma imagem que representa o perfil do Gustavo Murdiga"
 						/>
 					</div>
