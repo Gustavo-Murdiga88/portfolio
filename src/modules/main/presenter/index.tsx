@@ -86,7 +86,7 @@ export function Main() {
 					</Link>
 				</div>
 				<figure className="relative flex items-center justify-center overflow-hidden rounded-full before:absolute before:inset-0 before:origin-center before:scale-[200%] before:animate-rotate-linear before:bg-profile">
-					<div className="flex size-[210px] md:size-[300px] items-center justify-center overflow-hidden rounded-full">
+					<div className="flex size-[210px] items-center justify-center overflow-hidden rounded-full md:size-[300px]">
 						<Img
 							src="https://github.com/gustavo-murdiga88.png"
 							height={292}
@@ -98,7 +98,7 @@ export function Main() {
 							data-section="home"
 							blurDataURL="data:image/png;base64,"
 							decoding="sync"
-							className="pointer-events-none absolute rounded-full size-[12.5rem] md:size-[18.25rem]"
+							className="pointer-events-none absolute size-[12.5rem] rounded-full md:size-[18.25rem]"
 							alt="Uma imagem que representa o perfil do Gustavo Murdiga"
 						/>
 					</div>

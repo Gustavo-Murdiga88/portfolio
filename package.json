@@ -29,15 +29,15 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
-    "eslint-config-next": "15.1.0",
-    "eslint": "8.48.0",
     "@gm-dev/eslint-config": "latest",
     "@tailwindcss/typography": "^0.5.15",
     "@types/node": "20.5.6",
     "@types/nodemailer": "^6.4.17",
     "@types/react": "19.0.1",
     "@types/react-dom": "19.0.2",
-    "@typescript-eslint/eslint-plugin": "^6.21.0"
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "eslint": "8.48.0",
+    "eslint-config-next": "15.1.0"
   },
   "prettier": {
     "plugins": [
@@ -57,5 +57,6 @@
   "overrides": {
     "@types/react": "19.0.1",
     "@types/react-dom": "19.0.2"
-  }
+  },
+  "packageManager": "pnpm@9.15.1+sha512.1acb565e6193efbebda772702950469150cf12bcc764262e7587e71d19dc98a423dff9536e57ea44c49bdf790ff694e83c27be5faa23d67e0c033b583be4bfcf"
 }
