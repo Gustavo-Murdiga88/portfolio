@@ -1,17 +1,15 @@
 import { cookies } from "next/headers";
 
-import { Title } from "@/components/title";
 import { userCanSendEmail } from "@/util/useCanSendEmail";
 
 import { Form } from "./form";
 
-export async function Contact() {
+export default async function Contact() {
 	const cookie = await cookies();
 	const userAlreadySendEmail = !userCanSendEmail(cookie);
 
 	return (
-		<section aria-label="Contato comigo" className="flex flex-col lg:h-[960px]">
-			<Title title="Contato" id="contact" data-main data-section="contact" />
+		<section aria-label="Contato comigo" className="flex flex-1 flex-col">
 			<div
 				data-aos="fade-up"
 				className="mx-auto mb-20 mt-10 flex max-w-[62.5rem] flex-1 flex-col-reverse items-center justify-center gap-10 px-4 md:flex-row lg:mb-10"

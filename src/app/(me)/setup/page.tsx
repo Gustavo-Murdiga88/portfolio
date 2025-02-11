@@ -1,13 +1,11 @@
 import Img from "next/image";
 import Link from "next/link";
 
-import { SetupHeader } from "./components/setup-header";
 import json from "./setup.json";
 
 export default function SetupPage() {
 	return (
 		<div className="mx-auto max-w-[56.25rem]">
-			<SetupHeader />
 			<main className="px-5 py-4 md:mx-auto md:w-full">
 				<h1 className="mb-4 text-lg font-semibold">Meu setup</h1>
 				<p className="text-justify text-[0.75rem] font-semibold leading-relaxed text-zinc-200/50">

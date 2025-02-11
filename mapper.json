@@ -1,0 +1,191 @@
+{
+  "about": {
+    "about": ""
+  },
+  "equipments": [
+    {
+      "name": "Astra Elements",
+      "link": "https://amzn.to/3AvUr7D",
+      "img": "/setup/astra.png",
+      "height": 160,
+      "width": 160
+    },
+    {
+      "name": "Logitech MX Master 3S",
+      "link": "https://amzn.to/3Mcc66D",
+      "img": "/setup/mouse.png",
+      "height": 140,
+      "width": 140
+    },
+    {
+      "name": "Base Multilaser",
+      "link": "https://amzn.to/46RN4TO",
+      "img": "/setup/suporte.png",
+      "height": 150,
+      "width": 150
+    },
+    {
+      "name": "Suporte ELG F80N",
+      "link": "https://amzn.to/4fVLQLF",
+      "img": "/setup/suporte-monitor.png",
+      "height": 110,
+      "width": 110
+    },
+    {
+      "name": "Alexa Echo pop",
+      "link": "https://amzn.to/3XemWhR",
+      "img": "/setup/alexa.png",
+      "height": 110,
+      "width": 110
+    },
+    {
+      "name": "Teclado fizz sunrise",
+      "link": "https://amzn.to/3MfSLkY",
+      "img": "/setup/teclado.png",
+      "height": 170,
+      "width": 170
+    },
+    {
+      "name": "iPhone 13",
+      "link": "https://amzn.to/4duHx8f",
+      "img": "/setup/iphone.png",
+      "height": 110,
+      "width": 110
+    },
+    {
+      "name": "Mouse Pad Gamer Speed",
+      "link": "https://amzn.to/3WR3I1j",
+      "img": "/setup/mouse-pad.png",
+      "height": 170,
+      "width": 170
+    },
+    {
+      "name": "Mesa Hayonik",
+      "link": "https://amzn.to/4dNBZFK",
+      "img": "/setup/mesa.png",
+      "height": 150,
+      "width": 150
+    },
+    {
+      "name": "Edifier W800BT PLUS",
+      "link": "https://amzn.to/4dM5Cam",
+      "img": "/setup/fone.png",
+      "height": 110,
+      "width": 110
+    },
+    {
+      "name": "Suporte para Headset",
+      "link": "https://amzn.to/3YT6uFT",
+      "img": "/setup/suporte-fone.png",
+      "height": 70,
+      "width": 70
+    },
+    {
+      "name": "Porta copos",
+      "link": "https://amzn.to/3yOUlat",
+      "img": "/setup/porta-copos.png",
+      "height": 170,
+      "width": 170
+    },
+    {
+      "name": "Monitor 165hz",
+      "link": "https://amzn.to/4fPb4Lr",
+      "img": "/setup/monitor.png",
+      "height": 170,
+      "width": 170
+    },
+    {
+      "name": "Notebook Dell Latitude",
+      "link": "https://amzn.to/4dtYBeM",
+      "img": "/setup/notebook.png",
+      "height": 170,
+      "width": 170
+    },
+    {
+      "name": "Notebook Acer nitro 5",
+      "link": "https://amzn.to/3SZrPtD",
+      "img": "/setup/notebook-acer.png",
+      "height": 170,
+      "width": 170
+    },
+    {
+      "name": "Arquitetura limpa",
+      "link": "https://amzn.to/4dOdurW",
+      "img": "/setup/clean-arch.jpg",
+      "height": 110,
+      "width": 110
+    },
+    {
+      "name": "Entendendo algoritmos",
+      "link": "https://amzn.to/4dMdzME",
+      "img": "/setup/entendendo-algoritmos.jpg",
+      "height": 110,
+      "width": 110
+    },
+    {
+      "name": "A única coisa",
+      "link": "https://amzn.to/3yN4zrU",
+      "img": "/setup/unica-coisa.jpg",
+      "height": 110,
+      "width": 110
+    },
+    {
+      "name": "Administração de Redes Linux",
+      "link": "https://amzn.to/46VGxaQ",
+      "img": "/setup/linux.jpg",
+      "height": 110,
+      "width": 110
+    },
+    {
+      "name": "Rocketseat",
+      "link": "https://app.rocketseat.com.br/cart/rocketseat-one?referral=gustavo-murdiga-260299&coupon=indicamgm&utm_source=platform&utm_medium=organic&utm_campaign=venda&utm_term=mgm&utm_content=indication-lp_one",
+      "img": "/setup/rockeatseat.svg",
+      "height": 130,
+      "width": 130
+    }
+  ],
+  "time_line": [
+    {
+      "company": "Guarani sistemas",
+      "date": "Atualmente",
+      "title": "Desenvolvedor full-stack web/mobile",
+      "url": "https://guaranisistemas.com.br/",
+      "description": "Sou peça fundamental no avanço contínuo do sistema ERP em nuvem,liderando a implementação de funcionalidades e estabelecendo padrõesde projeto para uma arquitetura eficiente e facilmente mantida. Minha atuação abrange desde a resolução de bugs até aprimoramentos na performance, com dedicação à criação e implementação de testes automatizados para garantir qualidade e conformidade com padrões de desenvolvimento.À frente da equipe web, conduzo a equipe na implementação de novas tarefas, especialmente para telas responsivas, e contribuo para o design system da empresa. Na equipe mobile, destaco-me no desenvolvimento de um ERP offline-first em Flutter. Utilizamos Next.js como core em nossos projetos web, ampliando nossa versatilidade. Essa diversidade de habilidades e contribuições reforça meu papel como agente-chave para o sucesso e a evolução contínua dos sistemas."
+    },
+    {
+      "company": "OnFriday Technologies",
+      "date": "17/09/2023 à 17/12/2023",
+      "title": "Desenvolvedor Mobile",
+      "url": "https://www.linkedin.com/company/onfridaytech/",
+      "description": "Como desenvolvedor, tive o papel fundamental na criação da arquitetura de um aplicativo móvel inovador. Minhas responsabilidades incluíram a implementação de funcionalidades e telas para um eficiente sistema de venda de ingressos online, integrado harmoniosamente com um site na web. Utilizei a tecnologia React Native com Expo para garantir uma experiência ágil e unificada em ambas as plataformas"
+    },
+    {
+      "company": "STi3",
+      "date": "17/10/2022 à 17/10/2023",
+      "title": "Desenvolvedor Front-End",
+      "url": "https://www.sti3.com.br",
+      "description": "Atuando de forma proativa no desenvolvimento e aprimoramento contínuo de funcionalidades cruciais para o sistema ERP comercializado pela empresa. Minha expertise concentra-se no uso predominante da tecnologia React.js, combinada com bibliotecas de estilização. Como parte integral da equipe, sou responsável por manter e contribuir para novas implementações no sistema ERP em nuvem. Destacando-me no gerenciamento de relatórios, implementação do PDV do sistema e nas estratégias de implementações de cache em requisições, otimizando assim a eficiência do sistema."
+    },
+    {
+      "company": "Fluency Academy",
+      "date": "Cursando",
+      "title": "English tech",
+      "url": "https://fluency.io/br/",
+      "type": "student"
+    },
+    {
+      "company": "Rocketseat",
+      "date": "01/01/2021 à 01/01/2022",
+      "title": "Formação Full-Stack",
+      "url": "https://www.rocketseat.com.br",
+      "type": "student"
+    },
+    {
+      "company": "Anhanguera",
+      "date": "01/01/2020 à 01/07/2022",
+      "title": "Arquitetura de dados",
+      "url": "https://www.anhanguera.com/curso/arquitetura-de-dados-tecnologo/?gclid=CjwKCAiAq4KuBhA6EiwArMAw1LnZymbJsqQlrOUQdPupcAJBhoiUFqi9VJtjlG6yblK3Nx4pKt7T1xoCaxkQAvD_BwE",
+      "type": "student"
+    }
+  ]
+}

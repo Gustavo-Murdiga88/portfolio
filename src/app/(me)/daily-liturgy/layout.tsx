@@ -39,5 +39,9 @@ export const metadata: Metadata = {
 };
 
 export default function DailyLayout({ children }: { children: ReactNode }) {
-	return <div>{children}</div>;
+	return (
+		<main className="mx-auto flex w-full max-w-[47.5rem] flex-1">
+			{children}
+		</main>
+	);
 }

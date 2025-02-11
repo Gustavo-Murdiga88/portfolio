@@ -91,6 +91,7 @@ const config: Config = {
 			},
 
 			backgroundImage: {
+				noise: "url('/noise-light.png')",
 				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
 				"gradient-conic":
 					"conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
@@ -165,6 +166,6 @@ const config: Config = {
 			},
 		},
 	},
-	plugins: [require("@tailwindcss/typography")],
+	plugins: [require("@tailwindcss/typography"), require('tailwindcss-animated')],
 };
 export default config;
