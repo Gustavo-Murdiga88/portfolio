@@ -16,7 +16,7 @@ export default function Main() {
 
 	return (
 		<div className="flex size-full flex-1 flex-col items-center justify-center">
-			<section className="w-full max-w-[458px]">
+			<section className="w-full max-w-[458px] animate-fade-up">
 				<strong className="mb-1 ml-2 block text-[0.625rem] font-semibold text-zinc-50">
 					Jaú, SP - {dateFormatted} / Seja bem vindo!
 				</strong>
