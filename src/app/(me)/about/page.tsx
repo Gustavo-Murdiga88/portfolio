@@ -73,18 +73,17 @@ export default function About() {
 						</div>
 					</div>
 				</header>
-				<p className="text-justify text-[0.875rem] font-semibold text-neutral-900 dark:text-neutral-dark-900">
+				<p className="text-justify text-[0.875rem] font-medium text-neutral-900 dark:text-neutral-dark-900">
 					Olá, meu nome é Gustavo, moro em Jaú, interior de São Paulo e tenho{" "}
 					{yearsOld} anos de idade. Sou um desenvolvedor full-stack
 					especializado em Javascript e Node.js com {yearsOfExp} anos de
-					experiência, e atualmente trabalho de forma remota há 3 anos. Sou
-					formado em arquitetura de dados, analise e desenvolvimento de
-					sistemas, eletrotécnica, eletroeletrônica e gestão de energias
-					renováveis. Ao longo da minha carreira, tenho trabalhado em projetos
-					incríveis que me fizeram um profissional cada vez mais eficaz e com
-					uma análise critica de problemas e soluções eficientes. Caso deseje
-					saber mais sobre mim, fique a vontade para analisar minha história
-					profissional
+					experiência, e atuo remotamente nos últimos 3 anos. Sou formado em
+					arquitetura de dados, análise e desenvolvimento de sistemas,
+					eletrotécnica, eletroeletrônica e gestão de energias renováveis. Ao
+					longo da minha carreira, tenho trabalhado em projetos incríveis que me
+					fizeram um profissional cada vez mais eficaz e com uma análise crítica
+					de problemas e soluções eficientes. Caso deseje saber mais sobre mim,
+					fique à vontade para analisar minha história profissional
 					<Link
 						href="/curr.pdf"
 						target="_blank"
@@ -92,6 +91,7 @@ export default function About() {
 					>
 						aqui
 					</Link>
+					.
 				</p>
 			</article>
 			<footer className="mt-4 border-t-[0.0313rem] border-t-zinc-700/90 px-2 py-4">

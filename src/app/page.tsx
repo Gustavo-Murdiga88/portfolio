@@ -22,12 +22,12 @@ export default function Main() {
 				</strong>
 				<div className="rounded-xs bg-zinc-700/50 p-2">
 					<header className="relative h-[7.75rem] rounded-xs border-[0.125rem] border-zinc-700">
-						<Img
-							src="https://images.unsplash.com/photo-1537726086503-4806b83dab73?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-							height={120}
-							width={450}
-							className="absolute h-[120px] rounded-xs object-cover"
-							alt="Uma capa do meu perfil, representada um plano preto com listras"
+						<div
+							style={{
+								backgroundImage: `url(https://images.unsplash.com/photo-1651407552395-e780d88e1e14?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)`,
+								backgroundPosition: "40% 65%",
+							}}
+							className="absolute h-[120px] w-full rounded-xs bg-no-repeat object-cover"
 						/>
 
 						<Img
