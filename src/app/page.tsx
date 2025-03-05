@@ -23,7 +23,7 @@ export default function Main() {
 				<div className="rounded-xs bg-zinc-700/50 p-2">
 					<header className="relative h-[7.75rem] rounded-xs border-[0.125rem] border-zinc-700">
 						<Img
-							src="https://images.unsplash.com/photo-1738831920727-73e17adc5b87?q=100&w=1200&&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+							src="https://images.unsplash.com/photo-1537726086503-4806b83dab73?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 							height={120}
 							width={450}
 							className="absolute h-[120px] rounded-xs object-cover"

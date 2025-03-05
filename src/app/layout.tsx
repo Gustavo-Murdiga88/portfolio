@@ -32,7 +32,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 		<ViewTransitions>
 			<html lang="pt-br" className="dark" suppressHydrationWarning>
 				<body
-					className={`${poppins.className} px-2 ${poppins.variable} h-svh bg-gradient-to-b from-zinc-900 to-zinc-800 font-poppins text-zinc-50 antialiased selection:bg-emerald-400 selection:text-zinc-950`}
+					className={`${poppins.className} px-2 ${poppins.variable} h-svh bg-gradient-to-r from-zinc-900 to-zinc-800 font-poppins text-zinc-50 antialiased selection:bg-emerald-400 selection:text-zinc-950`}
 				>
 					<Toaster />
 					{children}

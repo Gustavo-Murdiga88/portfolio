@@ -78,11 +78,8 @@ export function Form({ userAlreadySendEmail }: IFormProps) {
 			data-section="contact"
 			ref={refForm}
 			onSubmit={handleSubmit}
-			className="relative mx-4 flex w-full flex-col gap-8 rounded-xs border border-neutral-800 bg-neutral-950 px-4 py-6 lg:w-[668px] lg:px-10"
+			className="relative mx-4 flex w-full flex-col gap-8 rounded-xs"
 		>
-			<h1 className="mb-4 text-center text-lg font-semibold text-neutral-200 lg:text-[1.75rem]">
-				Vamos trabalhar juntos!
-			</h1>
 			<input
 				disabled={formState.submitting}
 				name="name"
@@ -95,7 +92,7 @@ export function Form({ userAlreadySendEmail }: IFormProps) {
 				}}
 				id="name"
 				placeholder="Nome"
-				className="h-7 rounded-xs border-2 border-neutral-800 bg-neutral-50 p-4 text-[14px] font-semibold outline-none placeholder:text-neutral-200 focus-visible:ring-2 focus-visible:ring-zinc-100 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-neutral-dark-50"
+				className="h-7 rounded-xs border-2 border-neutral-800 bg-neutral-50 p-4 text-[14px] font-semibold outline-none placeholder:text-neutral-200 focus-visible:ring-2 focus-visible:ring-zinc-100 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-zinc-800"
 			/>
 			<input
 				type="email"
@@ -113,7 +110,7 @@ export function Form({ userAlreadySendEmail }: IFormProps) {
 				inputMode="email"
 				id="email"
 				placeholder="E-mail"
-				className="h-7 rounded-xs border-2 border-neutral-800 bg-neutral-50 p-4 text-[14px] font-semibold outline-none placeholder:text-neutral-200 focus-visible:ring-2 focus-visible:ring-zinc-100 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-neutral-dark-50"
+				className="h-7 rounded-xs border-2 border-neutral-800 bg-neutral-50 p-4 text-[14px] font-semibold outline-none placeholder:text-neutral-200 focus-visible:ring-2 focus-visible:ring-zinc-100 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-zinc-800"
 			/>
 
 			<textarea
@@ -131,7 +128,7 @@ export function Form({ userAlreadySendEmail }: IFormProps) {
 				required
 				disabled={formState.submitting}
 				placeholder="Digite uma mensagem..."
-				className="h-[250px] resize-none rounded-xs border-2 border-neutral-800 bg-neutral-50 p-4 text-[14px] font-semibold outline-none placeholder:text-neutral-200 focus-visible:ring-2 focus-visible:ring-zinc-100 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-neutral-dark-50"
+				className="h-[250px] resize-none rounded-xs border-2 border-neutral-800 bg-neutral-50 p-4 text-[14px] font-semibold outline-none placeholder:text-neutral-200 focus-visible:ring-2 focus-visible:ring-zinc-100 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-zinc-800"
 			/>
 			<button
 				aria-label="Enviar"
@@ -139,7 +136,7 @@ export function Form({ userAlreadySendEmail }: IFormProps) {
 				type="submit"
 				data-main
 				data-section="contact"
-				className="flex items-center justify-center gap-4 rounded-DEFAULT rounded-xs bg-blue-200 p-2 font-semibold text-neutral-100 focus:ring-2 focus:ring-neutral-50 disabled:cursor-not-allowed disabled:opacity-60"
+				className="flex items-center justify-center gap-4 rounded-DEFAULT rounded-xs bg-zinc-50 p-2 font-semibold text-zinc-950 focus:ring-2 focus:ring-neutral-50 disabled:cursor-not-allowed disabled:opacity-60"
 			>
 				Enviar
 				{formState.isLoading && (
