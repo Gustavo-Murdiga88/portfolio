@@ -80,10 +80,10 @@ export default function About() {
 					experiência, e atualmente trabalho de forma remota há 3 anos. Sou
 					formado em arquitetura de dados, analise e desenvolvimento de
 					sistemas, eletrotécnica, eletroeletrônica e gestão de energias
-					renováveis. Ao longo da minha carreira, tenho trabalhos em projetos
-					incríveis que me fizeram um profissional cadas mais eficaz e com uma
-					análise critica de problemas e soluções eficientes. Caso deseje saber
-					mais sobre mim, fique a vontade para analisar minha história
+					renováveis. Ao longo da minha carreira, tenho trabalhado em projetos
+					incríveis que me fizeram um profissional cada vez mais eficaz e com
+					uma análise critica de problemas e soluções eficientes. Caso deseje
+					saber mais sobre mim, fique a vontade para analisar minha história
 					profissional
 					<Link
 						href="/curr.pdf"
