@@ -2,6 +2,8 @@ import { ChevronRight, Github, Linkedin, Paperclip } from "lucide-react";
 import Img from "next/image";
 import { Link } from "next-view-transitions";
 
+export const dynamic = "force-dynamic";
+
 export default function Main() {
 	const date = new Date();
 	const dateFormatted = Intl.DateTimeFormat("pt-br", {
@@ -10,6 +12,7 @@ export default function Main() {
 		day: "2-digit",
 		hour: "2-digit",
 		minute: "2-digit",
+    second: "2-digit",
 	}).format(new Date());
 
 	const myYearsOld = date.getFullYear() - 1999;

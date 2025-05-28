@@ -35,7 +35,6 @@ export default function SetupPage() {
 										decoding="sync"
 										loading="eager"
 										fetchPriority="high"
-										priority
 										className="rounded-xs object-cover transition-all duration-200 hover:scale-105"
 										src={img}
 									/>

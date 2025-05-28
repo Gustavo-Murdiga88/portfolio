@@ -139,6 +139,24 @@
       "img": "/setup/rockeatseat.svg",
       "height": 130,
       "width": 130
+    }, 
+    {
+      
+      "name": "MacBook air M3",
+      "link": "https://www.amazon.com.br/vdp/0c0e461853364437b66cf11cb9bfd79e?_encoding=UTF8&ref=vse_cards_1&pd_rd_w=BivYF&content-id=amzn1.sym.7b4813e1-2e10-469a-8836-198e51e9551d&pf_rd_p=7b4813e1-2e10-469a-8836-198e51e9551d&pf_rd_r=W14CZFXXGW36ZRRNY179&pd_rd_wg=6MPTS&pd_rd_r=246105ce-976a-49cc-8431-58795b60b114",
+      "img": "/setup/macbook.png",
+      "height": 250,
+      "width": 200
+     
+    },
+    {
+      
+      "name": "Teclado mxkeys logitech",
+      "link": "https://www.amazon.com.br/dp/B09LZ1NS8Q?_encoding=UTF8&th=1",
+      "img": "/setup/mxkeys.png",
+      "height": 250,
+      "width": 200
+     
     }
   ]
 }
