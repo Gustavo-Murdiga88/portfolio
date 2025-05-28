@@ -4,35 +4,35 @@ const user = atob(process.env.NEXT_PUBLIC_NODEMAILER_EMAIL);
 const pass = atob(process.env.NEXT_PUBLIC_NODEMAILER_SECRET);
 
 export const transporter = nodemailer.createTransport({
-	host: "smtp.gmail.com.",
-	pool: true,
-	port: 465,
-	secure: true,
-	auth: {
-		type: "login",
-		user,
-		pass,
-	},
+  host: "smtp.gmail.com.",
+  pool: true,
+  port: 465,
+  secure: true,
+  auth: {
+    type: "login",
+    user,
+    pass,
+  },
 });
 
 export async function SenMailer({
-	email,
-	name,
-	text,
+  email,
+  name,
+  text,
 }: {
-	email: string;
-	text: string;
-	name: string;
+  email: string;
+  text: string;
+  name: string;
 }) {
-	const { rejected } = await transporter.sendMail({
-		to: "gumurdiga@gmail.com",
-		text: `${text} ${email}`,
-		subject: `Enviado por ${name}, do nosso portfólio`,
-	});
+  const { rejected } = await transporter.sendMail({
+    to: "gumurdiga@gmail.com",
+    text: `${text} ${email}`,
+    subject: `Enviado por ${name}, do nosso portfólio`,
+  });
 
-	return {
-		success: rejected.length === 0,
-	};
+  return {
+    success: rejected.length === 0,
+  };
 }
 // transporter.verify((error, success) => {
 // 	if (error) {
