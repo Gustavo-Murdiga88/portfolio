@@ -20,7 +20,7 @@
     "nodemailer": "^6.9.16",
     "postcss": "8.4.28",
     "react": "19.1.0",
-    "react-dom": "19.0.0",
+    "react-dom": "19.1.0",
     "sharp": "^0.33.5",
     "sonner": "^1.7.1",
     "tailwind-merge": "^2.5.5",
