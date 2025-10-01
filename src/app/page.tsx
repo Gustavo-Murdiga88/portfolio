@@ -19,12 +19,12 @@ export default function Main() {
 
   return (
     <ViewTransitions enter={"fade-left"} exit={"fade-out-left"}>
-      <div className="flex size-full flex-1 flex-col items-center justify-center">
-        <section className="w-full max-w-[458px]">
-          <strong className="mb-1 ml-2 block text-[0.625rem] font-semibold text-zinc-400">
-            Jaú, SP - {dateFormatted} / Seja bem vindo!
-          </strong>
-          <div className="rounded-xs bg-zinc-700/50 p-2">
+      <div className="my-4 flex min-h-dvh items-center justify-center md:my-0">
+        <section className="h-fit w-full max-w-[31.25rem]">
+          <div className="rounded-xs border border-zinc-700/50 p-4">
+            <strong className="mb-1 ml-2 block text-[0.625rem] font-semibold text-zinc-400">
+              Jaú, SP - {dateFormatted} / Seja bem vindo!
+            </strong>
             <header className="relative h-[7.75rem] rounded-xs border-[0.125rem] border-zinc-700">
               <div
                 style={{
@@ -53,21 +53,21 @@ export default function Main() {
             <div className="mt-4 flex items-center justify-end gap-1 pr-4">
               <Link
                 className="rounded-xs p-2 text-zinc-50 transition-colors hover:bg-zinc-700"
-                href="https://github.com/Gustavo-Murdiga88"
+                href="https://github.com/Gustavo-Murdiga88 border border-zinc-600/30"
                 target="_blank"
               >
                 <Github size={18} />
               </Link>
               <Link
                 className="rounded-xs p-2 text-zinc-50 transition-colors hover:bg-zinc-700"
-                href="https://www.linkedin.com/in/gustavomurdiga/"
+                href="https://www.linkedin.com/in/gustavomurdiga/ border border-zinc-600/30"
                 target="_blank"
               >
                 <Linkedin size={18} />
               </Link>
               <Link
                 href="/curr.pdf"
-                target="_blank"
+                target="_blank border border-zinc-600/30"
                 className="rounded-xs p-2 text-zinc-50 transition-colors hover:bg-zinc-700"
               >
                 <Paperclip size={18} />
@@ -77,18 +77,31 @@ export default function Main() {
             <ul className="mx-2 mt-2 flex flex-col gap-1">
               <li>
                 <strong className="block text-[0.875rem] font-semibold">
-                  Gustavo Murdiga / Desenvolvedor full-stack
+                  Gustavo Murdiga
+                  <br />
+                  <span className="text-blue-900">
+                    Desenvolvedor full-stack senior
+                  </span>
+                  <br />
+                  na
+                  <Link
+                    href={"https://remessaonline.com.br"}
+                    target="_blank border border-zinc-600/30"
+                    className="ml-1 hover:underline"
+                  >
+                    Remessa online
+                  </Link>
                 </strong>
               </li>
               <li>
                 <Link
                   href="mailto:gumurdiga@gmail.com"
-                  className="block text-[0.625rem] font-semibold text-zinc-50 transition-colors hover:underline hover:underline-offset-2"
+                  className="block py-2 text-[0.75rem] font-semibold text-blue-900 underline transition-colors hover:underline hover:underline-offset-2"
                 >
                   gumurdiga@gmail.com
                 </Link>
               </li>
-              <li className="block text-[0.625rem] font-semibold text-zinc-50 transition-colors">
+              <li className="block text-[12px] font-semibold text-zinc-50 transition-colors">
                 {myYearsOld} anos
               </li>
             </ul>
@@ -101,7 +114,7 @@ export default function Main() {
                 <li>
                   <Link
                     href="/about"
-                    className="flex items-center justify-between rounded-xs p-2 font-semibold transition-colors hover:bg-zinc-700"
+                    className="flex items-center justify-between rounded-xs border border-zinc-600/30 p-3 font-semibold transition-colors hover:bg-zinc-700"
                   >
                     Sobre
                     <ChevronRight size={16} />
@@ -110,7 +123,7 @@ export default function Main() {
                 <li>
                   <Link
                     href="/skills"
-                    className="flex items-center justify-between rounded-xs p-2 font-semibold transition-colors hover:bg-zinc-700"
+                    className="flex items-center justify-between rounded-xs border border-zinc-600/30 p-3 font-semibold transition-colors hover:bg-zinc-700"
                   >
                     Habilidades
                     <ChevronRight size={16} />
@@ -119,7 +132,7 @@ export default function Main() {
                 <li>
                   <Link
                     href="/projects"
-                    className="flex items-center justify-between rounded-xs p-2 font-semibold transition-colors hover:bg-zinc-700"
+                    className="flex items-center justify-between rounded-xs border border-zinc-600/30 p-3 font-semibold transition-colors hover:bg-zinc-700"
                   >
                     Projetos
                     <ChevronRight size={16} />
@@ -128,7 +141,7 @@ export default function Main() {
                 <li>
                   <Link
                     href="/setup"
-                    className="flex items-center justify-between rounded-xs p-2 font-semibold transition-colors hover:bg-zinc-700"
+                    className="flex items-center justify-between rounded-xs border border-zinc-600/30 p-3 font-semibold transition-colors hover:bg-zinc-700"
                   >
                     Setup
                     <ChevronRight size={16} />
@@ -137,7 +150,7 @@ export default function Main() {
                 <li>
                   <Link
                     href="/daily-liturgy"
-                    className="flex items-center justify-between rounded-xs p-2 font-semibold transition-colors hover:bg-zinc-700"
+                    className="flex items-center justify-between rounded-xs border border-zinc-600/30 p-3 font-semibold transition-colors hover:bg-zinc-700"
                   >
                     Liturgia diária
                     <ChevronRight size={16} />
@@ -146,7 +159,7 @@ export default function Main() {
                 <li>
                   <Link
                     href="/contact"
-                    className="flex items-center justify-between rounded-xs p-2 font-semibold transition-colors hover:bg-zinc-700"
+                    className="flex items-center justify-between rounded-xs border border-zinc-600/30 p-3 font-semibold transition-colors hover:bg-zinc-700"
                   >
                     Contato
                     <ChevronRight size={16} />

@@ -20,12 +20,12 @@ export const metadata: Metadata = {
   creator: "GM DEV",
   openGraph: {
     type: "article",
-    locale: "Pt-br",
+    locale: "pt-br",
     title: `Liturgia Diária 🙏 ${today}`,
     description: "Liturgia diária",
     tags: ["gospel", "evangelho"],
     images: [
-      "https://1drv.ms/i/c/a37e0f73b46925c9/UQPJJWm0cw9-IICjyA8AAAAAADMOnQ4yAdE9meQ?width=1024",
+      "https://res.cloudinary.com/dtrh0qcd3/image/upload/v1759287677/jesus_ld4tyz.jpg",
     ],
   },
   twitter: {
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description: "Tenha seu minuto de fé!",
     title: `Liturgia Diária 🙏 ${today}`,
     images: [
-      "https://1drv.ms/i/c/a37e0f73b46925c9/UQPJJWm0cw9-IICjyA8AAAAAADMOnQ4yAdE9meQ?width=1024",
+      "https://res.cloudinary.com/dtrh0qcd3/image/upload/v1759287677/jesus_ld4tyz.jpg",
     ],
   },
 };

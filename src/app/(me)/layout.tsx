@@ -8,7 +8,7 @@ import { Title } from "@/components/title";
 export default function MeLayout({ children }: { children: ReactNode }) {
   return (
     <ViewTransitions name="me" exit={"fade-out-right"} enter={"fade-right"}>
-      <div className="flex h-svh flex-col">
+      <div className="flex min-h-dvh flex-col">
         <Title id="setup" title="Meus Equipamentos">
           <nav
             aria-label="Ações"

@@ -157,14 +157,14 @@ export default function About() {
         >
           <label
             htmlFor="checkbox"
-            className="flex items-center gap-2 text-[0.875rem] font-semibold"
+            className="flex w-fit cursor-pointer items-center gap-2 rounded-xs border border-zinc-600/30 p-2 px-4 text-[0.875rem] font-semibold transition-all hover:bg-zinc-600/40"
           >
-            Trajetória professional{" "}
+            Trajetória professional
             <ChevronDown
               size={18}
               className="group transition-transform duration-200 group-has-[input:checked]:rotate-180"
             />
-            <input type="checkbox" hidden id="checkbox" />
+            <input type="checkbox" defaultChecked hidden id="checkbox" />
           </label>
           <div
             id="accordion"

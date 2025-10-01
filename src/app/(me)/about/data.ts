@@ -2,18 +2,28 @@ import anhanguera from "@/assets/anhanguera.jpg";
 import fluency from "@/assets/Fluency.png";
 import guarani from "@/assets/guarani.jpg";
 import onfriday from "@/assets/onfriday.jpeg";
+import remessa from "@/assets/remessa.webp";
 import rockeatseat from "@/assets/rockeat-seat.png";
 import sti3 from "@/assets/sti3.png";
 import { ITimeLineProps } from "@/components/time_line/widget";
 
 export const time_line: ITimeLineProps[] = [
   {
-    company: "Guarani sistemas",
+    company: "Remessa online",
     date: "Atualmente",
+    title: "Desenvolvedor full-stack senior",
+    url: "https://remessaonline.com.br",
+    description:
+      "Atualmente atuo como desenvolvedor full-stack sênior na Remessa Online, fintech líder no mercado de transferências internacionais. Minhas principais responsabilidades incluem desenvolver e manter soluções tecnológicas que facilitam operações financeiras, garantindo segurança, eficiência e inovação.\n\nTrabalho com tecnologias modernas como Node.js, React, TypeScript e AWS para criar sistemas robustos e escaláveis. Colaboro com equipes multidisciplinares na entrega de produtos de alta qualidade que atendem às necessidades do mercado global.\n\nMinhas atividades abrangem:\n• Manutenção e otimização de filas de processamento\n• Comunicação entre microsserviços utilizando gRPC, RabbitMQ, SNS e SQS\n• Desenvolvimento de testes automatizados com Jest\n• Foco na melhoria contínua e excelência operacional",
+    img: remessa.src,
+  },
+  {
+    company: "Guarani sistemas",
+    date: "17/10/2023 à 18/08/2025",
     title: "Desenvolvedor full-stack web/mobile",
     url: "https://guaranisistemas.com.br/",
     description:
-      "Sou peça fundamental no avanço contínuo do sistema ERP em nuvem,liderando a implementação de funcionalidades e estabelecendo padrõesde projeto para uma arquitetura eficiente e facilmente mantida. Minha atuação abrange desde a resolução de bugs até aprimoramentos na performance, com dedicação à criação e implementação de testes automatizados para garantir qualidade e conformidade com padrões de desenvolvimento.À frente da equipe web, conduzo a equipe na implementação de novas tarefas, especialmente para telas responsivas, e contribuo para o design system da empresa. Na equipe mobile, destaco-me no desenvolvimento de um ERP offline-first em Flutter. Utilizamos Next.js como core em nossos projetos web, ampliando nossa versatilidade. Essa diversidade de habilidades e contribuições reforça meu papel como agente-chave para o sucesso e a evolução contínua dos sistemas.",
+      "Atuei como peça fundamental no desenvolvimento contínuo do sistema ERP em nuvem, liderando a implementação de funcionalidades e estabelecendo padrões de projeto para uma arquitetura eficiente e facilmente mantida.\n\nMinhas responsabilidades incluíram:\n• Resolução de bugs e otimização de performance\n• Criação e implementação de testes automatizados\n• Liderança da equipe web na implementação de telas responsivas\n• Contribuição para o design system da empresa\n• Desenvolvimento de ERP offline-first em Flutter para mobile\n• Utilização de Next.js como core nos projetos web\n\nEssa diversidade de habilidades reforçou meu papel como agente-chave no sucesso e evolução contínua dos sistemas.",
     img: guarani.src,
   },
   {
@@ -22,7 +32,7 @@ export const time_line: ITimeLineProps[] = [
     title: "Desenvolvedor Mobile",
     url: "https://www.linkedin.com/company/onfridaytech/",
     description:
-      "Como desenvolvedor, tive o papel fundamental na criação da arquitetura de um aplicativo móvel inovador. Minhas responsabilidades incluíram a implementação de funcionalidades e telas para um eficiente sistema de venda de ingressos online, integrado harmoniosamente com um site na web. Utilizei a tecnologia React Native com Expo para garantir uma experiência ágil e unificada em ambas as plataformas",
+      "Desempenhei papel fundamental na criação da arquitetura de um aplicativo móvel inovador para sistema de venda de ingressos online.\n\nMinhas principais contribuições:\n• Implementação de funcionalidades e telas para o aplicativo\n• Integração harmoniosa entre aplicativo móvel e plataforma web\n• Desenvolvimento com React Native e Expo\n• Garantia de experiência ágil e unificada em ambas as plataformas\n\nO projeto resultou em uma solução completa e eficiente para venda de ingressos digitais.",
     img: onfriday.src,
   },
   {
@@ -31,7 +41,7 @@ export const time_line: ITimeLineProps[] = [
     title: "Desenvolvedor Front-End",
     url: "https://www.sti3.com.br",
     description:
-      "Atuando de forma proativa no desenvolvimento e aprimoramento contínuo de funcionalidades cruciais para o sistema ERP comercializado pela empresa. Minha expertise concentra-se no uso predominante da tecnologia React.js, combinada com bibliotecas de estilização. Como parte integral da equipe, sou responsável por manter e contribuir para novas implementações no sistema ERP em nuvem. Destacando-me no gerenciamento de relatórios, implementação do PDV do sistema e nas estratégias de implementações de cache em requisições, otimizando assim a eficiência do sistema.",
+      "Atuei proativamente no desenvolvimento e aprimoramento de funcionalidades cruciais para o sistema ERP comercializado pela empresa.\n\nMinhas especialidades incluíram:\n• Desenvolvimento predominante com React.js e bibliotecas de estilização\n• Manutenção e implementação de novas funcionalidades no ERP em nuvem\n• Gerenciamento e otimização de relatórios\n• Implementação do sistema PDV\n• Estratégias de cache em requisições para otimização de performance\n\nContribuí significativamente para a eficiência e qualidade do sistema como parte integral da equipe.",
     img: sti3.src,
   },
   {
