@@ -69,6 +69,7 @@ export default function Main() {
                 href="/curr.pdf"
                 target="_blank border border-zinc-600/30"
                 className="rounded-xs p-2 text-zinc-50 transition-colors hover:bg-zinc-700"
+                prefetch={false}
               >
                 <Paperclip size={18} />
               </Link>
