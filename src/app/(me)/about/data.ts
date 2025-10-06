@@ -1,4 +1,5 @@
 import anhanguera from "@/assets/anhanguera.jpg";
+import fitlab from "@/assets/fitlab.svg";
 import fluency from "@/assets/Fluency.png";
 import guarani from "@/assets/guarani.jpg";
 import onfriday from "@/assets/onfriday.jpeg";
@@ -16,6 +17,15 @@ export const time_line: ITimeLineProps[] = [
     description:
       "Atualmente atuo como desenvolvedor full-stack sênior na Remessa Online, fintech líder no mercado de transferências internacionais. Minhas principais responsabilidades incluem desenvolver e manter soluções tecnológicas que facilitam operações financeiras, garantindo segurança, eficiência e inovação.\n\nTrabalho com tecnologias modernas como Node.js, React, TypeScript e AWS para criar sistemas robustos e escaláveis. Colaboro com equipes multidisciplinares na entrega de produtos de alta qualidade que atendem às necessidades do mercado global.\n\nMinhas atividades abrangem:\n• Manutenção e otimização de filas de processamento\n• Comunicação entre microsserviços utilizando gRPC, RabbitMQ, SNS e SQS\n• Desenvolvimento de testes automatizados com Jest\n• Foco na melhoria contínua e excelência operacional",
     img: remessa.src,
+  },
+  {
+    company: "Fit lab",
+    date: "01/07/2025 à 01/10/2025",
+    title: "Desenvolvedor mobile senior",
+    url: "https://www.fitlab.pro/",
+    description:
+      "Fui responsável pela manutenção contínua e pela implementação de novas funcionalidades nos sistemas distribuídos da empresa, incluindo os aplicativos Android e iOS, além do ERP em nuvem.\n\nTrabalho com tecnologias como React.js, Next.js e React Native para aplicações multiplataforma, utilizando Styled-components para criação e estilização de componentes. Também desenvolvo e mantenho testes automatizados com ferramentas como Vitest, Playwright, Detox e Jest, garantindo a qualidade e estabilidade dos sistemas.\n\nMinhas responsabilidades incluem:\n• Desenvolvimento de aplicações multiplataforma com React Native\n• Implementação e manutenção de testes automatizados\n• Criação e distribuição de aplicativos nas lojas Apple e Google\n• Liderança da equipe de desenvolvimento\n• Gerenciamento de entregas e revisões de código\n• Supervisão do ciclo completo de versionamento e publicação",
+    img: fitlab.src,
   },
   {
     company: "Guarani sistemas",
