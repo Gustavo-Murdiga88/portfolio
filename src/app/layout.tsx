@@ -29,6 +29,13 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-br" className="dark" suppressHydrationWarning>
+      <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6252769412873895"
+          crossOrigin="anonymous"
+        ></script>
+      </head>
       <body
         className={`${poppins.className} px-2 ${poppins.variable} h-svh bg-gradient-to-r from-zinc-900 to-zinc-800 font-poppins text-zinc-50 antialiased selection:bg-emerald-400 selection:text-zinc-950`}
       >
