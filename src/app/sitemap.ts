@@ -50,5 +50,23 @@ export default function siteMap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       priority: 0.8,
     },
+    {
+      url: "https://gustavomurdiga.vercel.app/blog",
+      changeFrequency: "weekly",
+      lastModified: new Date(),
+      priority: 0.9,
+    },
+    {
+      url: "https://gustavomurdiga.vercel.app/privacy-policy",
+      changeFrequency: "monthly",
+      lastModified: new Date(),
+      priority: 0.5,
+    },
+    {
+      url: "https://gustavomurdiga.vercel.app/terms-of-service",
+      changeFrequency: "monthly",
+      lastModified: new Date(),
+      priority: 0.5,
+    },
   ];
 }

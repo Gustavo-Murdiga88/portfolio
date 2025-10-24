@@ -73,26 +73,77 @@ export default function About() {
             </div>
           </div>
         </header>
-        <p className="text-justify text-[0.875rem] font-medium text-neutral-900 dark:text-neutral-dark-900">
-          Olá, meu nome é Gustavo, moro em Jaú, interior de São Paulo e tenho{" "}
-          {yearsOld} anos de idade. Sou um desenvolvedor full-stack
-          especializado em Javascript e Node.js com {yearsOfExp} anos de
-          experiência, e atuo remotamente nos últimos 3 anos. Sou formado em
-          arquitetura de dados, análise e desenvolvimento de sistemas,
-          eletrotécnica, eletroeletrônica e gestão de energias renováveis. Ao
-          longo da minha carreira, tenho trabalhado em projetos incríveis que me
-          fizeram um profissional cada vez mais eficaz e com uma análise crítica
-          de problemas e soluções eficientes. Caso deseje saber mais sobre mim,
-          fique à vontade para analisar minha história profissional
-          <Link
-            href="/curr.pdf"
-            target="_blank"
-            className="ml-2 font-semibold text-zinc-50 underline"
-          >
-            aqui
-          </Link>
-          .
-        </p>
+        <div className="space-y-4 text-justify text-[0.875rem] font-medium text-neutral-900 dark:text-neutral-dark-900">
+          <p>
+            Olá, meu nome é Gustavo, moro em Jaú, interior de São Paulo e tenho{" "}
+            {yearsOld} anos de idade. Sou um desenvolvedor full-stack
+            especializado em Javascript e Node.js com {yearsOfExp} anos de
+            experiência, e atuo remotamente nos últimos 3 anos.
+          </p>
+
+          <p>
+            Minha jornada na tecnologia começou de forma curiosa. Desde criança,
+            sempre fui fascinado por como as coisas funcionavam - desmontava
+            eletrônicos para entender seus mecanismos internos. Essa curiosidade
+            natural me levou inicialmente para a área elétrica, onde me formei
+            em eletrotécnica e eletroeletrônica, mas foi o mundo do software que
+            verdadeiramente capturou minha paixão.
+          </p>
+
+          <p>
+            Durante minha formação em análise e desenvolvimento de sistemas e
+            arquitetura de dados, descobri que programar não é apenas escrever
+            código - é resolver problemas reais das pessoas. Cada projeto é um
+            quebra-cabeça único que requer criatividade, lógica e muita
+            dedicação.
+          </p>
+
+          <p>
+            Atualmente trabalho como desenvolvedor full-stack sênior na Remessa
+            Online, onde contribuo para uma fintech que facilita transferências
+            internacionais. Meu trabalho envolve desde a criação de interfaces
+            intuitivas com React e Next.js até o desenvolvimento de APIs
+            robustas com Node.js e NestJS, sempre priorizando performance,
+            segurança e experiência do usuário.
+          </p>
+
+          <p>
+            O que mais me motiva na programação é a capacidade de transformar
+            ideias em soluções tangíveis que impactam positivamente a vida das
+            pessoas. Cada linha de código é uma oportunidade de fazer a
+            diferença, seja otimizando um processo, criando uma nova
+            funcionalidade ou melhorando a experiência do usuário.
+          </p>
+
+          <p>
+            Além da tecnologia, sou católico praticante e acredito que a fé me
+            proporciona uma perspectiva única sobre ética no trabalho e
+            responsabilidade social. Também tenho grande interesse em energias
+            renováveis - área onde possuo formação específica - pois acredito na
+            importância da sustentabilidade para o futuro do nosso planeta.
+          </p>
+
+          <p>
+            Quando não estou codificando, gosto de compartilhar conhecimento
+            através de artigos no meu blog, contribuir com projetos open source
+            e estar sempre aprendendo novas tecnologias. A tecnologia evolui
+            rapidamente, e manter-se atualizado é essencial para continuar
+            oferecendo soluções modernas e eficientes.
+          </p>
+
+          <p>
+            Caso deseje saber mais sobre minha experiência profissional
+            detalhada, fique à vontade para analisar meu currículo completo
+            <Link
+              href="/curr.pdf"
+              target="_blank"
+              className="ml-2 font-semibold text-zinc-50 underline"
+            >
+              aqui
+            </Link>
+            .
+          </p>
+        </div>
       </article>
       <footer className="mt-4 border-t-[0.0313rem] border-t-zinc-700/90 px-2 py-4">
         <ul className="flex list-none flex-wrap gap-4 text-zinc-50">
