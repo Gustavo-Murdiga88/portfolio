@@ -30,7 +30,7 @@ interface IFetchReturn {
 
 export default async function Page() {
   const today = new Date();
-  const restInMiliSeconds = (24 - today.getHours()) * (60 * 60);
+  const restInMiliSeconds = 60 * 60;
 
   const data = (await fetch(
     `${process.env.DAILY_LITURGY_URL}?dia=${today.getDate()}&mes=${today.getMonth() + 1}`,
