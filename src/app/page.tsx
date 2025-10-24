@@ -150,6 +150,15 @@ export default function Main() {
                 </li>
                 <li>
                   <Link
+                    href="/blog"
+                    className="flex items-center justify-between rounded-xs border border-zinc-600/30 p-3 font-semibold transition-colors hover:bg-zinc-700"
+                  >
+                    Blog
+                    <ChevronRight size={16} />
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     href="/daily-liturgy"
                     className="flex items-center justify-between rounded-xs border border-zinc-600/30 p-3 font-semibold transition-colors hover:bg-zinc-700"
                   >
@@ -174,6 +183,20 @@ export default function Main() {
                 Made with 💜 <br />
                 by Gustavo Murdiga{" "}
               </strong>
+              <div className="mt-2 flex justify-center gap-4 text-[0.5rem]">
+                <Link
+                  href="/privacy-policy"
+                  className="text-zinc-400 transition-colors hover:text-zinc-50 hover:underline"
+                >
+                  Política de Privacidade
+                </Link>
+                <Link
+                  href="/terms-of-service"
+                  className="text-zinc-400 transition-colors hover:text-zinc-50 hover:underline"
+                >
+                  Termos de Uso
+                </Link>
+              </div>
             </footer>
           </div>
         </section>

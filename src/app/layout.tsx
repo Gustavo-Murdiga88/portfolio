@@ -6,6 +6,9 @@ import { Poppins } from "next/font/google";
 import { ReactNode } from "react";
 import { Toaster } from "sonner";
 
+import { CookieBanner } from "@/components/cookie-banner";
+import { GoogleAnalytics } from "@/components/google-analytics";
+
 import { options, struttedData, struttedDataOrganization } from "./meta";
 
 const poppins = Poppins({
@@ -41,6 +44,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       >
         <Toaster />
         {children}
+        <CookieBanner />
+        <GoogleAnalytics />
         <section>
           <script
             type="application/ld+json"
