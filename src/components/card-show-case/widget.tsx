@@ -44,7 +44,7 @@ export function Card({
   return (
     <article
       {...props}
-      className="rounded-xs bg-card p-0.5 md:max-h-[400px] md:w-[16.25rem]"
+      className="rounded-xs bg-card p-0.5 md:max-h-[400px] md:w-[260px]"
     >
       <div className="flex h-full flex-col gap-2 rounded-xs bg-neutral-dark-50 p-4">
         <figure className="flex h-[6.875rem] items-center justify-center rounded-xs bg-zinc-800/50 [&_img]:max-h-[6.25rem]">

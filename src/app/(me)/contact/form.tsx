@@ -136,7 +136,7 @@ export function Form({ userAlreadySendEmail }: IFormProps) {
         type="submit"
         data-main
         data-section="contact"
-        className="flex items-center justify-center gap-4 rounded-DEFAULT rounded-xs bg-zinc-50 p-2 font-semibold text-zinc-950 focus:ring-2 focus:ring-neutral-50 disabled:cursor-not-allowed disabled:opacity-60"
+        className="flex items-center justify-center gap-4 rounded-xs border border-zinc-600 bg-zinc-800 p-2 font-semibold text-zinc-200 focus:ring-2 focus:ring-neutral-50 disabled:cursor-not-allowed disabled:opacity-60"
       >
         Enviar
         {formState.isLoading && (

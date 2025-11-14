@@ -7,6 +7,10 @@ const exp = currentYear - 2020;
 export const options: Metadata = {
   abstract: `Sou um engenheiro de software com +${exp} anos de experiência, especializado em tecnologias como React.js, Next.js, Node.js,NestJS e AWS.Brasileiro, nascido em Jaú no interior de São paulo, com ${myYearsOld} anos, católico, estudante e um desenvolvedor que busca ser melhor, não apenas nas linhas de código, mas como pessoa.`,
   applicationName: "Gustavo Murdiga",
+  robots: {
+    index: true,
+    follow: true,
+  },
   formatDetection: {
     address: true,
     date: false,
@@ -22,8 +26,9 @@ export const options: Metadata = {
     capable: false,
     title: "Olá, eu sou o Gustavo! 🤓",
   },
+  generator: "Next.js",
   publisher: "Gustavo Murdiga",
-  classification: "Portfólio",
+  classification: "Personal Blog",
   metadataBase: new URL("https://gustavomurdiga.vercel.app/"),
   alternates: {
     canonical: "/",
@@ -65,6 +70,26 @@ export const options: Metadata = {
     "Tecnologia em Jaú",
     "GM Dev",
     "Gustavo Murdiga",
+    "Desenvolvedor Full-Stack",
+    "Engenheiro de Software",
+    "Desenvolvedor React.js",
+    "Desenvolvedor Node.js",
+    "Desenvolvedor NestJS",
+    "Desenvolvedor Next.js",
+    "Desenvolvedor AWS",
+    "Portfólio de Desenvolvedor",
+    "Blog de Tecnologia",
+    "Inovação em Software",
+    "Soluções Web",
+    "Desenvolvimento Ágil",
+    "Transformação Digital",
+    "Carreira em Tecnologia",
+    "Projetos de Software",
+    "Desenvolvimento de Aplicações",
+    "Tecnologias Modernas",
+    "Desenvolvimento de Sistemas",
+    "Desenvolvedor Brasileiro",
+    "Tecnologia no Brasil",
   ],
 };
 

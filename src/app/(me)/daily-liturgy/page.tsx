@@ -1,3 +1,6 @@
+import dayjs from "dayjs";
+import { Metadata } from "next";
+
 interface IFetchReturn {
   data: string;
   liturgia: string;
@@ -28,6 +31,66 @@ interface IFetchReturn {
   };
 }
 
+const today = dayjs().format("DD/MM/YYYY");
+
+export const metadata: Metadata = {
+  title: `Liturgia Diária 🙏 ${today}`,
+  description: "Aqui será mostrado à você a liturgia diária da igreja católica",
+  authors: [
+    {
+      name: "Gustavo Murdiga",
+    },
+  ],
+  appleWebApp: {
+    capable: false,
+    statusBarStyle: "black-translucent",
+    title: "Liturgia Diária",
+  },
+  category: "Religion",
+  keywords: [
+    "liturgia",
+    "evangelho",
+    "gospel",
+    "católico",
+    "evangelho do dia",
+    "liturgia diária",
+    "igreja católica",
+    "fé",
+    "oração",
+    "devocional",
+    "espiritualidade",
+    "bíblia",
+    "palavra de Deus",
+    "meditação",
+    "santo",
+    "sacramento",
+    "missal",
+    "celebração",
+    "liturgia das horas",
+    "reflexão bíblica",
+    "vida cristã",
+  ],
+  creator: "Gustavo Murdiga",
+  openGraph: {
+    type: "article",
+    locale: "pt-br",
+    title: `Liturgia Diária 🙏 ${today}`,
+    description: "Liturgia diária",
+    tags: ["gospel", "evangelho"],
+    images: [
+      "https://res.cloudinary.com/dtrh0qcd3/image/upload/v1759287677/jesus_ld4tyz.jpg",
+    ],
+  },
+  twitter: {
+    site: "@GuMurdiga",
+    description: "Tenha seu minuto de fé!",
+    title: `Liturgia Diária 🙏 ${today}`,
+    images: [
+      "https://res.cloudinary.com/dtrh0qcd3/image/upload/v1759287677/jesus_ld4tyz.jpg",
+    ],
+  },
+};
+
 export default async function Page() {
   const today = new Date();
   const restInMiliSeconds = 60 * 60;
@@ -46,11 +109,11 @@ export default async function Page() {
   const title = data.evangelho.titulo.replace("✠", "✞");
 
   return (
-    <div className="prose prose-sm prose-zinc prose-invert flex min-w-full flex-col justify-center p-4 md:prose-base prose-h2:mt-0 prose-p:hyphens-auto">
+    <div className="prose prose-sm prose-zinc prose-invert mx-auto flex max-w-[45rem] flex-1 flex-col justify-center p-4 md:prose-base prose-h2:mt-0 prose-p:hyphens-auto">
       <span className="text-[0.75rem] font-semibold text-zinc-100/60">
         Cor Litúrgica: {data.cor}
       </span>
-      <span className="text-[0.75rem] font-semibold text-zinc-100/60">
+      <span className="mb-4 text-[0.75rem] font-semibold text-zinc-100/60">
         Data: {data.data}
       </span>
 

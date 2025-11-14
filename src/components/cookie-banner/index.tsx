@@ -41,7 +41,6 @@ export function CookieBanner() {
     localStorage.setItem("cookie-consent", JSON.stringify(consentData));
     setIsVisible(false);
 
-    // Load analytics and advertising scripts
     if (typeof window !== "undefined") {
       window.gtag?.("consent", "update", {
         analytics_storage: "granted",
@@ -80,7 +79,6 @@ export function CookieBanner() {
     localStorage.setItem("cookie-consent", JSON.stringify(consentData));
     setIsVisible(false);
 
-    // Deny all non-necessary cookies
     if (typeof window !== "undefined") {
       window.gtag?.("consent", "update", {
         analytics_storage: "denied",
@@ -90,7 +88,7 @@ export function CookieBanner() {
   };
 
   const togglePreference = (key: keyof typeof preferences) => {
-    if (key === "necessary") return; // Can't disable necessary cookies
+    if (key === "necessary") return;
 
     setPreferences((prev) => ({
       ...prev,

@@ -1,34 +1,25 @@
 import dayjs from "dayjs";
-import ptBr from "dayjs/locale/pt-br";
-import timeZone from "dayjs/plugin/timezone";
 import { ChevronRight, Github, Linkedin, Paperclip } from "lucide-react";
 import Img from "next/image";
 import Link from "next/link";
-
-export const dynamic = "force-dynamic";
 import { unstable_ViewTransition as ViewTransitions } from "react";
 
-dayjs.extend(timeZone);
-dayjs.locale(ptBr);
+export const dynamic = "force-dynamic";
 
 export default function Main() {
   const date = dayjs();
-  const dateFormatted = date.format("DD/MM/YYYY HH:mm:ss");
 
   const myYearsOld = date.get("year") - 1999;
 
   return (
     <ViewTransitions enter={"fade-left"} exit={"fade-out-left"}>
       <div className="my-4 flex min-h-dvh items-center justify-center md:my-0">
-        <section className="h-fit w-full max-w-[31.25rem]">
+        <section className="h-fit w-full max-w-[45rem]">
           <div className="rounded-xs border border-zinc-700/50 p-4">
-            <strong className="mb-1 ml-2 block text-[0.625rem] font-semibold text-zinc-400">
-              Jaú, SP - {dateFormatted} / Seja bem vindo!
-            </strong>
             <header className="relative h-[7.75rem] rounded-xs border-[0.125rem] border-zinc-700">
               <div
                 style={{
-                  backgroundImage: `url(https://images.unsplash.com/photo-1651407552395-e780d88e1e14?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)`,
+                  backgroundImage: `url(https://images.unsplash.com/photo-1651407552395-e780d88e1e14?q=80&w=720&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)`,
                   backgroundPosition: "40% 65%",
                 }}
                 className="absolute h-[120px] w-full rounded-xs bg-no-repeat object-cover"
@@ -53,14 +44,14 @@ export default function Main() {
             <div className="mt-4 flex items-center justify-end gap-1 pr-4">
               <Link
                 className="rounded-xs p-2 text-zinc-50 transition-colors hover:bg-zinc-700"
-                href="https://github.com/Gustavo-Murdiga88 border border-zinc-600/30"
+                href="https://github.com/Gustavo-Murdiga88"
                 target="_blank"
               >
                 <Github size={18} />
               </Link>
               <Link
                 className="rounded-xs p-2 text-zinc-50 transition-colors hover:bg-zinc-700"
-                href="https://www.linkedin.com/in/gustavomurdiga/ border border-zinc-600/30"
+                href="https://www.linkedin.com/in/gustavomurdiga"
                 target="_blank"
               >
                 <Linkedin size={18} />
@@ -80,7 +71,7 @@ export default function Main() {
                 <strong className="block text-[0.875rem] font-semibold">
                   Gustavo Murdiga
                   <br />
-                  <span className="text-blue-900">
+                  <span className="text-zinc-200">
                     Desenvolvedor full-stack senior
                   </span>
                   <br />
@@ -97,7 +88,7 @@ export default function Main() {
               <li>
                 <Link
                   href="mailto:gumurdiga@gmail.com"
-                  className="block py-2 text-[0.75rem] font-semibold text-blue-900 underline transition-colors hover:underline hover:underline-offset-2"
+                  className="block py-2 text-[0.75rem] font-semibold text-zinc-200 underline transition-colors hover:underline hover:underline-offset-2"
                 >
                   gumurdiga@gmail.com
                 </Link>
@@ -177,27 +168,6 @@ export default function Main() {
                 </li>
               </ul>
             </nav>
-
-            <footer className="group mt-4 border-t border-zinc-700 py-4 text-center text-[0.625rem]">
-              <strong className="leading-relaxed">
-                Made with 💜 <br />
-                by Gustavo Murdiga{" "}
-              </strong>
-              <div className="mt-2 flex justify-center gap-4 text-[0.5rem]">
-                <Link
-                  href="/privacy-policy"
-                  className="text-zinc-400 transition-colors hover:text-zinc-50 hover:underline"
-                >
-                  Política de Privacidade
-                </Link>
-                <Link
-                  href="/terms-of-service"
-                  className="text-zinc-400 transition-colors hover:text-zinc-50 hover:underline"
-                >
-                  Termos de Uso
-                </Link>
-              </div>
-            </footer>
           </div>
         </section>
       </div>
