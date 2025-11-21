@@ -1,8 +1,15 @@
+import createMDX from "@next/mdx";
+
+const withMDX = createMDX({
+	extension: /\.(mdx|md)$/,
+})
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	experimental: {
 		viewTransition: true,
 	},
+	pageExtensions: ["ts", "tsx", "mdx", "md"],
 	async rewrites() {
 		return [
 			{
@@ -30,4 +37,4 @@ const nextConfig = {
 	},
 };
 
-module.exports = nextConfig;
+export default withMDX(nextConfig);

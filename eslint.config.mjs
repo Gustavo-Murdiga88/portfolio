@@ -13,7 +13,19 @@ const config = [
     extends: ["next/core-web-vitals"],
     rules: {
       "@typescript-eslint/no-require-imports": "off",
-    }
+    },
+    overrides: [
+      {
+        files: ["**/*.md", "**/*.mdx"],
+        extends: ["plugin:mdx/recommended"],
+        parser: "eslint-mdx",
+        rules: {
+          "@typescript-eslint/naming-convention": "off",
+          "@next/next/no-img-element": "off",
+          "prettier/prettier": ["error", { parser: "mdx" }],
+        },
+      },
+    ],
   }),
 ];
 

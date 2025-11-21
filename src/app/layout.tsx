@@ -48,7 +48,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Toaster />
         {children}
         <CookieBanner />
-        <footer className="border-t border-zinc-700 p-4">
+        <footer className="mt-3 border-t border-zinc-700 p-4">
           <div className="mx-auto max-w-[820px] text-center">
             <h2 className="mb-4 text-sm font-semibold text-zinc-50">
               Gustavo Murdiga
