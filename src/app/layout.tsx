@@ -36,11 +36,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-br" className="dark" suppressHydrationWarning>
       <head>
-        <script
+        <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6252769412873895"
           crossOrigin="anonymous"
-        ></script>
+        ></Script>
       </head>
       <body
         className={`${poppins.className} px-2 ${poppins.variable} h-svh bg-gradient-to-r from-zinc-950 to-zinc-900 font-poppins text-zinc-50 antialiased selection:bg-emerald-400 selection:text-zinc-950`}
@@ -48,7 +48,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Toaster />
         {children}
         <CookieBanner />
-        <footer className="border-t border-zinc-700 p-4">
+        <footer className="mt-3 border-t border-zinc-700 p-4">
           <div className="mx-auto max-w-[820px] text-center">
             <h2 className="mb-4 text-sm font-semibold text-zinc-50">
               Gustavo Murdiga

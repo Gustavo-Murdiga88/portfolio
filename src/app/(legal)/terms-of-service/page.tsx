@@ -9,6 +9,12 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  alternates: {
+    canonical: `${process.env.NEXT_PUBLIC_SITE_URL}/terms-of-service`,
+    languages: {
+      "pt-BR": `${process.env.NEXT_PUBLIC_SITE_URL}/terms-of-service`,
+    },
+  },
 };
 
 export default function TermsOfService() {

@@ -7,8 +7,13 @@
   --scroll-thumb-background: #000;
 }
 
+@view-transition {
+  navigation: auto;
+}
 
 @layer utilities {
+
+
   * {
     scroll-behavior: smooth;
   }
@@ -80,7 +85,6 @@
     }
   }
 
-
   ::view-transition-old(.fade-right) {
     animation-duration: 500ms;
     animation-name: fade-out-from-right;
@@ -91,7 +95,6 @@
     animation-name: fade-in-from-right;
   }
 
-
   ::view-transition-old(.fade-left) {
     animation-duration: 500ms;
     animation-name: fade-out-from-left;
@@ -101,7 +104,6 @@
     animation-duration: 500ms;
     animation-name: fade-in-from-left;
   }
-
 
   ::view-transition-old(.fade-out-right) {
     animation-duration: 500ms;
