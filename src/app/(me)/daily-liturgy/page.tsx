@@ -34,6 +34,25 @@ interface IFetchReturn {
 const today = dayjs().format("DD/MM/YYYY");
 
 export const metadata: Metadata = {
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+    },
+  },
+  verification: {
+    google: "WQbYrmDaHz95-t54jPgWbYHPSBebm4LWjt1QC3UQtrg",
+  },
+  alternates: {
+    canonical: `${process.env.NEXT_PUBLIC_SITE_URL}/daily-liturgy`,
+    languages: {
+      "pt-BR": `${process.env.NEXT_PUBLIC_SITE_URL}/daily-liturgy`,
+    },
+  },
   title: `Liturgia Diária 🙏 ${today}`,
   description: "Aqui será mostrado à você a liturgia diária da igreja católica",
   authors: [

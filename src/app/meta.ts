@@ -10,6 +10,19 @@ export const options: Metadata = {
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: `${process.env.NEXT_PUBLIC_SITE_URL}/`,
+    languages: {
+      "pt-BR": `${process.env.NEXT_PUBLIC_SITE_URL}/`,
+    },
   },
   formatDetection: {
     address: true,
@@ -30,9 +43,6 @@ export const options: Metadata = {
   publisher: "Gustavo Murdiga",
   classification: "Personal Blog",
   metadataBase: new URL("https://gustavomurdiga.vercel.app/"),
-  alternates: {
-    canonical: "/",
-  },
   title: "Olá, eu sou o Gustavo! 🤓",
   description: `Sou um engenheiro de software com +${exp} anos de experiência, especializado em tecnologias como React.js, Next.js, Node.js,NestJS e AWS.Brasileiro, nascido em Jaú no interior de São paulo, com ${myYearsOld} anos, católico, estudante e um desenvolvedor que busca ser melhor, não apenas nas linhas de código, mas como pessoa.`,
   authors: [
