@@ -8,15 +8,17 @@ function Component() {
   const router = useRouter();
 
   function back() {
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
-    if (!document?.startViewTransition) {
+    if (!document?.startViewTransition && history.length > 1) {
       router.back();
+    } else if (!document?.startViewTransition && history.length <= 1) {
+      router.push("/");
     } else {
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-ignore
       document.startViewTransition(() => {
-        router.back();
+        if (history.length > 1) {
+          router.back();
+        } else {
+          router.push("/");
+        }
       });
     }
   }
