@@ -41,7 +41,7 @@ export const metadata: Metadata = {
       "Descubra técnicas científicas de aprendizado e um roadmap completo para dominar Node.js. Aprenda Pomodoro para programação, projetos práticos com Express.js, MongoDB, JWT e muito mais. Guia definitivo para desenvolvedores que querem acelerar sua carreira backend.",
     type: "article",
     siteName: "Gustavo Murdiga - Blog de Desenvolvimento",
-    url: `${process.env.NEXT_PUBLIC_SITE_URL || "https://gustavo-murdiga.vercel.app"}/blog/how-to-study-nodejs`,
+    url: `${process.env.NEXT_PUBLIC_SITE_URL}/blog/how-to-study-nodejs`,
     locale: "pt_BR",
     countryName: "Brasil",
     images: [

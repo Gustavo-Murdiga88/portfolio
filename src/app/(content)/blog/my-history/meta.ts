@@ -43,7 +43,7 @@ export const metadata: Metadata = {
       "Descubra minha trajetória completa como desenvolvedor full-stack sênior, desde os primeiros passos até a posição atual como desenvolvedor Sênior. Uma história inspiradora de crescimento profissional, aprendizado contínuo e paixão pela tecnologia, com foco especial em Node.js, React, React Native e mentoria para novos desenvolvedores. Aprenda sobre carreira em tech, fintech e desenvolvimento de software.",
     type: "article",
     siteName: "Gustavo Murdiga - Desenvolvedor Full-Stack",
-    url: `${process.env.NEXT_PUBLIC_SITE_URL || "https://gustavo-murdiga.vercel.app"}/blog/my-history`,
+    url: `${process.env.NEXT_PUBLIC_SITE_URL}/blog/my-history`,
     locale: "pt_BR",
     countryName: "Brasil",
     images: [
