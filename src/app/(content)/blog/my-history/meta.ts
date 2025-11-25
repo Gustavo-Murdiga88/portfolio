@@ -38,9 +38,9 @@ export const metadata: Metadata = {
   category: "Tecnologia e Desenvolvimento",
 
   openGraph: {
-    title: "De Estudante a Mentor: Minha Jornada no Mundo da Tecnologia",
+    title: "Minha Jornada no Mundo da Tecnologia",
     description:
-      "🚀 Uma história inspiradora de crescimento em tecnologia: de estudante a desenvolvedor sênior em fintech. Descubra minha trajetória, aprendizados e como pretendo ajudar novos desenvolvedores a conquistarem suas primeiras oportunidades.",
+      "Descubra minha trajetória completa como desenvolvedor full-stack sênior, desde os primeiros passos até a posição atual como desenvolvedor Sênior. Uma história inspiradora de crescimento profissional, aprendizado contínuo e paixão pela tecnologia, com foco especial em Node.js, React, React Native e mentoria para novos desenvolvedores. Aprenda sobre carreira em tech, fintech e desenvolvimento de software.",
     type: "article",
     siteName: "Gustavo Murdiga - Desenvolvedor Full-Stack",
     url: `${process.env.NEXT_PUBLIC_SITE_URL || "https://gustavo-murdiga.vercel.app"}/blog/my-history`,
@@ -48,14 +48,14 @@ export const metadata: Metadata = {
     countryName: "Brasil",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630&q=80",
+        url: "https://images.unsplash.com/photo-1591262184859-dd20d214b52a?q=80&w=2940&auto=format&fit=crop",
         width: 1200,
         height: 630,
         alt: "Desenvolvedor trabalhando com código - Trajetória profissional de crescimento na área de tecnologia",
         type: "image/jpeg",
       },
       {
-        url: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80",
+        url: "https://images.unsplash.com/photo-1591262184859-dd20d214b52a?q=80&w=2940&auto=format&fit=crop",
         width: 800,
         height: 600,
         alt: "Equipe de desenvolvimento colaborando - representando mentoria em tecnologia",
@@ -83,18 +83,18 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    title: "De Estudante a Mentor: Minha Jornada em Tech 🚀",
+    title: "Minha Jornada no Mundo da Tecnologia",
     description:
-      "📖 História completa: de estudante a dev sênior na Remessa Online\n🎯 Próximo passo: mentoria para novos devs\n💡 #NodeJS #React #ReactNative #Mentoria #TechCareer",
+      "Descubra minha trajetória completa como desenvolvedor full-stack sênior, desde os primeiros passos até a posição atual como desenvolvedor Sênior. Uma história inspiradora de crescimento profissional, aprendizado contínuo e paixão pela tecnologia, com foco especial em Node.js, React, React Native e mentoria para novos desenvolvedores. Aprenda sobre carreira em tech, fintech e desenvolvimento de software.",
     card: "summary_large_image",
     creator: "@GustavoMurdiga",
     site: "@GustavoMurdiga",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=630&q=80",
+        url: "https://images.unsplash.com/photo-1591262184859-dd20d214b52a?q=80&w=2940&auto=format&fit=crop",
         width: 1200,
         height: 630,
-        alt: "Trajetória profissional em tecnologia - De estudante a mentor",
+        alt: "Evolução engraçada",
       },
     ],
   },

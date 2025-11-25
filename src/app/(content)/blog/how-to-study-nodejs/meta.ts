@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Como Estudar e Dominar Node.js: Guia Prático Completo",
     description:
-      "🚀 Guia definitivo para dominar Node.js! Técnicas científicas de estudo + roadmap prático com projetos reais. Express.js, MongoDB, JWT, microservices e muito mais. Acelere sua carreira backend!",
+      "Descubra técnicas científicas de aprendizado e um roadmap completo para dominar Node.js. Aprenda Pomodoro para programação, projetos práticos com Express.js, MongoDB, JWT e muito mais. Guia definitivo para desenvolvedores que querem acelerar sua carreira backend.",
     type: "article",
     siteName: "Gustavo Murdiga - Blog de Desenvolvimento",
     url: `${process.env.NEXT_PUBLIC_SITE_URL || "https://gustavo-murdiga.vercel.app"}/blog/how-to-study-nodejs`,
@@ -84,9 +84,9 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    title: "🚀 Guia Definitivo: Como Dominar Node.js",
+    title: "Como Estudar Melhor e Dominar Node.js",
     description:
-      "📚 Técnicas científicas de estudo para programação\n💻 Roadmap completo Node.js + Express + MongoDB\n🎯 Projetos práticos e dicas de carreira\n\n#NodeJS #JavaScript #Backend #Programming",
+      "Descubra técnicas científicas de aprendizado e um roadmap completo para dominar Node.js. Aprenda Pomodoro para programação, projetos práticos com Express.js, MongoDB, JWT e muito mais. Guia definitivo para desenvolvedores que querem acelerar sua carreira backend.",
     card: "summary_large_image",
     creator: "@GustavoMurdiga",
     site: "@GustavoMurdiga",
