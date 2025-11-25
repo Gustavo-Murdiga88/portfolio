@@ -7,6 +7,6 @@ export default function Robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/private/",
     },
-    sitemap: `${process.env.NEXT_PUBLIC_BASE_URL}/sitemap.xml`,
+    sitemap: `https://gustavo-murdiga.vercel.app/sitemap.xml`,
   };
 }

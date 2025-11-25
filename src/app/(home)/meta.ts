@@ -42,7 +42,7 @@ const metadata: Metadata = {
   generator: "Next.js",
   publisher: "Gustavo Murdiga",
   classification: "Personal Blog",
-  metadataBase: new URL("https://gustavomurdiga.vercel.app/"),
+  metadataBase: new URL("https://gustavo-murdiga.vercel.app/"),
   title: "Home",
   description: `Sou um engenheiro de software com +${exp} anos de experiência, especializado em tecnologias como React.js, Next.js, Node.js,NestJS e AWS.Brasileiro, nascido em Jaú no interior de São paulo, com ${myYearsOld} anos, católico, estudante e um desenvolvedor que busca ser melhor, não apenas nas linhas de código, mas como pessoa.`,
   authors: [
@@ -54,7 +54,7 @@ const metadata: Metadata = {
   openGraph: {
     type: "profile",
     title: "Olá, eu sou o Gustavo! 🤓",
-    url: "https://gustavomurdiga.vercel.app/",
+    url: "https://gustavo-murdiga.vercel.app/",
     description: `Sou um engenheiro de software com +${exp} anos de experiência, especializado em tecnologias como React.js, Next.js, Node.js,NestJS e AWS.Brasileiro, nascido em Jaú no interior de São paulo, com ${myYearsOld} anos, católico, estudante e um desenvolvedor que busca ser melhor, não apenas nas linhas de código, mas como pessoa.`,
     firstName: "Gustavo",
     lastName: "Murdiga",
@@ -109,7 +109,7 @@ const struttedData = {
   name: "Gustavo Murdiga",
   image:
     "https://res.cloudinary.com/dtrh0qcd3/image/upload/v1759288004/333d6614-5da4-48de-89a4-c58b11fe436b.png",
-  url: "https://gustavomurdiga.vercel.app/",
+  url: "https://gustavo-murdiga.vercel.app/",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Luiz zanolla",
@@ -133,7 +133,7 @@ const struttedDataOrganization = {
   "@type": "Organization",
   name: "GM Dev",
   logo: "https://res.cloudinary.com/dtrh0qcd3/image/upload/v1759288004/333d6614-5da4-48de-89a4-c58b11fe436b.png",
-  url: "https://gustavomurdiga.vercel.app/",
+  url: "https://gustavo-murdiga.vercel.app/",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Luiz zanolla",
