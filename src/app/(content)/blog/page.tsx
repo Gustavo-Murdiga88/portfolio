@@ -1,31 +1,39 @@
 import { BookOpen, ChevronDown } from "lucide-react";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
 import { formatDate } from "@/util/date";
 
+import * as meta from "./meta";
 import { blogPosts } from "./posts";
+
+export const metadata: Metadata = meta.metadata;
 
 export default function BlogPage() {
   return (
     <div className="mx-auto max-w-[820px] px-4 py-8">
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col">
         {blogPosts.map((post) => (
-          <Link key={post.id} href={post.link} prefetch>
-            <article className="group flex flex-wrap gap-4 bg-clip-text p-3 transition-all md:flex-nowrap md:gap-10 [&+&]:border-t [&+&]:border-zinc-700">
-              <div className="flex flex-col">
-                <div className="mb-3 flex gap-2 text-[12px] text-zinc-400 transition-colors duration-200 group-hover:text-zinc-200">
+          <Link
+            key={post.id}
+            href={post.link}
+            prefetch
+            className="[&+&]:border-t [&+&]:border-t-zinc-700"
+          >
+            <article className="group my-2 flex flex-wrap gap-4 rounded-xs p-3 transition-colors duration-300 hover:bg-zinc-800/50 md:flex-nowrap md:gap-10">
+              <div className="flex flex-1 flex-col">
+                <div className="mb-3 flex gap-2 text-[12px] text-zinc-200 transition-colors duration-200">
                   <span>{formatDate(post.date).format("DD/MM/YYYY")}</span>
                   <span>{post.readTime}</span>
                   <BookOpen className="size-4" />
                 </div>
 
-                <h2 className="mb-3 text-sm font-semibold text-zinc-400 transition-colors duration-200 group-hover:text-zinc-200">
+                <h2 className="mb-3 text-sm font-semibold text-zinc-200 transition-colors duration-200">
                   {post.title}
                 </h2>
 
                 <p className="order-2 mb-4 bg-gradient-to-b from-zinc-200 to-transparent bg-clip-text text-[0.75rem] leading-relaxed text-transparent md:order-1">
-                  {post.excerpt}
                   {post.excerpt}
                 </p>
 
@@ -48,7 +56,7 @@ export default function BlogPage() {
                 src={post.image}
                 alt={post.title}
                 width={250}
-                height={200}
+                height={180}
                 className="max-h-[180px] grow rounded-xs border border-zinc-700 object-cover md:grow-0"
               />
             </article>

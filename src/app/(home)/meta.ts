@@ -4,7 +4,7 @@ const currentYear = new Date().getFullYear();
 const myYearsOld = currentYear - 1999;
 const exp = currentYear - 2020;
 
-export const options: Metadata = {
+const metadata: Metadata = {
   abstract: `Sou um engenheiro de software com +${exp} anos de experiência, especializado em tecnologias como React.js, Next.js, Node.js,NestJS e AWS.Brasileiro, nascido em Jaú no interior de São paulo, com ${myYearsOld} anos, católico, estudante e um desenvolvedor que busca ser melhor, não apenas nas linhas de código, mas como pessoa.`,
   applicationName: "Gustavo Murdiga",
   robots: {
@@ -43,7 +43,7 @@ export const options: Metadata = {
   publisher: "Gustavo Murdiga",
   classification: "Personal Blog",
   metadataBase: new URL("https://gustavomurdiga.vercel.app/"),
-  title: "Olá, eu sou o Gustavo! 🤓",
+  title: "Home",
   description: `Sou um engenheiro de software com +${exp} anos de experiência, especializado em tecnologias como React.js, Next.js, Node.js,NestJS e AWS.Brasileiro, nascido em Jaú no interior de São paulo, com ${myYearsOld} anos, católico, estudante e um desenvolvedor que busca ser melhor, não apenas nas linhas de código, mas como pessoa.`,
   authors: [
     {
@@ -103,7 +103,7 @@ export const options: Metadata = {
   ],
 };
 
-export const struttedData = {
+const struttedData = {
   "@context": "http://schema.org/",
   "@type": "LocalBusiness",
   name: "Gustavo Murdiga",
@@ -128,7 +128,7 @@ export const struttedData = {
   ],
 };
 
-export const struttedDataOrganization = {
+const struttedDataOrganization = {
   "@context": "http://schema.org/",
   "@type": "Organization",
   name: "GM Dev",
@@ -143,3 +143,5 @@ export const struttedDataOrganization = {
     addressCountry: "Brazil",
   },
 };
+
+export { metadata, struttedData, struttedDataOrganization };

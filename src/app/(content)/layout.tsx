@@ -1,4 +1,4 @@
-import { unstable_ViewTransition as ViewTransitions } from "react";
+import { ViewTransition } from "react";
 
 import { BackButton } from "@/components/back-button";
 import { Title } from "@/components/title";
@@ -8,7 +8,7 @@ interface IBlogLayoutProps {
 }
 export default function BlogLayout({ children }: IBlogLayoutProps) {
   return (
-    <ViewTransitions name="blog">
+    <ViewTransition name="blog">
       <Title id="blog" title="Blog">
         <nav
           aria-label="Ações"
@@ -19,6 +19,6 @@ export default function BlogLayout({ children }: IBlogLayoutProps) {
       </Title>
 
       {children}
-    </ViewTransitions>
+    </ViewTransition>
   );
 }

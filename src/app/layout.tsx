@@ -2,7 +2,7 @@ import "./globals.css";
 import "@/lib/nodemailer";
 
 import { Github, Linkedin, Twitter } from "lucide-react";
-import { Viewport } from "next";
+import { Metadata, Viewport } from "next";
 import { Poppins } from "next/font/google";
 import Link from "next/link";
 import Script from "next/script";
@@ -12,7 +12,7 @@ import { Toaster } from "sonner";
 import { CookieBanner } from "@/components/cookie-banner";
 import { GoogleAnalytics } from "@/components/google-analytics";
 
-import { options, struttedData, struttedDataOrganization } from "./meta";
+import { struttedData, struttedDataOrganization } from "./(home)/meta";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -20,7 +20,6 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
-export const metadata = options;
 export const viewport: Viewport = {
   maximumScale: 1,
   minimumScale: 1,
@@ -30,6 +29,13 @@ export const viewport: Viewport = {
     { media: "(prefers-color-scheme: dark)", color: "#121214" },
     { media: "(prefers-color-scheme: light)", color: "#c3c3c3" },
   ],
+};
+
+export const metadata: Metadata = {
+  title: {
+    template: "Gustavo Murdiga | %s",
+    default: "Gustavo Murdiga",
+  },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

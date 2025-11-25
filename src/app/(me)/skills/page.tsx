@@ -1,6 +1,10 @@
+import { Metadata } from "next";
+
 import { CardPresenter } from "@/components/card-presenter";
 
 import { frameworks } from "./data";
+import * as meta from "./meta";
+export const metadata: Metadata = meta.metadata;
 
 export default function Skills() {
   return (

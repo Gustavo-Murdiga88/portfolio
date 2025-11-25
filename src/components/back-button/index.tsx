@@ -1,17 +1,22 @@
 "use client";
 
 import { ChevronLeft } from "lucide-react";
+import { useRouter } from "next/navigation";
 import { memo } from "react";
 
 function Component() {
+  const router = useRouter();
+
   function back() {
-    // @ts-expect-error View Transition API
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     if (!document?.startViewTransition) {
-      window.history.back();
+      router.back();
     } else {
-      // @ts-expect-error View Transition API
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
       document.startViewTransition(() => {
-        window.history.back();
+        router.back();
       });
     }
   }

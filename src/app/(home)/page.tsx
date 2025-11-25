@@ -1,18 +1,23 @@
 import dayjs from "dayjs";
 import { ChevronRight, Github, Linkedin, Paperclip } from "lucide-react";
+import { Metadata } from "next";
 import Img from "next/image";
 import Link from "next/link";
-import { unstable_ViewTransition as ViewTransitions } from "react";
+import { ViewTransition } from "react";
+
+import { metadata as meta } from "./meta";
 
 export const dynamic = "force-dynamic";
 
-export default function Main() {
+export const metadata: Metadata = meta;
+
+export default function Home() {
   const date = dayjs();
 
   const myYearsOld = date.get("year") - 1999;
 
   return (
-    <ViewTransitions enter={"fade-left"} exit={"fade-out-left"}>
+    <ViewTransition name="home" enter={"fade-left"} exit={"fade-out-left"}>
       <div className="my-4 flex min-h-dvh items-center justify-center md:my-0">
         <section className="h-fit w-full max-w-[45rem]">
           <div className="rounded-xs border border-zinc-700/50 p-4">
@@ -171,6 +176,6 @@ export default function Main() {
           </div>
         </section>
       </div>
-    </ViewTransitions>
+    </ViewTransition>
   );
 }

@@ -1,8 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "De Estudante a Mentor: Minha Jornada no Mundo da Tecnologia | Gustavo Murdiga",
+  title: "Minha Jornada no Mundo da Tecnologia",
   description:
     "Descubra minha trajetória completa como desenvolvedor full-stack sênior, desde os primeiros passos até a posição atual como desenvolvedor Sênior. Uma história inspiradora de crescimento profissional, aprendizado contínuo e paixão pela tecnologia, com foco especial em Node.js, React, React Native e mentoria para novos desenvolvedores. Aprenda sobre carreira em tech, fintech e desenvolvimento de software.",
   keywords: [
