@@ -8,11 +8,13 @@ function Component() {
   const router = useRouter();
 
   function back() {
-    // @ts-expect-error View Transition API
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     if (!document?.startViewTransition) {
       router.back();
     } else {
-      // @ts-expect-error View Transition API
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
       document.startViewTransition(() => {
         router.back();
       });
