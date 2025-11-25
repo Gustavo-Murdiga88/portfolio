@@ -1,17 +1,20 @@
 "use client";
 
 import { ChevronLeft } from "lucide-react";
+import { useRouter } from "next/navigation";
 import { memo } from "react";
 
 function Component() {
+  const router = useRouter();
+
   function back() {
     // @ts-expect-error View Transition API
     if (!document?.startViewTransition) {
-      window.history.back();
+      router.back();
     } else {
       // @ts-expect-error View Transition API
       document.startViewTransition(() => {
-        window.history.back();
+        router.back();
       });
     }
   }

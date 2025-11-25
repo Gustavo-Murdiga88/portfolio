@@ -1,13 +1,13 @@
 import { ChevronLeft, Cross, Github, Home, Linkedin } from "lucide-react";
 import Link from "next/link";
 import { ReactNode } from "react";
-import { unstable_ViewTransition as ViewTransitions } from "react";
+import { ViewTransition } from "react";
 
 import { Title } from "@/components/title";
 
 export default function MeLayout({ children }: { children: ReactNode }) {
   return (
-    <ViewTransitions name="me" exit={"fade-out-right"} enter={"fade-right"}>
+    <ViewTransition name="me" exit={"fade-out-right"} enter={"fade-right"}>
       <div className="flex min-h-dvh flex-col">
         <Title id="setup" title="Meus Equipamentos">
           <nav
@@ -64,6 +64,6 @@ export default function MeLayout({ children }: { children: ReactNode }) {
         </Title>
         {children}
       </div>
-    </ViewTransitions>
+    </ViewTransition>
   );
 }

@@ -9,12 +9,16 @@ import {
   Laptop,
   Linkedin,
 } from "lucide-react";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
 import { TimeBox } from "@/components/time_line/widget";
 
 import { time_line } from "./data";
+import * as meta from "./meta";
+
+export const metadata: Metadata = meta.metadata;
 
 export default function About() {
   const currentYear = new Date().getFullYear();

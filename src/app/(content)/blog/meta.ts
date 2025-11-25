@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog - Gustavo Murdiga",
+  title: "Blog",
   creator: "Gustavo Murdiga",
   publisher: "Gustavo Murdiga",
   robots: {

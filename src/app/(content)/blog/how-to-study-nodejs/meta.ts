@@ -1,8 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "Como Estudar Melhor e Dominar Node.js: Guia Prático 2024 | Gustavo Murdiga",
+  title: "Como Estudar Melhor e Dominar Node.js",
   description:
     "Descubra técnicas científicas de aprendizado e um roadmap completo para dominar Node.js. Aprenda Pomodoro para programação, projetos práticos com Express.js, MongoDB, JWT e muito mais. Guia definitivo para desenvolvedores que querem acelerar sua carreira backend.",
   keywords: [
