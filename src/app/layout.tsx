@@ -1,9 +1,9 @@
-import "./globals.css";
 import "@/lib/nodemailer";
+import "./globals.css";
 
 import { Github, Linkedin, Twitter } from "lucide-react";
 import { Metadata, Viewport } from "next";
-import { Poppins } from "next/font/google";
+import { JetBrains_Mono, Poppins } from "next/font/google";
 import Link from "next/link";
 import Script from "next/script";
 import { ReactNode } from "react";
@@ -18,6 +18,12 @@ const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700"],
   variable: "--font-poppins",
+});
+
+const jetBrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-jetbrains-mono",
 });
 
 export const viewport: Viewport = {
@@ -49,7 +55,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         ></Script>
       </head>
       <body
-        className={`${poppins.className} px-2 ${poppins.variable} h-svh bg-gradient-to-r from-zinc-950 to-zinc-900 font-poppins text-zinc-50 antialiased selection:bg-emerald-400 selection:text-zinc-950`}
+        className={`${poppins.className} ${jetBrainsMono.variable} px-2 ${poppins.variable} h-svh bg-gradient-to-r from-zinc-950 to-zinc-900 font-poppins text-zinc-50 antialiased selection:bg-emerald-400 selection:text-zinc-950`}
       >
         <Toaster />
         {children}

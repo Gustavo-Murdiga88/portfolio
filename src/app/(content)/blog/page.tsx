@@ -42,6 +42,9 @@ export default function BlogPage() {
                     <Image
                       height={30}
                       width={30}
+                      fetchPriority="high"
+                      decoding="sync"
+                      loading="eager"
                       alt="Avatar do autor"
                       className="z-10 rounded-full border border-zinc-700"
                       src={"https://github.com/Gustavo-Murdiga88.png"}

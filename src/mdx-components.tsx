@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 /* eslint-disable @next/next/no-img-element */
 
 import type { MDXComponents } from "mdx/types";
@@ -17,15 +18,36 @@ const components: MDXComponents = {
       decoding="sync"
       fetchPriority="high"
       alt={props.alt}
+      height={400}
+      width={800}
       {...props}
     />
   ),
   pre: ({ children }) => {
-    return <div className="my-6">{children}</div>;
+    return (
+      <>
+        <div className="my-6">{children}</div>
+        <ins
+          className="adsbygoogle block text-center"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6252769412873895"
+          data-ad-slot="6253825845"
+        />
+      </>
+    );
   },
   code: ({ children }) => {
     return (
-      <SyntaxHighlighter showLineNumbers language="javascript" style={dracula}>
+      <SyntaxHighlighter
+        customStyle={{
+          fontFamily: "var(--font-jetbrains-mono)",
+          fontWeight: "bold",
+        }}
+        showLineNumbers
+        language="javascript"
+        style={dracula}
+      >
         {children}
       </SyntaxHighlighter>
     );

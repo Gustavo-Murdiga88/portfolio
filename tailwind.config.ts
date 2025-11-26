@@ -7,6 +7,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         poppins: ["var(--font-poppins)"],
+        jetBrainsMono: ["var(--font-jetbrains-mono)"],
       },
 
       keyframes: {
