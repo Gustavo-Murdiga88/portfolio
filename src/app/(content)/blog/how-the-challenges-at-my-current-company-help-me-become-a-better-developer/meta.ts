@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Como os Desafios da Empresa que Trabalho Hoje, me Ajudam a ser um Desenvolvedor Melhor",
+    "Como os Desafios da empresa que trabalho Hoje, me ajudam a ser um desenvolvedor melhor",
   description:
     "Quando entrei na minha empresa atual há alguns meses, não imaginava que esta experiência se tornaria um divisor de águas na minha carreira como desenvolvedor. Trabalhar em uma fintech líder no mercado de transferências internacionais trouxe desafios únicos que me forçaram a evoluir rapidamente e me tornaram um profissional muito mais completo...",
   keywords: [
