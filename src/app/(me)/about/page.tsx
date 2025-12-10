@@ -20,7 +20,8 @@ import * as meta from "./meta";
 
 export const metadata: Metadata = meta.metadata;
 
-export default function About() {
+export default async function About() {
+  "use cache";
   const currentYear = new Date().getFullYear();
   const yearsOld = currentYear - 1999;
   const yearsOfExp = currentYear - 2020;

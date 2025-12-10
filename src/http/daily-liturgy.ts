@@ -29,6 +29,8 @@ interface IFetchReturn {
 }
 
 export async function getDailyLiturgy() {
+  "use cache";
+
   const today = new Date();
   const restInMiliSeconds = 60 * 60; // 1 hour
 

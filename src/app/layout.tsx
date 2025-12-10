@@ -2,7 +2,6 @@ import "@/lib/nodemailer";
 import "./globals.css";
 
 import { Github, Linkedin, Twitter } from "lucide-react";
-import { Metadata, Viewport } from "next";
 import { JetBrains_Mono, Poppins } from "next/font/google";
 import Link from "next/link";
 import Script from "next/script";
@@ -13,6 +12,8 @@ import { CookieBanner } from "@/components/cookie-banner";
 import { GoogleAnalytics } from "@/components/google-analytics";
 
 import { struttedData, struttedDataOrganization } from "./(home)/meta";
+
+export * from "./meta";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -26,25 +27,14 @@ const jetBrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
 });
 
-export const viewport: Viewport = {
-  maximumScale: 1,
-  minimumScale: 1,
-  viewportFit: "auto",
-  colorScheme: "dark light",
-  themeColor: [
-    { media: "(prefers-color-scheme: dark)", color: "#121214" },
-    { media: "(prefers-color-scheme: light)", color: "#c3c3c3" },
-  ],
-};
+export default async function RootLayout({
+  children,
+}: {
+  children: ReactNode;
+}) {
+  "use cache";
+  const year = new Date().getFullYear();
 
-export const metadata: Metadata = {
-  title: {
-    template: "Gustavo Murdiga | %s",
-    default: "Gustavo Murdiga",
-  },
-};
-
-export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-br" className="dark" suppressHydrationWarning>
       <head>
@@ -128,7 +118,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               Feito com ♥️ <br /> por Gustavo Murdiga
             </span>
             <span className="block text-center text-[10px] text-zinc-500">
-              &#169; {new Date().getFullYear()} - Todos os direitos
+              &#169; {year} - Todos os direitos
             </span>
           </div>
         </footer>

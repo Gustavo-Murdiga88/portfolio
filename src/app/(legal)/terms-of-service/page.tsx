@@ -20,7 +20,9 @@ export const metadata: Metadata = {
   },
 };
 
-export default function TermsOfService() {
+export default async function TermsOfService() {
+  "use cache";
+
   return (
     <ViewTransition name="terms">
       <div className="mx-auto max-w-4xl px-4 py-8">

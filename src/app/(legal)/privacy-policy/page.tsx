@@ -21,7 +21,9 @@ export const metadata: Metadata = {
   },
 };
 
-export default function PrivacyPolicy() {
+export default async function PrivacyPolicy() {
+  "use cache";
+
   return (
     <ViewTransition name="privacy">
       <div className="mx-auto max-w-4xl px-4 py-8">

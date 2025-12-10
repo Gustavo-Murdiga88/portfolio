@@ -9,6 +9,7 @@ const nextConfig = {
   experimental: {
     viewTransition: true,
   },
+  cacheComponents: true,
   pageExtensions: ["ts", "tsx", "mdx", "md"],
   images: {
     remotePatterns: [

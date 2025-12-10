@@ -7,11 +7,10 @@ import { ViewTransition } from "react";
 
 import { metadata as meta } from "./meta";
 
-export const dynamic = "force-dynamic";
-
 export const metadata: Metadata = meta;
 
-export default function Home() {
+export default async function Home() {
+  "use cache";
   const date = dayjs();
 
   const myYearsOld = date.get("year") - 1999;
