@@ -1,4 +1,3 @@
-/* eslint-disable tailwindcss/no-custom-classname */
 import Script from "next/script";
 import { ViewTransition } from "react";
 
@@ -11,26 +10,6 @@ interface IBlogLayoutProps {
 export default function BlogLayout({ children }: IBlogLayoutProps) {
   return (
     <ViewTransition name="blog">
-      <Script
-        async
-        strategy="lazyOnload"
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6252769412873895"
-        crossOrigin="anonymous"
-      />
-      <Script
-        async
-        strategy="lazyOnload"
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6252769412873895"
-        crossOrigin="anonymous"
-      />
-
-      <Script
-        async
-        strategy="lazyOnload"
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6252769412873895"
-        crossOrigin="anonymous"
-      />
-
       <Script
         async
         strategy="lazyOnload"
@@ -52,7 +31,8 @@ export default function BlogLayout({ children }: IBlogLayoutProps) {
       </Title>
 
       {children}
-      <ins
+
+      {/* <ins
         className="adsbygoogle block"
         data-ad-format="autorelaxed"
         data-ad-client="ca-pub-6252769412873895"
@@ -71,7 +51,7 @@ export default function BlogLayout({ children }: IBlogLayoutProps) {
         data-ad-slot="6445397530"
         data-ad-format="auto"
         data-full-width-responsive="true"
-      />
+      /> */}
     </ViewTransition>
   );
 }

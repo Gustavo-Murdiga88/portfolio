@@ -1,5 +1,4 @@
 /* eslint-disable tailwindcss/no-custom-classname */
-/* eslint-disable @next/next/no-img-element */
 
 import type { MDXComponents } from "mdx/types";
 import SyntaxHighlighter from "react-syntax-highlighter";
@@ -7,7 +6,7 @@ import { dracula } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 const components: MDXComponents = {
   wrapper: ({ children }) => (
-    <article className="prose prose-invert mx-auto my-12 min-h-[calc(100svh-3.375rem)] max-w-[45rem] p-2">
+    <article className="prose prose-invert mx-auto my-12 min-h-[calc(100svh-3.375rem)] max-w-[45rem] p-2 prose-p:text-zinc-50">
       {children}
     </article>
   ),
@@ -45,7 +44,6 @@ const components: MDXComponents = {
           fontWeight: "bold",
         }}
         showLineNumbers
-        language="javascript"
         style={dracula}
       >
         {children}
