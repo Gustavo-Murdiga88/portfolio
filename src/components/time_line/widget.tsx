@@ -73,7 +73,7 @@ export function TimeBox({
             <span className="mb-1 mt-4 block font-semibold leading-none text-neutral-50">
               {type === "xp" ? "Função:" : ""}
             </span>
-            <p className="break-before-auto text-balance text-start">
+            <p className="break-before-auto text-balance text-start text-zinc-100/90">
               {description}
             </p>
           </pre>

@@ -1,14 +1,13 @@
 import { BookOpen, ChevronDown } from "lucide-react";
-import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+import { Ads } from "@/components/ads";
 import { formatDate } from "@/util/date";
 
-import * as meta from "./meta";
 import { blogPosts } from "./posts";
 
-export const metadata: Metadata = meta.metadata;
+export { metadata } from "./meta";
 
 export default async function BlogPage() {
   "use cache";
@@ -76,6 +75,8 @@ export default async function BlogPage() {
           <ChevronDown className="size-4" />
         </button>
       </div>
+
+      <Ads type="auto" />
     </div>
   );
 }

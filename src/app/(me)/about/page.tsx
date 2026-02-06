@@ -28,7 +28,7 @@ export default async function About() {
       aria-label="Sobre mim"
       className="m-auto mt-10 flex max-w-[42.375rem] flex-1 flex-col justify-center p-2"
     >
-      <article className="prose prose-neutral px-2">
+      <article className="prose prose-zinc prose-invert px-2 prose-p:text-zinc-100/90">
         <header className="flex flex-row gap-4">
           <Image
             src="https://github.com/gustavo-murdiga88.png"
@@ -40,7 +40,8 @@ export default async function About() {
             placeholder="blur"
             blurDataURL="data:image/png;base64,"
             data-section="about"
-            className="m-0 rounded border-zinc-700"
+            objectFit="cover"
+            className="m-0 rounded border border-zinc-700"
             alt="Perfil do Gustavo Murdiga"
           />
           <div className="mt-1 flex flex-col text-[12px] font-semibold">
@@ -195,11 +196,11 @@ export default async function About() {
             </strong>
             <span className="text-[0.75rem] font-semibold text-zinc-50">
               <Link
-                href="https://open.spotify.com/track/5Ng2rZsyF9cp6ql8Lx2hJc?si=e812350950164ff3"
+                href="https://www.youtube.com/watch?v=R26c3QelJ-I"
                 className="font-semibold text-zinc-50 underline"
                 target="_blank"
               >
-                Santos dos santos - Colo de Deus{" "}
+                Eu e o meu amor feat. Cristo Alegria (Ao vivo)
               </Link>
             </span>
           </li>

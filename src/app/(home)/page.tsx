@@ -1,13 +1,12 @@
 import dayjs from "dayjs";
 import { ChevronRight, Github, Linkedin, Paperclip } from "lucide-react";
-import { Metadata } from "next";
 import Img from "next/image";
 import Link from "next/link";
 import { ViewTransition } from "react";
 
-import { metadata as meta } from "./meta";
+import { Ads } from "@/components/ads";
 
-export const metadata: Metadata = meta;
+export { metadata } from "./meta";
 
 export default async function Home() {
   "use cache";
@@ -175,6 +174,8 @@ export default async function Home() {
             </nav>
           </div>
         </section>
+
+        <Ads type="fluid" />
       </div>
     </ViewTransition>
   );

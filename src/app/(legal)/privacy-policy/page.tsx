@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { ViewTransition } from "react";
 
+import { Ads } from "@/components/ads";
 import { BackButton } from "@/components/back-button";
 import { Title } from "@/components/title";
 
@@ -264,6 +265,8 @@ export default async function PrivacyPolicy() {
           </section>
         </article>
       </div>
+
+      <Ads type="auto" />
     </ViewTransition>
   );
 }
