@@ -1,18 +1,17 @@
-import { Metadata } from "next";
 import Img from "next/image";
 import Link from "next/link";
 
-import * as meta from "./meta";
+export { metadata } from "./meta";
 import json from "./setup.json";
 
-export const metadata: Metadata = meta.metadata;
+export default async function SetupPage() {
+  "use cache";
 
-export default function SetupPage() {
   return (
     <div className="mx-auto max-w-[45rem] py-6">
-      <main className="px-5 py-4 md:mx-auto md:w-full">
+      <main className="px-5 py-4 md:mx-auto md:w-full" data-landmark-index="3">
         <h1 className="mb-4 text-lg font-semibold">Meu setup</h1>
-        <p className="text-justify text-[0.75rem] font-semibold leading-relaxed text-zinc-200/50">
+        <p className="text-justify text-[0.75rem] font-semibold leading-relaxed text-zinc-100/85">
           Com o tempo muitas pessoas me perguntam sobre meu periféricos no
           setup, a partir daí achei muito legal colocar aqui uma lista de todos
           os meus equipamentos para que vocês possam se espelhar ou até mesmo
@@ -38,6 +37,7 @@ export default function SetupPage() {
                     width={width}
                     decoding="sync"
                     loading="eager"
+                    objectFit="cover"
                     fetchPriority="high"
                     className="rounded-xs object-cover transition-all duration-200 hover:scale-105"
                     src={img}

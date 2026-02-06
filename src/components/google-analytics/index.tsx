@@ -4,12 +4,10 @@
 import Script from "next/script";
 import { useEffect } from "react";
 
-// Substitua por seu ID do Google Analytics
 const GA_TRACKING_ID = "G-XXXXXXXXXX";
 
 export function GoogleAnalytics() {
   useEffect(() => {
-    // Verifica se o usuário já deu consentimento
     const consent = localStorage.getItem("cookie-consent");
     if (consent) {
       const consentData = JSON.parse(consent);

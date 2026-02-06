@@ -40,6 +40,7 @@ export default async function Home() {
                 data-section="home"
                 blurDataURL="data:image/png;base64,"
                 decoding="sync"
+                objectFit="cover"
                 className="relative left-16 top-[45%] -translate-x-1/2 rounded-full border-[0.125rem] border-zinc-700"
                 alt="Uma imagem que representa o perfil do Gustavo Murdiga"
               />
@@ -102,7 +103,7 @@ export default async function Home() {
               </li>
             </ul>
 
-            <nav className="mx-2 mt-3">
+            <nav className="mx-2 mt-3" data-landmark-index="1">
               <strong className="block border-b border-zinc-700 py-1 text-[0.875rem] text-zinc-50">
                 Menus
               </strong>

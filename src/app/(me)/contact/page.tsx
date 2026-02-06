@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+export { metadata } from "./meta";
 
 import { Contact } from "./component";
 

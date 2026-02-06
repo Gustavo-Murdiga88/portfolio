@@ -16,7 +16,7 @@ export function CookieBanner() {
   const [isVisible, setIsVisible] = useState(false);
   const [showPreferences, setShowPreferences] = useState(false);
   const [preferences, setPreferences] = useState({
-    necessary: true, // Always true, can't be disabled
+    necessary: true,
     analytics: false,
     advertising: false,
     functional: false,
@@ -58,7 +58,6 @@ export function CookieBanner() {
     localStorage.setItem("cookie-consent", JSON.stringify(consentData));
     setIsVisible(false);
 
-    // Update consent based on preferences
     if (typeof window !== "undefined") {
       window.gtag?.("consent", "update", {
         analytics_storage: preferences.analytics ? "granted" : "denied",

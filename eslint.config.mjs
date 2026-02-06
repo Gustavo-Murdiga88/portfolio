@@ -11,7 +11,13 @@ const config = [
   ...gm,
   {
     ...mdx.flat,
+  },
+  {
     ...mdx.flatCodeBlocks,
+    files: [mdx.flatCodeBlocks.files],
+    rules: {
+      ...mdx.flatCodeBlocks.rules,
+    },
   },
   ...compat.config({
     root: true,

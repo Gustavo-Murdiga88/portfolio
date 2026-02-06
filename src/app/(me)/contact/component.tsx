@@ -1,12 +1,9 @@
-import { Metadata } from "next";
 import { cookies } from "next/headers";
 
 import { userCanSendEmail } from "@/util/useCanSendEmail";
 
 import { Form } from "./form";
-import * as meta from "./meta";
-
-export const metadata: Metadata = meta.metadata;
+export { metadata } from "./meta";
 
 export async function Contact() {
   const cookie = await cookies();

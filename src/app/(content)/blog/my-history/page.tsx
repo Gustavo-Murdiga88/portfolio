@@ -5,6 +5,7 @@ import Post from "./post.mdx";
 
 export const metadata: Metadata = meta.metadata;
 
-export default function FirstBlogPost() {
+export default async function FirstBlogPost() {
+  "use cache";
   return <Post />;
 }

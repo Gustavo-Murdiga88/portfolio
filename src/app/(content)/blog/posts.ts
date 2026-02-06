@@ -7,7 +7,7 @@ const blogPosts = [
     readTime: "5 min",
     link: "/blog/resume-of-my-last-five-months",
     image:
-      "https://images.unsplash.com/photo-1515041219749-89347f83291a?q=80&w=250&h=180&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1515041219749-89347f83291a?q=100&w=650&h=480&auto=format&fit=crop",
   },
   {
     id: "3",
@@ -18,7 +18,7 @@ const blogPosts = [
     readTime: "10 min",
     link: "/blog/how-the-challenges-at-my-current-company-help-me-become-a-better-developer",
     image:
-      "https://images.unsplash.com/photo-1606857521015-7f9fcf423740?q=80&w=250&h=180&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1606857521015-7f9fcf423740?q=100&w=650&h=480&auto=format&fit=crop",
   },
   {
     id: "2",
@@ -29,7 +29,7 @@ const blogPosts = [
     readTime: "3 min",
     link: "/blog/how-to-study-nodejs",
     image:
-      "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=250&h=180&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=100&w=650&h=480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: "1",
@@ -40,7 +40,7 @@ const blogPosts = [
     category: "My History",
     link: "/blog/my-history",
     image:
-      "https://images.unsplash.com/photo-1591262184859-dd20d214b52a?q=80&w=250&h=180&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1591262184859-dd20d214b52a?q=100&w=650&h=480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
 export { blogPosts };

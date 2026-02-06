@@ -40,9 +40,10 @@ export default async function RootLayout({
       <head>
         <Script
           async
+          strategy="afterInteractive"
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6252769412873895"
           crossOrigin="anonymous"
-        ></Script>
+        />
       </head>
       <body
         className={`${poppins.className} ${jetBrainsMono.variable} px-2 ${poppins.variable} h-svh bg-zinc-950 font-poppins text-zinc-50 antialiased selection:bg-emerald-400 selection:text-zinc-950`}

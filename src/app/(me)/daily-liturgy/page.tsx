@@ -1,10 +1,6 @@
-import { Metadata } from "next";
-
 import { getDailyLiturgy } from "@/http/daily-liturgy";
 
-import * as meta from "./meta";
-
-export const metadata: Metadata = meta.metadata;
+export { metadata } from "./meta";
 
 export default async function Page() {
   const data = await getDailyLiturgy();

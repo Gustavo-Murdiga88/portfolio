@@ -10,7 +10,8 @@ import { blogPosts } from "./posts";
 
 export const metadata: Metadata = meta.metadata;
 
-export default function BlogPage() {
+export default async function BlogPage() {
+  "use cache";
   return (
     <div className="mx-auto max-w-[820px] px-4 py-8">
       <div className="flex flex-col">
@@ -45,6 +46,7 @@ export default function BlogPage() {
                       fetchPriority="high"
                       decoding="sync"
                       loading="eager"
+                      objectFit="cover"
                       alt="Avatar do autor"
                       className="z-10 rounded-full border border-zinc-700"
                       src={"https://github.com/Gustavo-Murdiga88.png"}
@@ -60,7 +62,8 @@ export default function BlogPage() {
                 alt={post.title}
                 width={250}
                 height={180}
-                className="max-h-[180px] grow rounded-xs border border-zinc-700 object-cover md:grow-0"
+                objectFit="cover"
+                className="max-h-[180px] grow rounded-xs border border-zinc-700 md:grow-0"
               />
             </article>
           </Link>
